@@ -73,7 +73,7 @@ def create_snapshot(workspace_root=None, description=""):
                 projects.append({
                     "name": project_dir.name,
                     "has_readme": readme.exists(),
-                    "modified": datetime.fromtimestamp(project_dir.stat().st_mtime()).strftime('%Y-%m-%d %H:%M:%S')
+                    "modified": datetime.fromtimestamp(project_dir.stat().st_mtime).strftime('%Y-%m-%d %H:%M:%S')
                 })
 
         with open(snapshot_dir / "projects.json", 'w', encoding='utf-8') as f:
@@ -88,7 +88,7 @@ def create_snapshot(workspace_root=None, description=""):
             tools.append({
                 "name": tool_file.name,
                 "size": tool_file.stat().st_size,
-                "modified": datetime.fromtimestamp(tool_file.stat().st_mtime()).strftime('%Y-%m-%d %H:%M:%S')
+                "modified": datetime.fromtimestamp(tool_file.stat().st_mtime).strftime('%Y-%m-%d %H:%M:%S')
             })
 
     with open(snapshot_dir / "tools.json", 'w', encoding='utf-8') as f:
