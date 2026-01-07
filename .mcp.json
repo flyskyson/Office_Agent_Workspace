@@ -3,6 +3,14 @@
     "chrome-devtools": {
       "command": "npx",
       "args": ["chrome-devtools-mcp@latest"]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "c:\\Users\\flyskyson\\Office_Agent_Workspace"]
+    },
+    "github-repos-manager": {
+      "command": "npx",
+      "args": ["-y", "github-repos-manager-mcp"]
     }
   }
 }
