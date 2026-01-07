@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-01-07 12:53:13",
-  "workspace_root": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "scan_time": "2026-01-07 22:49:38",
+  "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
   "projects": [
     {
       "name": "my_first_agent",
@@ -89,7 +89,7 @@
           "hash": "d8ce4c5a"
         }
       ],
-      "last_modified": "2026-01-07 08:37:58"
+      "last_modified": "2026-01-07 15:09:53"
     },
     {
       "name": "web_monitor_agent",
@@ -282,13 +282,23 @@
   },
   "tools": [
     {
-      "path": "workspace_cleaner.py",
-      "name": "workspace_cleaner.py",
-      "size": 14215,
-      "modified": "2026-01-07 07:30:57",
+      "path": "create_snapshot.py",
+      "name": "create_snapshot.py",
+      "size": 7788,
+      "modified": "2026-01-07 15:19:58",
       "extension": ".py",
       "type": "Python脚本",
-      "hash": "ac0f49d5",
+      "hash": "4905d0a5",
+      "description": "工作区工具"
+    },
+    {
+      "path": "workspace_cleaner.py",
+      "name": "workspace_cleaner.py",
+      "size": 18930,
+      "modified": "2026-01-07 13:26:09",
+      "extension": ".py",
+      "type": "Python脚本",
+      "hash": "e3ceb752",
       "description": "清理工作区，删除Python缓存、临时文件"
     },
     {
@@ -382,6 +392,16 @@
       "description": "工作区工具"
     },
     {
+      "path": "check_screensaver.ps1",
+      "name": "check_screensaver.ps1",
+      "size": 2857,
+      "modified": "2026-01-07 16:09:09",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "1baf7962",
+      "description": "工作区工具"
+    },
+    {
       "path": "create_task_simple.ps1",
       "name": "create_task_simple.ps1",
       "size": 2427,
@@ -456,6 +476,15 @@
       "hash": "705000d0"
     },
     {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\README_清理工具.md",
+      "name": "README_清理工具.md",
+      "size": 7309,
+      "modified": "2026-01-07 13:27:29",
+      "extension": ".md",
+      "type": "Markdown文档",
+      "hash": "894e6229"
+    },
+    {
       "path": "00_Agent_Library\\99_Scripts_Tools\\start-vscode-with-deepseek.bat",
       "name": "start-vscode-with-deepseek.bat",
       "size": 549,
@@ -487,7 +516,7 @@
     "total_projects": 5,
     "active_projects": 3,
     "archived_projects": 2,
-    "total_tools": 21,
+    "total_tools": 24,
     "code_snippets": 10,
     "prompt_templates": 1
   }

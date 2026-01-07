@@ -1,0 +1,235 @@
+{
+  "timestamp": "2026-01-08 00:13:31",
+  "workspace_path": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "mcp_servers": {
+    "status": "已配置",
+    "count": 4,
+    "servers": [
+      {
+        "name": "chrome-devtools",
+        "command": "npx",
+        "installed": true
+      },
+      {
+        "name": "filesystem",
+        "command": "npx",
+        "installed": true
+      },
+      {
+        "name": "github-repos-manager",
+        "command": "npx",
+        "installed": true
+      },
+      {
+        "name": "playwright",
+        "command": "npx",
+        "installed": true
+      }
+    ]
+  },
+  "workspace_index": {
+    "status": "已索引",
+    "scan_time": "2026-01-07 22:49:38",
+    "total_projects": 5,
+    "total_tools": 24,
+    "total_scripts": 0
+  },
+  "projects": {
+    "active": [
+      {
+        "name": "my_first_agent",
+        "path": "01_Active_Projects\\my_first_agent",
+        "last_modified": "2026-01-04 13:45:43",
+        "py_files": 400,
+        "has_readme": true
+      },
+      {
+        "name": "pdf_processor",
+        "path": "01_Active_Projects\\pdf_processor",
+        "last_modified": "2026-01-07 15:09:53",
+        "py_files": 772,
+        "has_readme": true
+      },
+      {
+        "name": "web_monitor_agent",
+        "path": "01_Active_Projects\\web_monitor_agent",
+        "last_modified": "2026-01-05 22:30:37",
+        "py_files": 577,
+        "has_readme": false
+      }
+    ],
+    "archived": [
+      {
+        "name": "20250104_pdf_processor_v1.0",
+        "path": "02_Project_Archive\\20250104_pdf_processor_v1.0",
+        "last_modified": "2026-01-05 21:39:48",
+        "py_files": 2,
+        "has_readme": true
+      },
+      {
+        "name": "my_first_agent_历史版本",
+        "path": "02_Project_Archive\\my_first_agent_历史版本",
+        "last_modified": "2026-01-05 09:23:55",
+        "py_files": 3,
+        "has_readme": false
+      }
+    ],
+    "active_count": 3,
+    "archived_count": 2
+  },
+  "tools": {
+    "python_tools": [
+      {
+        "name": "create_snapshot.py",
+        "modified": "2026-01-07 15:19:58"
+      },
+      {
+        "name": "workspace_cleaner.py",
+        "modified": "2026-01-07 13:26:09"
+      },
+      {
+        "name": "workspace_maintenance.py",
+        "modified": "2026-01-07 07:36:48"
+      },
+      {
+        "name": "workspace_report.py",
+        "modified": "2026-01-07 08:29:04"
+      },
+      {
+        "name": "workspace_scanner.py",
+        "modified": "2026-01-07 12:48:53"
+      },
+      {
+        "name": "check_scheduled_task.bat",
+        "modified": "2026-01-07 07:55:34"
+      },
+      {
+        "name": "generate_project_plan.bat",
+        "modified": "2026-01-07 12:35:59"
+      },
+      {
+        "name": "run_maintenance.bat",
+        "modified": "2026-01-07 07:41:33"
+      },
+      {
+        "name": "setup_scheduled_maintenance.bat",
+        "modified": "2026-01-07 07:58:05"
+      },
+      {
+        "name": "start_new_session.bat",
+        "modified": "2026-01-07 12:34:48"
+      },
+      {
+        "name": "check_scheduled_task.ps1",
+        "modified": "2026-01-07 07:55:29"
+      },
+      {
+        "name": "check_screensaver.ps1",
+        "modified": "2026-01-07 16:09:09"
+      },
+      {
+        "name": "create_task_simple.ps1",
+        "modified": "2026-01-07 08:00:49"
+      },
+      {
+        "name": "setup_scheduled_maintenance.ps1",
+        "modified": "2026-01-07 07:42:32"
+      },
+      {
+        "name": "add_poppler_path.ps1",
+        "modified": "2026-01-05 23:37:35"
+      },
+      {
+        "name": "add_tesseract_path.ps1",
+        "modified": "2026-01-05 23:00:10"
+      },
+      {
+        "name": "check-deepseek.ps1",
+        "modified": "2026-01-06 17:41:50"
+      },
+      {
+        "name": "fix-deepseek.ps1",
+        "modified": "2026-01-06 17:44:56"
+      },
+      {
+        "name": "init-vscode.ps1",
+        "modified": "2026-01-06 17:47:31"
+      },
+      {
+        "name": "README_定时维护.md",
+        "modified": "2026-01-07 07:42:52"
+      },
+      {
+        "name": "README_清理工具.md",
+        "modified": "2026-01-07 13:27:29"
+      },
+      {
+        "name": "start-vscode-with-deepseek.bat",
+        "modified": "2026-01-06 17:48:30"
+      },
+      {
+        "name": "switch-model.bat",
+        "modified": "2026-01-06 17:32:58"
+      },
+      {
+        "name": "switch-model.ps1",
+        "modified": "2026-01-06 17:21:15"
+      }
+    ],
+    "batch_scripts": [],
+    "python_tools_count": 24,
+    "batch_scripts_count": 0
+  },
+  "recent_activity": {
+    "recent_reports": [
+      {
+        "name": "工作区健康报告_20260107_072410.md",
+        "modified": "2026-01-07 07:24:13"
+      },
+      {
+        "name": "工作区健康报告_20260107_082911.md",
+        "modified": "2026-01-07 08:29:13"
+      },
+      {
+        "name": "工作区健康报告_20260107_231403.md",
+        "modified": "2026-01-07 23:14:04"
+      },
+      {
+        "name": "清理报告_20260107_072943.md",
+        "modified": "2026-01-07 07:29:44"
+      },
+      {
+        "name": "清理报告_20260107_073100.md",
+        "modified": "2026-01-07 07:31:02"
+      }
+    ],
+    "count": 5
+  },
+  "notes": {
+    "total_categories": 3,
+    "categories": [
+      {
+        "type": "学习日志",
+        "location": "06_Learning_Journal/daily_logs/",
+        "count": 1
+      },
+      {
+        "type": "问题解决记录",
+        "location": "06_Learning_Journal/challenges_solved/",
+        "count": 0
+      },
+      {
+        "type": "代码模式",
+        "location": "06_Learning_Journal/code_patterns/",
+        "count": 0
+      }
+    ]
+  },
+  "data_freshness": {
+    "index_exists": true,
+    "last_scan": "2026-01-07 22:49:39",
+    "age_hours": 1.4,
+    "freshness": "较新",
+    "recommendation": "数据较新,建议每日刷新"
+  }
+}

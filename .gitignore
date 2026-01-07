@@ -46,13 +46,25 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
-# 我的工具生成的报告（可选）
-# 清理报告_*.md
-# 维护报告_*.md
-# 工作区健康报告_*.md
-# 但保留最近的
-!清理报告_20260107*.md
-!维护报告_20260107*.md
+# 我的工具生成的报告
+清理报告_*.md
+维护报告_*.md
+工作区健康报告_*.md
+
+# 但保留重要的快照和索引
+!06_Learning_Journal/workspace_memory/workspace_index_latest.*
+!06_Learning_Journal/workspace_memory/super_butler_report.json
+!06_Learning_Journal/snapshots/
+
+# 临时测试文件
+debug_demo.html
+test_login.py
+登录测试指南.md
+手动创建计划任务.md
+
+# Claude本地配置
+.claude/settings.local.json
+.claude/settings.backup.*.json
 
 # 测试和覆盖率
 .pytest_cache/

@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-01-07 13:28:51",
-  "workspace_root": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "scan_time": "2026-01-07 22:49:38",
+  "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
   "projects": [
     {
       "name": "my_first_agent",
@@ -89,7 +89,7 @@
           "hash": "d8ce4c5a"
         }
       ],
-      "last_modified": "2026-01-07 08:37:58"
+      "last_modified": "2026-01-07 15:09:53"
     },
     {
       "name": "web_monitor_agent",
@@ -282,6 +282,16 @@
   },
   "tools": [
     {
+      "path": "create_snapshot.py",
+      "name": "create_snapshot.py",
+      "size": 7788,
+      "modified": "2026-01-07 15:19:58",
+      "extension": ".py",
+      "type": "Python脚本",
+      "hash": "4905d0a5",
+      "description": "工作区工具"
+    },
+    {
       "path": "workspace_cleaner.py",
       "name": "workspace_cleaner.py",
       "size": 18930,
@@ -379,6 +389,16 @@
       "extension": ".ps1",
       "type": "脚本工具",
       "hash": "ae56c90e",
+      "description": "工作区工具"
+    },
+    {
+      "path": "check_screensaver.ps1",
+      "name": "check_screensaver.ps1",
+      "size": 2857,
+      "modified": "2026-01-07 16:09:09",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "1baf7962",
       "description": "工作区工具"
     },
     {
@@ -496,7 +516,7 @@
     "total_projects": 5,
     "active_projects": 3,
     "archived_projects": 2,
-    "total_tools": 22,
+    "total_tools": 24,
     "code_snippets": 10,
     "prompt_templates": 1
   }
