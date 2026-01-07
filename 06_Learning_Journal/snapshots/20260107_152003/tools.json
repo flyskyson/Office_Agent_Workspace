@@ -1,0 +1,32 @@
+[
+  {
+    "name": "code_version_tracker.py",
+    "size": 12422,
+    "modified": "2026-01-07 12:50:22"
+  },
+  {
+    "name": "daily_snapshot.py",
+    "size": 10232,
+    "modified": "2026-01-07 12:53:04"
+  },
+  {
+    "name": "workspace_cleaner.py",
+    "size": 18930,
+    "modified": "2026-01-07 13:26:09"
+  },
+  {
+    "name": "workspace_maintenance.py",
+    "size": 13468,
+    "modified": "2026-01-07 07:36:48"
+  },
+  {
+    "name": "workspace_report.py",
+    "size": 15398,
+    "modified": "2026-01-07 08:29:04"
+  },
+  {
+    "name": "workspace_scanner.py",
+    "size": 18298,
+    "modified": "2026-01-07 12:48:53"
+  }
+]
