@@ -1,0 +1,97 @@
+# Python缓存文件
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 虚拟环境
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE配置
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# 操作系统
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 我的工具生成的报告（可选）
+# 清理报告_*.md
+# 维护报告_*.md
+# 工作区健康报告_*.md
+# 但保留最近的
+!清理报告_20260107*.md
+!维护报告_20260107*.md
+
+# 测试和覆盖率
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# 环境变量
+.env
+.venv
+env.ini
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.swp
+*~.nib
+local_settings.py
+cached.py
+
+# 打包文件
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip

@@ -1,0 +1,494 @@
+{
+  "scan_time": "2026-01-07 13:11:13",
+  "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "projects": [
+    {
+      "name": "my_first_agent",
+      "status": "active",
+      "path": "01_Active_Projects\\my_first_agent",
+      "has_readme": true,
+      "readme_path": "01_Active_Projects\\my_first_agent\\README.md",
+      "py_files_count": 400,
+      "js_files_count": 0,
+      "doc_files_count": 3,
+      "main_scripts": [
+        {
+          "path": "01_Active_Projects\\my_first_agent\\organizer_final.py",
+          "name": "organizer_final.py",
+          "size": 11919,
+          "modified": "2026-01-04 13:43:01",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "21fafb37"
+        },
+        {
+          "path": "01_Active_Projects\\my_first_agent\\organizer_learning.py",
+          "name": "organizer_learning.py",
+          "size": 17313,
+          "modified": "2026-01-04 13:45:43",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "5d0e544a"
+        }
+      ],
+      "last_modified": "2026-01-04 13:45:43"
+    },
+    {
+      "name": "pdf_processor",
+      "status": "active",
+      "path": "01_Active_Projects\\pdf_processor",
+      "has_readme": true,
+      "readme_path": "01_Active_Projects\\pdf_processor\\README.md",
+      "py_files_count": 772,
+      "js_files_count": 0,
+      "doc_files_count": 10,
+      "main_scripts": [
+        {
+          "path": "01_Active_Projects\\pdf_processor\\argparse_cheatsheet.py",
+          "name": "argparse_cheatsheet.py",
+          "size": 12915,
+          "modified": "2026-01-05 10:02:27",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "fba8911f"
+        },
+        {
+          "path": "01_Active_Projects\\pdf_processor\\argparse_demo1.py",
+          "name": "argparse_demo1.py",
+          "size": 700,
+          "modified": "2026-01-05 09:59:43",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "5773fd8a"
+        },
+        {
+          "path": "01_Active_Projects\\pdf_processor\\argparse_demo2.py",
+          "name": "argparse_demo2.py",
+          "size": 818,
+          "modified": "2026-01-05 09:59:59",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "63b4bc90"
+        },
+        {
+          "path": "01_Active_Projects\\pdf_processor\\argparse_demo3.py",
+          "name": "argparse_demo3.py",
+          "size": 1205,
+          "modified": "2026-01-05 10:00:10",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "06dfe494"
+        },
+        {
+          "path": "01_Active_Projects\\pdf_processor\\argparse_demo4.py",
+          "name": "argparse_demo4.py",
+          "size": 1138,
+          "modified": "2026-01-05 10:00:19",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "d8ce4c5a"
+        }
+      ],
+      "last_modified": "2026-01-07 08:37:58"
+    },
+    {
+      "name": "web_monitor_agent",
+      "status": "active",
+      "path": "01_Active_Projects\\web_monitor_agent",
+      "has_readme": false,
+      "readme_path": null,
+      "py_files_count": 577,
+      "js_files_count": 1,
+      "doc_files_count": 5,
+      "main_scripts": [
+        {
+          "path": "01_Active_Projects\\web_monitor_agent\\src\\simple_fetcher.py",
+          "name": "simple_fetcher.py",
+          "size": 1729,
+          "modified": "2026-01-05 22:31:24",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "efd2e50f"
+        },
+        {
+          "path": "01_Active_Projects\\web_monitor_agent\\src\\simple_fetcher_learning.py",
+          "name": "simple_fetcher_learning.py",
+          "size": 8286,
+          "modified": "2026-01-05 22:41:09",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "1ef216d0"
+        },
+        {
+          "path": "01_Active_Projects\\web_monitor_agent\\tests\\test_web_monitor.py",
+          "name": "test_web_monitor.py",
+          "size": 0,
+          "modified": "2026-01-05 22:13:00",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "d41d8cd9"
+        }
+      ],
+      "last_modified": "2026-01-05 22:30:37"
+    },
+    {
+      "name": "20250104_pdf_processor_v1.0",
+      "status": "archived",
+      "path": "02_Project_Archive\\20250104_pdf_processor_v1.0",
+      "has_readme": true,
+      "readme_path": "02_Project_Archive\\20250104_pdf_processor_v1.0\\README.md",
+      "py_files_count": 2,
+      "js_files_count": 0,
+      "doc_files_count": 3,
+      "main_scripts": [
+        {
+          "path": "02_Project_Archive\\20250104_pdf_processor_v1.0\\pdf_extractor.py",
+          "name": "pdf_extractor.py",
+          "size": 10344,
+          "modified": "2026-01-05 09:29:27",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "ccadb5d1"
+        },
+        {
+          "path": "02_Project_Archive\\20250104_pdf_processor_v1.0\\pdf_extractor_learning.py",
+          "name": "pdf_extractor_learning.py",
+          "size": 23487,
+          "modified": "2026-01-05 09:44:24",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "78477983"
+        }
+      ],
+      "last_modified": "2026-01-05 21:39:48"
+    },
+    {
+      "name": "my_first_agent_历史版本",
+      "status": "archived",
+      "path": "02_Project_Archive\\my_first_agent_历史版本",
+      "has_readme": false,
+      "readme_path": null,
+      "py_files_count": 3,
+      "js_files_count": 0,
+      "doc_files_count": 0,
+      "main_scripts": [
+        {
+          "path": "02_Project_Archive\\my_first_agent_历史版本\\organizer.py",
+          "name": "organizer.py",
+          "size": 7546,
+          "modified": "2026-01-02 19:42:50",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "9e4420fb"
+        },
+        {
+          "path": "02_Project_Archive\\my_first_agent_历史版本\\organizer01.py",
+          "name": "organizer01.py",
+          "size": 7565,
+          "modified": "2026-01-02 19:59:13",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "538303ef"
+        },
+        {
+          "path": "02_Project_Archive\\my_first_agent_历史版本\\organizer_with_log.py",
+          "name": "organizer_with_log.py",
+          "size": 3266,
+          "modified": "2026-01-02 18:02:40",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "822230f1"
+        }
+      ],
+      "last_modified": "2026-01-05 09:23:55"
+    }
+  ],
+  "code_library": {
+    "snippets": {
+      "API调用": [
+        {
+          "name": "HTTP请求",
+          "path": "00_Agent_Library\\02_Code_Snippets\\API调用\\HTTP请求.py",
+          "category": "API调用"
+        }
+      ],
+      "工具函数": [
+        {
+          "name": "cli_example_pdf",
+          "path": "00_Agent_Library\\02_Code_Snippets\\工具函数\\cli_example_pdf.py",
+          "category": "工具函数"
+        },
+        {
+          "name": "cli_template",
+          "path": "00_Agent_Library\\02_Code_Snippets\\工具函数\\cli_template.py",
+          "category": "工具函数"
+        },
+        {
+          "name": "cli_tool_template",
+          "path": "00_Agent_Library\\02_Code_Snippets\\工具函数\\cli_tool_template.py",
+          "category": "工具函数"
+        },
+        {
+          "name": "pdf_extractor",
+          "path": "00_Agent_Library\\02_Code_Snippets\\工具函数\\pdf_extractor.py",
+          "category": "工具函数"
+        }
+      ],
+      "数据处理": [
+        {
+          "name": "数据处理工具",
+          "path": "00_Agent_Library\\02_Code_Snippets\\数据处理\\数据处理工具.py",
+          "category": "数据处理"
+        }
+      ],
+      "文件操作": [
+        {
+          "name": "file_organizer",
+          "path": "00_Agent_Library\\02_Code_Snippets\\文件操作\\file_organizer.py",
+          "category": "文件操作"
+        },
+        {
+          "name": "pdf_utils",
+          "path": "00_Agent_Library\\02_Code_Snippets\\文件操作\\pdf_utils.py",
+          "category": "文件操作"
+        },
+        {
+          "name": "文件读写操作",
+          "path": "00_Agent_Library\\02_Code_Snippets\\文件操作\\文件读写操作.py",
+          "category": "文件操作"
+        }
+      ],
+      "日志记录": [
+        {
+          "name": "日志工具",
+          "path": "00_Agent_Library\\02_Code_Snippets\\日志记录\\日志工具.py",
+          "category": "日志记录"
+        }
+      ],
+      "网络请求": []
+    },
+    "prompts": {
+      "任务拆解": [],
+      "格式规范": [],
+      "角色设定": [
+        {
+          "name": "快速开始提示词",
+          "path": "00_Agent_Library\\01_Prompt_Library\\角色设定\\快速开始提示词.md"
+        }
+      ]
+    },
+    "templates": {},
+    "tools": {}
+  },
+  "tools": [
+    {
+      "path": "workspace_cleaner.py",
+      "name": "workspace_cleaner.py",
+      "size": 14215,
+      "modified": "2026-01-07 07:30:57",
+      "extension": ".py",
+      "type": "Python脚本",
+      "hash": "ac0f49d5",
+      "description": "清理工作区，删除Python缓存、临时文件"
+    },
+    {
+      "path": "workspace_maintenance.py",
+      "name": "workspace_maintenance.py",
+      "size": 13468,
+      "modified": "2026-01-07 07:36:48",
+      "extension": ".py",
+      "type": "Python脚本",
+      "hash": "6a8d564d",
+      "description": "定期维护脚本，检查磁盘空间、大文件等"
+    },
+    {
+      "path": "workspace_report.py",
+      "name": "workspace_report.py",
+      "size": 15398,
+      "modified": "2026-01-07 08:29:04",
+      "extension": ".py",
+      "type": "Python脚本",
+      "hash": "fe68e097",
+      "description": "生成工作区健康报告，分析项目状态、缓存文件等"
+    },
+    {
+      "path": "workspace_scanner.py",
+      "name": "workspace_scanner.py",
+      "size": 18298,
+      "modified": "2026-01-07 12:48:53",
+      "extension": ".py",
+      "type": "Python脚本",
+      "hash": "2eb47794",
+      "description": "工作区扫描器，建立完整工作区索引"
+    },
+    {
+      "path": "check_scheduled_task.bat",
+      "name": "check_scheduled_task.bat",
+      "size": 325,
+      "modified": "2026-01-07 07:55:34",
+      "extension": ".bat",
+      "type": "脚本工具",
+      "hash": "df0d1270",
+      "description": "工作区工具"
+    },
+    {
+      "path": "generate_project_plan.bat",
+      "name": "generate_project_plan.bat",
+      "size": 514,
+      "modified": "2026-01-07 12:35:59",
+      "extension": ".bat",
+      "type": "脚本工具",
+      "hash": "62cead55",
+      "description": "工作区工具"
+    },
+    {
+      "path": "run_maintenance.bat",
+      "name": "run_maintenance.bat",
+      "size": 1043,
+      "modified": "2026-01-07 07:41:33",
+      "extension": ".bat",
+      "type": "脚本工具",
+      "hash": "f0ff836e",
+      "description": "工作区工具"
+    },
+    {
+      "path": "setup_scheduled_maintenance.bat",
+      "name": "setup_scheduled_maintenance.bat",
+      "size": 2394,
+      "modified": "2026-01-07 07:58:05",
+      "extension": ".bat",
+      "type": "脚本工具",
+      "hash": "f8e14ebf",
+      "description": "工作区工具"
+    },
+    {
+      "path": "start_new_session.bat",
+      "name": "start_new_session.bat",
+      "size": 3230,
+      "modified": "2026-01-07 12:34:48",
+      "extension": ".bat",
+      "type": "脚本工具",
+      "hash": "69e9f5e7",
+      "description": "一键启动菜单，快速访问工作区功能"
+    },
+    {
+      "path": "check_scheduled_task.ps1",
+      "name": "check_scheduled_task.ps1",
+      "size": 1815,
+      "modified": "2026-01-07 07:55:29",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "ae56c90e",
+      "description": "工作区工具"
+    },
+    {
+      "path": "create_task_simple.ps1",
+      "name": "create_task_simple.ps1",
+      "size": 2427,
+      "modified": "2026-01-07 08:00:49",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "70358e62",
+      "description": "工作区工具"
+    },
+    {
+      "path": "setup_scheduled_maintenance.ps1",
+      "name": "setup_scheduled_maintenance.ps1",
+      "size": 4442,
+      "modified": "2026-01-07 07:42:32",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "d8c87dec",
+      "description": "工作区工具"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\add_poppler_path.ps1",
+      "name": "add_poppler_path.ps1",
+      "size": 667,
+      "modified": "2026-01-05 23:37:35",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "64f58d0c"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\add_tesseract_path.ps1",
+      "name": "add_tesseract_path.ps1",
+      "size": 691,
+      "modified": "2026-01-05 23:00:10",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "2e9c3ccd"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\check-deepseek.ps1",
+      "name": "check-deepseek.ps1",
+      "size": 2310,
+      "modified": "2026-01-06 17:41:50",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "1f809901"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\fix-deepseek.ps1",
+      "name": "fix-deepseek.ps1",
+      "size": 3821,
+      "modified": "2026-01-06 17:44:56",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "9fa5692b"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\init-vscode.ps1",
+      "name": "init-vscode.ps1",
+      "size": 330,
+      "modified": "2026-01-06 17:47:31",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "924a110b"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\README_定时维护.md",
+      "name": "README_定时维护.md",
+      "size": 4299,
+      "modified": "2026-01-07 07:42:52",
+      "extension": ".md",
+      "type": "Markdown文档",
+      "hash": "705000d0"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\start-vscode-with-deepseek.bat",
+      "name": "start-vscode-with-deepseek.bat",
+      "size": 549,
+      "modified": "2026-01-06 17:48:30",
+      "extension": ".bat",
+      "type": "脚本工具",
+      "hash": "a78224a6"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\switch-model.bat",
+      "name": "switch-model.bat",
+      "size": 2145,
+      "modified": "2026-01-06 17:32:58",
+      "extension": ".bat",
+      "type": "脚本工具",
+      "hash": "3a580c72"
+    },
+    {
+      "path": "00_Agent_Library\\99_Scripts_Tools\\switch-model.ps1",
+      "name": "switch-model.ps1",
+      "size": 1746,
+      "modified": "2026-01-06 17:21:15",
+      "extension": ".ps1",
+      "type": "脚本工具",
+      "hash": "1f963b40"
+    }
+  ],
+  "statistics": {
+    "total_projects": 5,
+    "active_projects": 3,
+    "archived_projects": 2,
+    "total_tools": 21,
+    "code_snippets": 10,
+    "prompt_templates": 1
+  }
+}

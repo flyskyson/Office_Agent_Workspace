@@ -1,0 +1,24 @@
+# Agent 项目配置文件
+
+app:
+  name: "My Agent"
+  version: "1.0.0"
+  debug: false
+
+# 路径配置
+paths:
+  input: "data/input"
+  output: "data/output"
+  temp: "data/temp"
+  logs: "logs"
+
+# 日志配置
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/app.log"
+
+# 自定义配置
+custom:
+  # 在这里添加你的配置项
+  example_param: "value"

@@ -1,0 +1,52 @@
+[
+  {
+    "name": "cdddfw",
+    "value": "ht_30000",
+    "domain": "gxpf.sft.gxzf.gov.cn",
+    "path": "/portal/exam",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cdddfw",
+    "value": "ht_30000",
+    "domain": "gxpf.sft.gxzf.gov.cn",
+    "path": "/imgs/exam",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cdddfw",
+    "value": "ht_30000",
+    "domain": "gxpf.sft.gxzf.gov.cn",
+    "path": "/api/auth",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cdddfw",
+    "value": "ht_30000",
+    "domain": "gxpf.sft.gxzf.gov.cn",
+    "path": "/assets",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "cdddfw",
+    "value": "ht_30000",
+    "domain": "gxpf.sft.gxzf.gov.cn",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": true,
+    "sameSite": "Lax"
+  }
+]

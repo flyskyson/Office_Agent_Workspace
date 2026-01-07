@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF 文本提取器 - 流程图预览</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-left: 5px solid #3498db;
+        }
+        .mermaid {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            text-align: center;
+        }
+        .info-box {
+            background-color: #e8f4f8;
+            border: 1px solid #b8d4e3;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .toc {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .toc h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        .toc a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        #loading {
+            text-align: center;
+            padding: 20px;
+            font-size: 18px;
+            color: #3498db;
+        }
+        .error-message {
+            background-color: #ffebee;
+            border: 1px solid #ef5350;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #c62828;
+        }
+    </style>
+</head>
+<body>
+    <h1>📊 PDF 文本提取器 - 程序流程图</h1>
+
+    <div class="info-box">
+        <strong>💡 提示：</strong>如果流程图没有显示，请检查网络连接（需要加载 Mermaid 库）。或者使用 VSCode 的 Markdown Preview Mermaid Support 插件查看 <a href="流程图.md">流程图.md</a> 文件。
+    </div>
+
+    <div id="loading">正在加载流程图库，请稍候...</div>
+
+    <div class="toc">
+        <h3>📑 目录</h3>
+        <ul>
+            <li><a href="#main-flow">1. 主流程图 - 程序完整执行流程</a></li>
+            <li><a href="#extract-flow">2. 核心函数流程 - extract_text_from_pdf()</a></li>
+            <li><a href="#ocr-flow">3. OCR函数流程 - extract_text_with_ocr()</a></li>
+            <li><a href="#markdown-flow">4. Markdown保存流程 - save_to_markdown()</a></li>
+            <li><a href="#json-flow">5. JSON保存流程 - save_to_json()</a></li>
+            <li><a href="#module-flow">6. 程序模块关系图</a></li>
+            <li><a href="#data-flow">7. 数据流向图</a></li>
+            <li><a href="#decision-tree">8. PDF处理策略决策树</a></li>
+            <li><a href="#error-flow">9. 错误处理流程</a></li>
+        </ul>
+    </div>
+
+    <h2 id="main-flow">1. 主流程图 - 程序完整执行流程</h2>
+    <div class="mermaid">
+flowchart TD
+    Start([程序启动]) --> Init[导入库和检查OCR功能]
+    Init --> ParseArgs[解析命令行参数]
+    ParseArgs --> CheckFolder{文件夹是否存在?}
+    CheckFolder -->|否| ShowError[显示错误信息] --> End1([程序结束])
+    CheckFolder -->|是| ScanFolder[扫描PDF文件]
+    ScanFolder --> CheckFiles{找到PDF?}
+    CheckFiles -->|否| ShowWarning[显示未找到PDF] --> End2([程序结束])
+    CheckFiles -->|是| ShowInfo[显示处理信息]
+
+    ShowInfo --> ProcessLoop[遍历每个PDF文件]
+    ProcessLoop --> CheckMode{是否强制OCR?}
+
+    CheckMode -->|是| CallOCR[调用OCR提取]
+    CheckMode -->|否| TryExtract[尝试文本提取]
+
+    TryExtract --> ExtractSuccess{提取成功?}
+    ExtractSuccess -->|是| CheckThreshold{字符数 &lt; 阈值?}
+    ExtractSuccess -->|否| FallbackOCR[OCR降级处理]
+
+    CheckThreshold -->|是| TryOCR[尝试OCR]
+    CheckThreshold -->|否| SaveResult1[保存文本提取结果]
+
+    TryOCR --> OCRSuccess{OCR成功?}
+    OCRSuccess -->|是| CompareResult{OCR结果更好?}
+    OCRSuccess -->|否| SaveResult1
+
+    CompareResult -->|是| SaveResult2[保存OCR结果]
+    CompareResult -->|否| SaveResult1
+
+    CallOCR --> OCRCheck{OCR可用?}
+    OCRCheck -->|否| ShowOCRError[显示OCR不可用] --> SaveFail[标记失败]
+    OCRCheck -->|是| OCRProcess[执行OCR处理]
+
+    FallbackOCR --> FallbackSuccess{降级成功?}
+    FallbackSuccess -->|是| SaveResult3[保存降级结果]
+    FallbackSuccess -->|否| SaveFail
+
+    OCRProcess --> SaveResult2
+    SaveResult1 --> NextFile{还有文件?}
+    SaveResult2 --> NextFile
+    SaveResult3 --> NextFile
+    SaveFail --> NextFile
+
+    NextFile -->|是| ProcessLoop
+    NextFile -->|否| SaveFile[保存到文件]
+
+    SaveFile --> ShowStats[显示统计信息]
+    ShowStats --> End3([程序成功结束])
+    </div>
+
+    <h2 id="extract-flow">2. 核心函数流程 - extract_text_from_pdf()</h2>
+    <div class="mermaid">
+flowchart TD
+    Start([开始: extract_text_from_pdf]) --> CheckForce{force_ocr = True?}
+
+    CheckForce -->|是| OCRAvailable{OCR可用?}
+    OCRAvailable -->|否| ReturnError1[返回: OCR不可用]
+    OCRAvailable -->|是| CallOCRFunc[调用 extract_text_with_ocr]
+    CallOCRFunc --> ReturnOCR[返回OCR结果]
+
+    CheckForce -->|否| OpenPDF[使用pdfplumber打开PDF]
+    OpenPDF --> InitLoop[初始化 all_text 和 total_chars]
+
+    InitLoop --> PageLoop{遍历每一页}
+
+    PageLoop --> ExtractPage[page.extract_text]
+    ExtractPage --> HasText{提取到文本?}
+
+    HasText -->|是| AddText[添加到all_text并统计字符]
+    HasText -->|否| AddEmpty[标记空白页]
+
+    AddText --> PageLoop
+    AddEmpty --> PageLoop
+
+    PageLoop -->|结束| JoinText[合并文本]
+
+    JoinText --> CalcStats[计算空白页数量和比例]
+    CalcStats --> NeedOCR{需要OCR?}
+
+    NeedOCR -->|是| OCRCheck2{OCR可用?}
+    OCRCheck2 -->|否| CheckResult1[检查是否有文本]
+    OCRCheck2 -->|是| RunOCR[执行OCR提取]
+
+    NeedOCR -->|否| CheckResult1
+
+    RunOCR --> OCRBetter{OCR结果更好?}
+    OCRBetter -->|是| ReturnOCR2[返回OCR结果]
+    OCRBetter -->|否| KeepOriginal[保留原结果]
+
+    KeepOriginal --> CheckResult1{total_chars &gt; 0?}
+    CheckResult1 -->|是| ReturnSuccess[返回: 成功 + 字符数]
+    CheckResult1 -->|否| ReturnFail[返回: 无有效文本]
+
+    ReturnOCR2 --> End([结束])
+    ReturnSuccess --> End
+    ReturnFail --> End
+    ReturnOCR --> End
+    ReturnError1 --> End
+    </div>
+
+    <h2 id="ocr-flow">3. OCR函数流程 - extract_text_with_ocr()</h2>
+    <div class="mermaid">
+flowchart TD
+    Start([开始: extract_text_with_ocr]) --> CheckAvailable{OCR_AVAILABLE?}
+    CheckAvailable -->|否| ReturnError[返回: OCR功能未安装]
+
+    CheckAvailable -->|是| CheckOS{是Windows系统?}
+
+    CheckOS -->|是| SetPath1[设置Poppler路径]
+    SetPath1 --> SetPath2[设置Tesseract路径]
+    SetPath2 --> SetEnv[设置语言包环境变量]
+
+    CheckOS -->|否| SkipPath[跳过路径配置]
+
+    SetEnv --> ConvertPDF
+    SkipPath --> ConvertPDF[convert_from_path: PDF转图片]
+
+    ConvertPDF --> CheckImages{转换成功?}
+    CheckImages -->|否| ReturnError2[返回: PDF转换失败]
+
+    CheckImages -->|是| InitOCR[初始化 all_text 列表]
+    InitOCR --> ShowProgress[显示进度信息]
+
+    ShowProgress --> PageLoop{遍历每一页图片}
+
+    PageLoop --> DoOCR[pytesseract识别]
+    DoOCR --> OCRSuccess{识别成功?}
+
+    OCRSuccess -->|是| CheckEmpty{识别到文字?}
+    CheckEmpty -->|是| AddOCRText[添加识别文本]
+    CheckEmpty -->|否| AddNoText[标记未识别到文字]
+
+    OCRSuccess -->|否| AddOCRError[记录识别错误]
+
+    AddOCRText --> PageLoop
+    AddNoText --> PageLoop
+    AddOCRError --> PageLoop
+
+    PageLoop -->|结束| CheckAnyText{有文本?}
+
+    CheckAnyText -->|否| ReturnError3[返回: 未识别到文字]
+
+    CheckAnyText -->|是| JoinResult[合并结果]
+    JoinResult --> ReturnSuccess[返回: 成功 + OCR文本]
+
+    ReturnSuccess --> End([结束])
+    ReturnError --> End
+    ReturnError2 --> End
+    ReturnError3 --> End
+    </div>
+
+    <h2 id="markdown-flow">4. Markdown保存流程 - save_to_markdown()</h2>
+    <div class="mermaid">
+flowchart TD
+    Start([开始: save_to_markdown]) --> OpenFile[打开/创建Markdown文件]
+    OpenFile --> WriteTitle[写入文件标题和时间]
+    WriteTitle --> CalcStats[计算统计信息]
+
+    CalcStats --> WriteStats[写入: 总数/成功/OCR数/失败]
+    WriteStats --> WriteSeparator[写入分隔线]
+
+    WriteSeparator --> FileLoop{遍历每个文件结果}
+
+    FileLoop --> WriteFileName[写入文件名标题]
+    WriteFileName --> WriteMethod[写入提取方式]
+
+    WriteMethod --> CheckSuccess{提取成功?}
+    CheckSuccess -->|是| WriteContent[写入文本内容]
+    CheckSuccess -->|否| WriteError[写入错误信息]
+
+    WriteContent --> WriteSep2[写入分隔线]
+    WriteError --> WriteSep2
+
+    WriteSep2 --> FileLoop
+
+    FileLoop -->|结束| CloseFile[关闭文件]
+    CloseFile --> End([结束])
+    </div>
+
+    <h2 id="json-flow">5. JSON保存流程 - save_to_json()</h2>
+    <div class="mermaid">
+flowchart TD
+    Start([开始: save_to_json]) --> CalcStats[计算统计信息]
+    CalcStats --> BuildDict[构建数据字典]
+
+    BuildDict --> AddMeta[添加: 提取时间]
+    AddMeta --> AddStats[添加: 统计信息]
+    AddStats --> InitList[初始化文件列表]
+
+    InitList --> FileLoop{遍历每个文件结果}
+
+    FileLoop --> CreateFileDict[创建文件数据字典]
+    CreateFileDict --> AddBasic[添加: 文件名/方式/状态]
+
+    AddBasic --> CheckSuccess{提取成功?}
+    CheckSuccess -->|是| AddContent[添加: 内容/字符数/是否OCR]
+    CheckSuccess -->|否| AddErrorMsg[添加: 错误信息]
+
+    AddContent --> AppendList[添加到文件列表]
+    AddErrorMsg --> AppendList
+
+    AppendList --> FileLoop
+
+    FileLoop -->|结束| WriteFile[json.dump写入文件]
+    WriteFile --> End([结束])
+    </div>
+
+    <h2 id="module-flow">6. 程序模块关系图</h2>
+    <div class="mermaid">
+graph TB
+    subgraph 入口层
+        Main[main函数]
+    end
+
+    subgraph 控制层
+        Process[process_pdfs主处理函数]
+        Parse[parse_arguments参数解析]
+    end
+
+    subgraph 业务逻辑层
+        GetPDF[get_pdf_files获取PDF列表]
+        Extract[extract_text_from_pdf智能提取]
+        OCR[extract_text_with_ocr OCR提取]
+    end
+
+    subgraph 数据持久层
+        SaveMD[save_to_markdown]
+        SaveJSON[save_to_json]
+    end
+
+    Main --> Parse
+    Main --> Process
+    Process --> GetPDF
+    Process --> Extract
+    Extract --> OCR
+    Process --> SaveMD
+    Process --> SaveJSON
+
+    style Main fill:#e1f5ff
+    style Process fill:#fff4e1
+    style Extract fill:#ffe1f5
+    style OCR fill:#f5ffe1
+    </div>
+
+    <h2 id="data-flow">7. 数据流向图</h2>
+    <div class="mermaid">
+flowchart LR
+    Input[输入: PDF文件夹] --> Scan[扫描PDF文件]
+    Scan --> Files[PDF文件列表]
+
+    Files --> Extract{智能提取}
+    Extract -->|文本型PDF| Direct[直接提取文本]
+    Extract -->|扫描件PDF| OCR[OCR识别]
+
+    Direct --> Results[提取结果列表]
+    OCR --> Results
+
+    Results --> Format{输出格式?}
+    Format -->|Markdown| MD[.md文件]
+    Format -->|JSON| JSON[.json文件]
+
+    MD --> Output[输出文件]
+    JSON --> Output
+
+    Output --> Console[控制台统计信息]
+
+    style Input fill:#e3f2fd
+    style Output fill:#c8e6c9
+    style Console fill:#fff9c4
+    </div>
+
+    <h2 id="decision-tree">8. PDF处理策略决策树</h2>
+    <div class="mermaid">
+flowchart TD
+    Start([PDF文件输入]) --> Q1{强制OCR模式?}
+
+    Q1 -->|是| OCR1[直接使用OCR]
+    Q1 -->|否| Q2{尝试文本提取}
+
+    Q2 -->|成功| Q3{提取的字符数 &lt; 50?}
+    Q2 -->|失败| OCR2[降级到OCR]
+
+    Q3 -->|是| Q4{超过50%页面空白?}
+    Q3 -->|否| Direct1[使用文本提取结果]
+
+    Q4 -->|是| OCR3[尝试OCR增强]
+    Q4 -->|否| Direct1
+
+    OCR3 --> Q5{OCR结果更好?}
+    Q5 -->|是| Direct2[使用OCR结果]
+    Q5 -->|否| Direct1
+
+    OCR1 --> End([输出结果])
+    OCR2 --> End
+    Direct1 --> End
+    Direct2 --> End
+
+    style OCR1 fill:#ffcccb
+    style OCR2 fill:#ffcccb
+    style OCR3 fill:#ffcccb
+    style Direct1 fill:#90ee90
+    style Direct2 fill:#90ee90
+    </div>
+
+    <h2 id="error-flow">9. 错误处理流程</h2>
+    <div class="mermaid">
+flowchart TD
+    Start([操作执行]) --> Try{尝试执行}
+
+    Try -->|成功| Success[返回成功结果]
+    Try -->|失败| CatchError[捕获异常]
+
+    CatchError --> Analyze{分析错误类型}
+
+    Analyze -->|文件不存在| FileNotFound[返回: FileNotFoundError]
+    Analyze -->|不是文件夹| NotDir[返回: NotADirectoryError]
+    Analyze -->|PDF加密| Encrypted[返回: PDF已加密]
+    Analyze -->|PDF损坏| Damaged[返回: PDF损坏]
+    Analyze -->|OCR未安装| NoOCR[返回: OCR不可用]
+    Analyze -->|其他错误| Other[返回: 通用错误信息]
+
+    FileNotFound --> Log[记录错误日志]
+    NotDir --> Log
+    Encrypted --> Log
+    Damaged --> Log
+    NoOCR --> Log
+    Other --> Log
+
+    Log --> Continue{继续处理?}
+    Continue -->|是| NextFile[处理下一个文件]
+    Continue -->|否| Exit[终止程序]
+
+    Success --> End([结束])
+    NextFile --> End
+    Exit --> End
+    </div>
+
+    <div class="info-box" style="margin-top: 50px;">
+        <h3>📚 关键数据结构说明</h3>
+        <h4>提取结果元组：</h4>
+        <pre><code>(filename: str, content: str, success: bool, method: str)</code></pre>
+
+        <h4>OCR 返回元组：</h4>
+        <pre><code>(text: str, success: bool, message: str)</code></pre>
+
+        <h4>程序核心特点：</h4>
+        <ul>
+            <li>✅ <strong>智能降级</strong>：文本提取 → 自动OCR → 强制OCR</li>
+            <li>✅ <strong>容错机制</strong>：单个文件失败不影响其他文件</li>
+            <li>✅ <strong>灵活输出</strong>：支持 Markdown 和 JSON 两种格式</li>
+            <li>✅ <strong>详细统计</strong>：记录提取方式、字符数、成功率等信息</li>
+            <li>✅ <strong>编码处理</strong>：Windows 控制台 UTF-8 编码修复</li>
+        </ul>
+    </div>
+
+    <!-- 使用多个 CDN 源，确保至少有一个可以工作 -->
+    <script>
+        // 尝试加载 Mermaid
+        function loadMermaid() {
+            var cdns = [
+                'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js',
+                'https://unpkg.com/mermaid@10/dist/mermaid.min.js',
+                'https://cdn.bootcdn.net/ajax/libs/mermaid/10.6.1/mermaid.min.js'
+            ];
+
+            var loadingIndex = 0;
+
+            function tryLoadCDN(index) {
+                if (index >= cdns.length) {
+                    document.getElementById('loading').innerHTML =
+                        '<div class="error-message">❌ 无法加载 Mermaid 库。请检查网络连接，或使用 VSCode 查看流程图.md 文件。</div>';
+                    return;
+                }
+
+                var script = document.createElement('script');
+                script.src = cdns[index];
+                script.onload = function() {
+                    document.getElementById('loading').style.display = 'none';
+                    mermaid.initialize({
+                        startOnLoad: true,
+                        theme: 'default',
+                        flowchart: {
+                            useMaxWidth: true,
+                            htmlLabels: true,
+                            curve: 'basis'
+                        },
+                        securityLevel: 'loose'
+                    });
+                };
+                script.onerror = function() {
+                    console.log('CDN ' + cdns[index] + ' failed, trying next...');
+                    tryLoadCDN(index + 1);
+                };
+                document.head.appendChild(script);
+            }
+
+            tryLoadCDN(0);
+        }
+
+        // 页面加载完成后加载 Mermaid
+        window.addEventListener('load', loadMermaid);
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(tree:*)",
+      "Bash(mkdir:*)",
+      "Bash(del file_organizer_wrapper.py import_examples.py README_导入说明.md)",
+      "Bash(rm:*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(test:*)",
+      "Bash(powershell:*)",
+      "Bash(pip install:*)",
+      "Bash(choco:*)",
+      "Bash(timeout:*)",
+      "Bash(pip index versions:*)",
+      "Bash(findstr:*)",
+      "Bash(copy:*)",
+      "Bash(where:*)",
+      "Bash(if not exist .vscode mkdir .vscode)",
+      "Bash(powershell.exe -Command \"if \\($env:DEEPSEEK_API_KEY\\) { Write-Host ''DEEPSEEK_API_KEY is loaded'' } else { Write-Host ''DEEPSEEK_API_KEY is NOT loaded'' }\")",
+      "Bash(powershell.exe:*)",
+      "Bash(node:*)",
+      "Bash(npm --version:*)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npx playwright install:*)",
+      "Bash(npm config set:*)",
+      "Bash(npm config get:*)",
+      "Bash(code:*)",
+      "Bash(set PLAYWRIGHT_DOWNLOAD_HOST=https://npmmirror.com/mirrors/playwright:*)",
+      "Bash($env:PLAYWRIGHT_DOWNLOAD_HOST=\"https://npmmirror.com/mirrors/playwright\")",
+      "Bash(npm run example:*)",
+      "Bash(cmd /c \"echo %TEMP%\")",
+      "Bash(cat:*)",
+      "Bash(./butler_mode.bat)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
+    ]
+  },
+  "model": "deepseek-chat",
+  "api": {
+    "base_url": "https://api.deepseek.com/v1",
+    "api_key_env_var": "DEEPSEEK_API_KEY"
+  }
+}

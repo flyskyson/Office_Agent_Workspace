@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(tree:*)",
+      "Bash(mkdir:*)",
+      "Bash(del file_organizer_wrapper.py import_examples.py README_导入说明.md)",
+      "Bash(rm:*)",
+      "Bash(python:*)",
+      "Bash(ls:*)",
+      "Bash(test:*)",
+      "Bash(powershell:*)",
+      "Bash(pip install:*)",
+      "Bash(choco:*)",
+      "Bash(timeout:*)",
+      "Bash(pip index versions:*)",
+      "Bash(findstr:*)",
+      "Bash(copy:*)",
+      "Bash(where:*)",
+      "Bash(Get-ExecutionPolicy -List)",
+      "Bash(switch-model.bat:*)"
+    ]
+  }
+}
