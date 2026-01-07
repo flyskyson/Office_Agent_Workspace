@@ -11,6 +11,10 @@
     "github-repos-manager": {
       "command": "npx",
       "args": ["-y", "github-repos-manager-mcp"]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
     }
   }
 }
