@@ -2,9 +2,41 @@
 
 ## 📦 已安装的 MCP 服务器
 
-你的工作区现在配置了 3 个 MCP 服务器：
+你的工作区现在配置了 4 个 MCP 服务器：
 
-### 1. 🌐 Chrome DevTools MCP
+### 1. 🎭 Playwright MCP (微软官方)
+
+**包名**: `@playwright/mcp@latest`
+**版本**: 0.0.54
+**开发商**: Microsoft
+**功能**: 强大的浏览器自动化和测试
+
+**能力**:
+- ✅ 跨浏览器自动化（Chrome、Firefox、Safari、Edge）
+- ✅ 网页截图和PDF生成
+- ✅ 表单自动填写
+- ✅ 点击、输入、导航等用户操作
+- ✅ 网络拦截和Mock
+- ✅ 移动端模拟
+- ✅ API 测试
+
+**使用示例**:
+```
+"用 Playwright 自动登录这个网站"
+"截取整个网页的截图"
+"测试这个表单提交功能"
+"批量爬取这个网站的列表数据"
+```
+
+**优势**:
+- 🎯 微软官方维护，质量保证
+- 🌐 支持所有主流浏览器
+- 📱 移动端模拟
+- 🔄 自动等待元素，稳定性高
+
+---
+
+### 2. 🌐 Chrome DevTools MCP
 
 **包名**: `chrome-devtools-mcp@latest`
 **版本**: 0.12.1
@@ -26,7 +58,7 @@
 
 ---
 
-### 2. 📁 Filesystem MCP
+### 3. 📁 Filesystem MCP
 
 **包名**: `@modelcontextprotocol/server-filesystem`
 **路径**: `c:\Users\flyskyson\Office_Agent_Workspace`
@@ -52,7 +84,7 @@
 
 ---
 
-### 3. 🐙 GitHub Repos Manager MCP
+### 4. 🐙 GitHub Repos Manager MCP
 
 **包名**: `github-repos-manager-mcp`
 **功能**: GitHub 仓库管理
@@ -92,6 +124,15 @@
 
 ## 🚀 快速开始
 
+### 使用 Playwright MCP
+
+直接告诉我浏览器自动化需求:
+```
+"用 Playwright 打开这个网页并截图"
+"自动填写表单并提交"
+"测试登录功能是否正常"
+```
+
 ### 使用 Chrome DevTools MCP
 
 1. 在浏览器中打开网页
@@ -125,6 +166,10 @@ MCP 配置文件位置: `.mcp.json`
 ```json
 {
   "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"]
+    },
     "chrome-devtools": {
       "command": "npx",
       "args": ["chrome-devtools-mcp@latest"]
@@ -221,11 +266,12 @@ MCP 配置文件位置: `.mcp.json`
 
 ## 🎊 总结
 
-你现在拥有 3 个强大的 MCP 服务器：
+你现在拥有 4 个强大的 MCP 服务器：
 
-1. **Chrome DevTools** - 浏览器调试和自动化
-2. **Filesystem** - 文件系统操作
-3. **GitHub** - 仓库管理（需配置 Token）
+1. **Playwright** - 微软官方浏览器自动化（跨浏览器、测试、爬虫）
+2. **Chrome DevTools** - 浏览器调试和性能分析
+3. **Filesystem** - 文件系统操作
+4. **GitHub** - 仓库管理（需配置 Token）
 
 开始使用吧！🚀
 
@@ -233,6 +279,9 @@ MCP 配置文件位置: `.mcp.json`
 
 **Sources**:
 - [Awesome MCP Servers - GitHub](https://github.com/wong2/awesome-mcp-servers)
+- [Microsoft Playwright MCP - GitHub](https://github.com/microsoft/playwright-mcp)
 - [Chrome DevTools MCP - Chrome for Developers](https://developer.chrome.com/blog/chrome-devtools-mcp)
 - [Top 7 MCP Servers Every Developer Needs in 2026](https://medium.com/@reactjsbd/the-top-7-mcp-servers-every-developer-needs-in-2026-d7d7e0a1b1da)
 - [MCP Server Filesystem：AI工程师必备的本地交互深度指南](https://skywork.ai/skypage/zh/MCP-Server-Filesystem%EF%BC%9AAI%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%BF%85%E5%A4%87%E7%9A%84%E6%9C%AC%E5%9C%B0%E4%BA%A4%E4%BA%92%E6%B7%B1%E5%BA%A6%E6%8C%87%E5%8D%97/1971090856160063488)
+- [Playwright MCP完全指南：AI驱动的浏览器自动化工具【2025】](https://www.cursor-ide.com/blog/playwright-mcp-ai-tools-2025)
+- [How to Install Microsoft Playwright MCP Server in VS Code?](https://medium.com/@testerstalk/how-to-install-microsoft-playwright-mcp-server-in-vs-code-9e65513e23e5)
