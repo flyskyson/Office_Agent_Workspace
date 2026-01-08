@@ -10,7 +10,7 @@ $Shortcut1.Save()
 
 # Create shortcut for File Manager Center
 $Shortcut2 = $WshShell.CreateShortcut($Desktop + '\File Manager Center.lnk')
-$Shortcut2.TargetPath = 'c:\Users\flyskyson\Office_Agent_Workspace\run_file_manager_center.bat'
+$Shortcut2.TargetPath = 'c:\Users\flyskyson\Office_Agent_Workspace\00_Agent_Library\99_Scripts_Tools\run_file_manager_center.bat'
 $Shortcut2.WorkingDirectory = 'c:\Users\flyskyson\Office_Agent_Workspace'
 $Shortcut2.Description = 'Office Agent Workspace - File Manager Center'
 $Shortcut2.Save()
