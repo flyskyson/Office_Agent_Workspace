@@ -8,24 +8,35 @@ echo 这个脚本会帮助你快速恢复上下文，让AI助手了解你的背�
 echo.
 echo 请选择操作:
  echo.
-echo 1. 查看我的开发者档案 (AI_MEMORY.md)
-echo 2. 运行项目规划助手
-echo 3. 打开学习日志记录工具
-echo 4. 查看自动化项目库
-echo 5. 查看快速开始提示词
-echo 6. 生成工作区状态报告
+echo ⭐ 1. 🌅 今日启动器 (推荐！晨间工作区助手)
+echo 2. 查看我的开发者档案 (AI_MEMORY.md)
+echo 3. 运行项目规划助手
+echo 4. 打开学习日志记录工具
+echo 5. 查看自动化项目库
+echo 6. 查看快速开始提示词
+echo 7. 生成工作区状态报告
 echo 0. 退出
 echo.
-set /p choice=请输入选项 (0-6):
+set /p choice=请输入选项 (0-7):
 
-if "%choice%"=="1" goto view_memory
-if "%choice%"=="2" goto run_planner
-if "%choice%"=="3" goto run_logger
-if "%choice%"=="4" goto view_projects
-if "%choice%"=="5" goto view_prompts
-if "%choice%"=="6" goto run_report
+if "%choice%"=="1" goto daily_launcher
+if "%choice%"=="2" goto view_memory
+if "%choice%"=="3" goto run_planner
+if "%choice%"=="4" goto run_logger
+if "%choice%"=="5" goto view_projects
+if "%choice%"=="6" goto view_prompts
+if "%choice%"=="7" goto run_report
 if "%choice%"=="0" goto end
 goto invalid
+
+:daily_launcher
+echo.
+echo ========================================================================
+echo 正在启动今日启动器...
+echo ========================================================================
+echo.
+python daily_launcher.py
+goto end
 
 :view_memory
 echo.

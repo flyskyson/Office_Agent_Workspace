@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-01-08 00:13:31",
-  "workspace_path": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "timestamp": "2026-01-08 10:13:16",
+  "workspace_path": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
   "mcp_servers": {
     "status": "已配置",
     "count": 4,
@@ -228,7 +228,7 @@
   "data_freshness": {
     "index_exists": true,
     "last_scan": "2026-01-07 22:49:39",
-    "age_hours": 1.4,
+    "age_hours": 11.4,
     "freshness": "较新",
     "recommendation": "数据较新,建议每日刷新"
   }

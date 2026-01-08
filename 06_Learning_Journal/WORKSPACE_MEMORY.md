@@ -24,6 +24,7 @@
 - 📝 追踪代码版本演进
 - 💡 积累知识库和最佳实践
 - 🤖 提供上下文感知的智能建议
+- 📁 **自动整理文件**（智能混合模式）
 
 ---
 
@@ -72,7 +73,8 @@ Office_Agent_Workspace/
 │   ├── code_version_tracker.py   # 📝 版本追踪工具
 │   ├── workspace_report.py       # 📊 健康报告
 │   ├── workspace_cleaner.py      # 🧹 清理工具
-│   └── workspace_maintenance.py  # 🔧 维护脚本
+│   ├── workspace_maintenance.py  # 🔧 维护脚本
+│   └── daily_file_organizer.py   # 📁 文件自动整理器（智能混合模式）
 │
 └── 🚀 快速启动
     ├── start_new_session.bat     # 一键启动菜单
@@ -241,6 +243,23 @@ Office_Agent_Workspace/
 → 提供学习路径
 ```
 
+#### 6. 📁 文件自动整理（新功能！）
+```
+"帮我整理一下文件"
+"文件太乱了，整理一下"
+"运行文件整理器"
+→ 执行 daily_file_organizer.py
+→ 自动分类归档文件
+→ 生成整理报告
+```
+
+**整理规则**：
+- 📊 报告文件 → `05_Outputs/Reports/日期/`
+- 🔧 脚本工具 → `00_Agent_Library/99_Scripts_Tools/`
+- 📚 学习资料 → `04_Data_&_Resources/Learning_Materials/`
+- 🧪 测试文件 → `00_Temp/Tests/日期/`
+- ⭐ 核心文件保留在根目录
+
 ---
 
 ## 🔄 使用工作区管家的标准流程
@@ -327,6 +346,14 @@ AI: [搜索代码库] → [匹配项目] → [推荐方案]
 #### 版本历史
 ```
 "查询[文件名]的版本历史和最近变更"
+```
+
+#### 文件整理（新！）
+```
+"帮我整理一下文件"
+"文件太乱了"
+"运行文件整理器"
+→ 自动执行整理，无需手动运行脚本
 ```
 
 ---

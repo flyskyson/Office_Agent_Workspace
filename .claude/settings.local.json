@@ -37,7 +37,17 @@
       "Bash(git init:*)",
       "Bash(git config:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(git count-objects:*)",
+      "Bash(git branch:*)",
+      "Bash(git ls-tree:*)",
+      "Bash(.\\\\start_new_session:*)",
+      "Bash(cmd:*)",
+      "Bash(npx:*)",
+      "Bash(start:*)",
+      "Bash(tasklist:*)",
+      "Bash(.\\\\butler_mode.bat:*)",
+      "Bash(git restore:*)"
     ]
   },
   "model": "deepseek-chat",
