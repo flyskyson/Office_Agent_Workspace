@@ -47,7 +47,8 @@
       "Bash(start:*)",
       "Bash(tasklist:*)",
       "Bash(.\\\\butler_mode.bat:*)",
-      "Bash(git restore:*)"
+      "Bash(git restore:*)",
+      "Bash(git reset:*)"
     ]
   },
   "model": "deepseek-chat",
