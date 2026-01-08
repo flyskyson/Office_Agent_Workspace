@@ -107,3 +107,9 @@ cached.py
 *.rar
 *.tar
 *.zip
+
+# 敏感信息
+github_token.txt
+*_token.txt
+*token.txt
+nul

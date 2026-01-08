@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-01-08 16:11:39",
-  "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "scan_time": "2026-01-08 12:51:12",
+  "workspace_root": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
   "projects": [
     {
       "name": "my_first_agent",
@@ -304,11 +304,11 @@
     {
       "path": "create_shortcut.ps1",
       "name": "create_shortcut.ps1",
-      "size": 1594,
-      "modified": "2026-01-08 12:51:54",
+      "size": 1560,
+      "modified": "2026-01-08 12:45:47",
       "extension": ".ps1",
       "type": "脚本工具",
-      "hash": "1581afdb",
+      "hash": "b5c4ec6e",
       "description": "工作区工具"
     },
     {
