@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-01-09 11:10:46",
-  "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "scan_time": "2026-01-09 08:50:39",
+  "workspace_root": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
   "projects": [
     {
       "name": "file_organizer",
@@ -325,21 +325,21 @@
     {
       "path": "start_new_session.bat",
       "name": "start_new_session.bat",
-      "size": 4413,
-      "modified": "2026-01-09 08:51:02",
+      "size": 4403,
+      "modified": "2026-01-08 16:38:41",
       "extension": ".bat",
       "type": "脚本工具",
-      "hash": "d6ffdad5",
+      "hash": "8efbd3e6",
       "description": "一键启动菜单，快速访问工作区功能"
     },
     {
       "path": "create_shortcut.ps1",
       "name": "create_shortcut.ps1",
-      "size": 2075,
-      "modified": "2026-01-09 08:52:06",
+      "size": 2027,
+      "modified": "2026-01-08 16:39:48",
       "extension": ".ps1",
       "type": "脚本工具",
-      "hash": "359a8f6a",
+      "hash": "ef61d97e",
       "description": "工作区工具"
     },
     {

@@ -48,7 +48,12 @@
       "Bash(tasklist:*)",
       "Bash(.\\\\butler_mode.bat:*)",
       "Bash(git restore:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(git push:*)",
+      "Bash(butler_mode.bat)",
+      "Bash(explorer .)",
+      "Bash(explorer \"c:\\\\Users\\\\flyskyson\\\\Office_Agent_Workspace\")",
+      "Bash(call:*)"
     ]
   },
   "model": "deepseek-chat",

@@ -15,9 +15,10 @@ echo 4. 打开学习日志记录工具
 echo 5. 查看自动化项目库
 echo 6. 查看快速开始提示词
 echo 7. 生成工作区状态报告
+echo 📖 8. 查看使用指南 (本菜单的完整说明)
 echo 0. 退出
 echo.
-set /p choice=请输入选项 (0-7):
+set /p choice=请输入选项 (0-8):
 
 if "%choice%"=="1" goto daily_launcher
 if "%choice%"=="2" goto view_memory
@@ -26,6 +27,7 @@ if "%choice%"=="4" goto run_logger
 if "%choice%"=="5" goto view_projects
 if "%choice%"=="6" goto view_prompts
 if "%choice%"=="7" goto run_report
+if "%choice%"=="8" goto view_guide
 if "%choice%"=="0" goto end
 goto invalid
 
@@ -35,7 +37,7 @@ echo ========================================================================
 echo 正在启动今日启动器...
 echo ========================================================================
 echo.
-python daily_launcher.py
+call start_daily_launcher_safe.bat
 goto end
 
 :view_memory
@@ -104,6 +106,27 @@ echo.
 python workspace_report.py
 echo.
 echo 报告已生成! 查看工作区根目录下的最新报告文件。
+echo.
+pause
+goto end
+
+:view_guide
+echo.
+echo ========================================================================
+echo 正在打开使用指南...
+echo ========================================================================
+echo.
+echo 使用指南文件位置:
+echo %CD%\📖New_Session_Launcher使用指南.md
+echo.
+echo 正在用默认程序打开...
+echo.
+start "" "📖New_Session_Launcher使用指南.md"
+echo.
+echo ========================================================================
+echo 提示: 已用默认程序打开使用指南
+echo 也可以用VS Code或其他编辑器打开此文件
+echo ========================================================================
 echo.
 pause
 goto end

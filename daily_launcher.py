@@ -79,13 +79,25 @@ class DailyLauncher:
         index_file = self.memory_dir / "workspace_index_latest.json"
 
         if not index_file.exists():
+            self.color_print("⚠️  工作区索引文件不存在", 'warning')
             return None
 
         try:
             with open(index_file, 'r', encoding='utf-8') as f:
-                return json.load(f)
+                data = json.load(f)
+                # 验证基本结构
+                if not isinstance(data, dict):
+                    self.color_print("⚠️  工作区索引格式错误: 根节点不是字典", 'warning')
+                    return None
+                return data
+        except json.JSONDecodeError as e:
+            self.color_print(f"⚠️  JSON解析错误: {e}", 'warning')
+            self.color_print(f"   文件位置: {index_file}", 'info')
+            self.color_print(f"   建议: 运行 python workspace_scanner.py 重新生成索引", 'info')
+            return None
         except Exception as e:
             self.color_print(f"⚠️  无法加载工作区索引: {e}", 'warning')
+            self.color_print(f"   文件位置: {index_file}", 'info')
             return None
 
     def get_recent_files(self, hours=24, limit=10):

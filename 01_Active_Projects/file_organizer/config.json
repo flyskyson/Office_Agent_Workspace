@@ -1,0 +1,33 @@
+{
+  "档案位置": "证照材料智能整理工具配置文件",
+
+  "archive_root": "C:/工作文档/证照档案",
+
+  "source_folders": [
+    "C:/Users/flyskyson/Desktop",
+    "C:/Users/flyskyson/Downloads"
+  ],
+
+  "file_patterns": {
+    "申请表": ["申请表", "申请", "表格", "申请书"],
+    "身份证": ["身份证", "id", "ID", "证件"],
+    "租赁合同": ["租赁", "合同", "出租"],
+    "产权证明": ["产权", "房产", "房产证"]
+  },
+
+  "allowed_extensions": [
+    ".pdf", ".jpg", ".jpeg", ".png", ".gif",
+    ".doc", ".docx", ".xls", ".xlsx",
+    ".zip", ".rar"
+  ],
+
+  "date_format": "%Y-%m-%d",
+
+  "organize_by_date": true,
+
+  "organize_by_applicant": true,
+
+  "create_index": false,
+
+  "backup_before_move": false
+}

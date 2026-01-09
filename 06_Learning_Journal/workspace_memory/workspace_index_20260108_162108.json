@@ -1,38 +1,7 @@
 {
-  "scan_time": "2026-01-09 11:10:46",
-  "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "scan_time": "2026-01-08 16:21:08",
+  "workspace_root": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
   "projects": [
-    {
-      "name": "file_organizer",
-      "status": "active",
-      "path": "01_Active_Projects\\file_organizer",
-      "has_readme": true,
-      "readme_path": "01_Active_Projects\\file_organizer\\README.md",
-      "py_files_count": 2,
-      "js_files_count": 0,
-      "doc_files_count": 2,
-      "main_scripts": [
-        {
-          "path": "01_Active_Projects\\file_organizer\\file_organizer.py",
-          "name": "file_organizer.py",
-          "size": 8056,
-          "modified": "2026-01-08 17:55:34",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "20d525b1"
-        },
-        {
-          "path": "01_Active_Projects\\file_organizer\\file_organizer_学习版.py",
-          "name": "file_organizer_学习版.py",
-          "size": 14968,
-          "modified": "2026-01-08 18:04:09",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "99df7faf"
-        }
-      ],
-      "last_modified": "2026-01-08 18:09:39"
-    },
     {
       "name": "my_first_agent",
       "status": "active",
@@ -325,21 +294,21 @@
     {
       "path": "start_new_session.bat",
       "name": "start_new_session.bat",
-      "size": 4413,
-      "modified": "2026-01-09 08:51:02",
+      "size": 3601,
+      "modified": "2026-01-08 10:29:42",
       "extension": ".bat",
       "type": "脚本工具",
-      "hash": "d6ffdad5",
+      "hash": "1b771519",
       "description": "一键启动菜单，快速访问工作区功能"
     },
     {
       "path": "create_shortcut.ps1",
       "name": "create_shortcut.ps1",
-      "size": 2075,
-      "modified": "2026-01-09 08:52:06",
+      "size": 1594,
+      "modified": "2026-01-08 12:51:54",
       "extension": ".ps1",
       "type": "脚本工具",
-      "hash": "359a8f6a",
+      "hash": "1581afdb",
       "description": "工作区工具"
     },
     {
@@ -541,15 +510,6 @@
       "hash": "615b3321"
     },
     {
-      "path": "00_Agent_Library\\99_Scripts_Tools\\查看使用指南.bat",
-      "name": "查看使用指南.bat",
-      "size": 3126,
-      "modified": "2026-01-08 16:39:20",
-      "extension": ".bat",
-      "type": "脚本工具",
-      "hash": "4c6accb5"
-    },
-    {
       "path": "00_Agent_Library\\99_Scripts_Tools\\查看我的资产.bat",
       "name": "查看我的资产.bat",
       "size": 343,
@@ -560,10 +520,10 @@
     }
   ],
   "statistics": {
-    "total_projects": 5,
-    "active_projects": 3,
+    "total_projects": 4,
+    "active_projects": 2,
     "archived_projects": 2,
-    "total_tools": 31,
+    "total_tools": 30,
     "code_snippets": 10,
     "prompt_templates": 1
   }

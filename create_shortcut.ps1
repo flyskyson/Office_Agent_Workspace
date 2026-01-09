@@ -17,10 +17,18 @@ $Shortcut2.Save()
 
 # Create shortcut for New Session
 $Shortcut3 = $WshShell.CreateShortcut($Desktop + '\New Session Launcher.lnk')
-$Shortcut3.TargetPath = 'c:\Users\flyskyson\Office_Agent_Workspace\start_new_session.bat'
+$Shortcut3.TargetPath = 'cmd.exe'
+$Shortcut3.Arguments = '/c "cd /d c:\Users\flyskyson\Office_Agent_Workspace && start_new_session.bat"'
 $Shortcut3.WorkingDirectory = 'c:\Users\flyskyson\Office_Agent_Workspace'
 $Shortcut3.Description = 'Office Agent Workspace - New Session Launcher'
 $Shortcut3.Save()
+
+# Create shortcut for User Guide
+$Shortcut4 = $WshShell.CreateShortcut($Desktop + '\📖 User Guide.lnk')
+$Shortcut4.TargetPath = 'c:\Users\flyskyson\Office_Agent_Workspace\00_Agent_Library\99_Scripts_Tools\查看使用指南.bat'
+$Shortcut4.WorkingDirectory = 'c:\Users\flyskyson\Office_Agent_Workspace'
+$Shortcut4.Description = 'Office Agent Workspace - User Guide'
+$Shortcut4.Save()
 
 Write-Host "Shortcuts created successfully!" -ForegroundColor Green
 Write-Host ""
@@ -28,5 +36,6 @@ Write-Host "Created shortcuts:" -ForegroundColor Cyan
 Write-Host "  1. Workspace Butler.lnk"
 Write-Host "  2. File Manager Center.lnk"
 Write-Host "  3. New Session Launcher.lnk"
+Write-Host "  4. 📖 User Guide.lnk"
 Write-Host ""
 Write-Host "Check your desktop!" -ForegroundColor Yellow
