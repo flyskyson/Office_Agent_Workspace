@@ -1,5 +1,5 @@
 {
-  "scan_time": "2026-01-09 12:21:53",
+  "scan_time": "2026-01-09 12:20:12",
   "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
   "projects": [
     {
@@ -580,15 +580,6 @@
       "hash": "c09b72d6"
     },
     {
-      "path": "00_Agent_Library\\99_Scripts_Tools\\启动管家_简单版.bat",
-      "name": "启动管家_简单版.bat",
-      "size": 1489,
-      "modified": "2026-01-09 12:21:09",
-      "extension": ".bat",
-      "type": "脚本工具",
-      "hash": "65e3c476"
-    },
-    {
       "path": "00_Agent_Library\\99_Scripts_Tools\\启动管家模式.bat",
       "name": "启动管家模式.bat",
       "size": 1372,
@@ -638,7 +629,7 @@
     "total_projects": 5,
     "active_projects": 3,
     "archived_projects": 2,
-    "total_tools": 38,
+    "total_tools": 37,
     "code_snippets": 10,
     "prompt_templates": 3
   }

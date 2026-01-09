@@ -459,6 +459,7 @@ class DailyLauncher:
         print("  4. 📝 打开学习日志记录")
         print("  5. 🔍 查看所有活跃项目")
         print("  6. 💻 打开VSCode到工作区")
+        print("  7. 📋 查看项目进度追踪（运行 project_tracker.py）")
         print("  0. 🚪 退出")
         print()
 
@@ -533,6 +534,17 @@ class DailyLauncher:
             input("\n按回车键继续...")
             return False
 
+        elif choice == '7':
+            print("\n正在查看项目进度...")
+            try:
+                tracker_path = self.workspace_root / 'project_tracker.py'
+                subprocess.run([sys.executable, str(tracker_path), 'list'], check=True)
+            except Exception as e:
+                self.color_print(f"\n❌ 查看失败: {e}", 'error')
+                print("\n💡 提示: 运行 'python project_tracker.py list' 查看所有项目进度")
+            input("\n按回车键继续...")
+            return False
+
         elif choice == '0':
             return True
 
@@ -586,7 +598,7 @@ class DailyLauncher:
             self.display_quick_actions()
 
             # 获取用户输入
-            choice = input("  请输入选项 (0-6): ").strip()
+            choice = input("  请输入选项 (0-7): ").strip()
 
             # 执行操作
             should_exit = self.run_quick_action(choice)
