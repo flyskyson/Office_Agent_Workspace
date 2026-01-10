@@ -20,8 +20,8 @@ def update_shortcut():
         workspace_root = Path(__file__).parent
         desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
 
-        # 使用增强版
-        target = str(workspace_root / '00_Agent_Library' / '99_Scripts_Tools' / '启动管家模式_增强版.bat')
+        # 使用简单版
+        target = str(workspace_root / '00_Agent_Library' / '99_Scripts_Tools' / '启动管家_简单版.bat')
         shortcut_path = os.path.join(desktop, 'Workspace Butler.lnk')
 
         # 删除旧快捷方式
@@ -37,13 +37,13 @@ def update_shortcut():
         shortcut.Description = 'Workspace Butler - Enhanced Daily Start'
         shortcut.save()
 
-        print("✅ 快捷方式已更新为增强版!")
+        print("✅ 快捷方式已更新为简单版!")
         print(f"位置: {shortcut_path}")
         print()
-        print("新功能:")
+        print("功能:")
         print("  - 话术自动复制到剪贴板")
         print("  - 自动打开VS Code")
-        print("  - 更清晰的显示格式")
+        print("  - 简洁清晰的显示")
 
         return True
 
