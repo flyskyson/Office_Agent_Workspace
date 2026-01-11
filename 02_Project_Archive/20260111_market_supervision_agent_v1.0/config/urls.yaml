@@ -1,0 +1,33 @@
+# 政务网站 URL 配置
+# 根据实际使用的政务平台修改这些 URL
+
+# 登录相关
+urls:
+  # 登录页面
+  login: "https://example.gov.cn/login"
+
+  # 企业年报
+  annual_report: "https://example.gov.cn/annual-report?year={year}"
+
+  # 企业设立登记
+  registration: "https://example.gov.cn/registration"
+
+  # 企业变更登记
+  change: "https://example.gov.cn/change"
+
+# 超时设置（毫秒）
+timeout:
+  default: 30000
+  navigation: 60000
+  submit: 15000
+
+# 重试配置
+retry:
+  max_attempts: 3
+  delay: 2000  # 毫秒
+
+# 截图配置
+screenshot:
+  enabled: true
+  save_on_error: true
+  output_dir: "data/screenshots"

@@ -1,6 +1,6 @@
 # Office Agent Workspace - 工作区指南
 
-> 最后更新: 2026-01-11 17:30
+> 最后更新: 2026-01-11 17:35
 
 ## 目录结构概览
 
@@ -29,9 +29,11 @@ Office_Agent_Workspace/
    - 语言: Python
    - 功能: 自动化处理企业年报、设立登记、变更登记等市场监管业务
    - 技术: Playwright 浏览器自动化
-   - 状态: 新建项目，活跃开发
+   - 状态: ⏸️ 已暂停并归档
+   - 当前: 精简版 (代码和文档)
+   - 完整版: [归档位置](02_Project_Archive/20260111_market_supervision_agent_v1.0/)
    - 文档: [README](01_Active_Projects/market_supervision_agent/README.md)
-   - 项目结构: [PROJECT_STRUCTURE.md](01_Active_Projects/market_supervision_agent/PROJECT_STRUCTURE.md)
+   - 恢复指南: [RESTORE_GUIDE.md](01_Active_Projects/market_supervision_agent/RESTORE_GUIDE.md)
 
 3. **memory_agent** - 学习记忆助手
    - 语言: Python
@@ -122,6 +124,20 @@ npm run form       # 表单自动填写
 ```
 YYYYMMDD_项目名_版本号/
 ```
+
+### 当前归档项目
+1. **20250104_pdf_processor_v1.0** - PDF处理器历史版本
+2. **my_first_agent_历史版本** - 首个Agent项目历史版本
+3. **20260111_market_supervision_agent_v1.0** - 市场监管智能体 (最新归档)
+   - 归档日期: 2026-01-11
+   - 状态: ⏸️ 已暂停
+   - 特点: 删除venv节省空间，保留完整代码和文档
+   - 恢复指南: 包含 `PAUSED.md` 文件
+
+### 归档策略
+- **完整归档**: 保留所有文件，包括虚拟环境
+- **精简归档**: 删除大文件(venv等)，保留核心资产
+- **混合归档**: 完整版归档 + 活跃目录保留精简版
 
 ## 技术栈
 

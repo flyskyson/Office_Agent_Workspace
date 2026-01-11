@@ -1,0 +1,19 @@
+# Python 依赖包
+playwright>=1.40.0
+pyyaml>=6.0
+pytest>=7.4.0
+python-dotenv>=1.0.0
+
+# 日志和工具
+colorlog>=6.7.0
+tqdm>=4.66.0
+
+# 数据处理
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# HTTP 请求（如果需要）
+requests>=2.31.0
+
+# 数据验证
+pydantic>=2.0.0

@@ -1,0 +1,110 @@
+# 网页元素定位器配置
+# 这是最核心的配置文件！
+# 根据实际网页结构使用浏览器开发者工具获取准确的选择器
+
+# 登录页面元素
+login:
+  username: "#username"  # 用户名/统一社会信用代码输入框
+  password: "#password"  # 密码输入框
+  captcha: "#captcha"    # 验证码输入框（如果有）
+  submit: "button[type='submit']"  # 登录按钮
+  success_indicator: ".user-info"  # 登录成功后的标志元素
+
+# 企业年报表单元素
+annual_report:
+  # 基本信息部分
+  basic_info:
+    company_name: "#companyName"
+    credit_code: "#creditCode"
+    registered_capital: "#registeredCapital"
+    company_type: "#companyType"
+    business_address: "#businessAddress"
+    postal_code: "#postalCode"
+    phone: "#phone"
+    email: "#email"
+
+  # 财务信息部分
+  financial_info:
+    total_assets: "#totalAssets"
+    total_liabilities: "#totalLiabilities"
+    total_revenue: "#totalRevenue"
+    net_profit: "#netProfit"
+    tax_paid: "#taxPaid"
+
+  # 股东信息部分
+  shareholder_info:
+    add_button: "#addShareholder"
+    name: ".shareholder-name"
+    investment: ".shareholder-investment"
+    ratio: ".shareholder-ratio"
+
+  # 提交部分
+  submit:
+    button: "#submitButton"
+    confirm: "#confirmButton"
+    success_message: ".success-msg"
+
+# 企业设立登记表单元素
+registration:
+  company_name: "#regCompanyName"
+  company_type: "#regCompanyType"
+  registered_capital: "#regCapital"
+  business_scope: "#businessScope"
+  legal_representative: "#legalRep"
+
+  # 股东信息
+  shareholders:
+    add_button: "#addShareholderBtn"
+    name_input: ".shareholder-name-input"
+    id_card: ".shareholder-id"
+    investment_amount: ".investment-amount"
+
+  # 文档上传
+  documents:
+    application_form: "#docApplicationForm"
+    id_card_copy: "#docIdCard"
+    lease_contract: "#docLease"
+
+  submit:
+    button: "#submitRegistration"
+    confirm: "#confirmRegistration"
+    success_message: ".registration-success"
+
+# 企业变更登记表单元素
+change:
+  change_type_selector: "#changeType"
+
+  # 名称变更
+  name_change:
+    new_name: "#newCompanyName"
+    reason: "#changeReason"
+
+  # 地址变更
+  address_change:
+    new_address: "#newAddress"
+    new_postal: "#newPostal"
+
+  # 法人变更
+  legal_rep_change:
+    new_legal_rep: "#newLegalRep"
+    new_id_card: "#newIdCard"
+
+  # 文档上传
+  documents:
+    change_application: "#docChangeApp"
+    board_resolution: "#docResolution"
+    supporting_docs: "#docSupporting"
+
+  submit:
+    button: "#submitChange"
+    confirm: "#confirmChange"
+    success_message: ".change-success"
+
+# 通用元素
+common:
+  loading: ".loading-spinner"
+  error_message: ".error-msg"
+  success_message: ".success-msg"
+  next_button: ".btn-next"
+  prev_button: ".btn-prev"
+  save_draft: ".btn-save-draft"
