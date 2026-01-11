@@ -1,0 +1,40 @@
+[
+  {
+    "company_name": "北京示例科技有限公司",
+    "credit_code": "91110000XXXXXXXXXX",
+    "password": "your_password_here",
+    "year": 2024,
+    "company_type": "有限责任公司",
+    "registered_capital": 1000000,
+    "business_address": "北京市海淀区中关村大街1号",
+    "postal_code": "100080",
+    "phone": "010-12345678",
+    "email": "contact@example.com",
+    "financial_data": {
+      "total_assets": 5000000,
+      "total_liabilities": 2000000,
+      "total_revenue": 3000000,
+      "net_profit": 500000,
+      "tax_paid": 150000
+    }
+  },
+  {
+    "company_name": "上海示例贸易有限公司",
+    "credit_code": "91310000YYYYYYYYYY",
+    "password": "your_password_here",
+    "year": 2024,
+    "company_type": "有限责任公司",
+    "registered_capital": 500000,
+    "business_address": "上海市浦东新区世纪大道88号",
+    "postal_code": "200120",
+    "phone": "021-87654321",
+    "email": "info@example.com",
+    "financial_data": {
+      "total_assets": 2000000,
+      "total_liabilities": 800000,
+      "total_revenue": 1500000,
+      "net_profit": 200000,
+      "tax_paid": 60000
+    }
+  }
+]

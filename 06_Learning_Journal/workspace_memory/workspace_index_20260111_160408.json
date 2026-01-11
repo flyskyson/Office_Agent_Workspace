@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-01-11 17:24:27",
-  "workspace_root": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "scan_time": "2026-01-11 16:04:08",
+  "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
   "projects": [
     {
       "name": "file_organizer",
@@ -57,19 +57,10 @@
       "path": "01_Active_Projects\\market_supervision_agent",
       "has_readme": true,
       "readme_path": "01_Active_Projects\\market_supervision_agent\\README.md",
-      "py_files_count": 504,
-      "js_files_count": 287,
-      "doc_files_count": 9,
+      "py_files_count": 10,
+      "js_files_count": 0,
+      "doc_files_count": 5,
       "main_scripts": [
-        {
-          "path": "01_Active_Projects\\market_supervision_agent\\quick_test.py",
-          "name": "quick_test.py",
-          "size": 1956,
-          "modified": "2026-01-11 16:04:30",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "021e23bb"
-        },
         {
           "path": "01_Active_Projects\\market_supervision_agent\\src\\agent_core.py",
           "name": "agent_core.py",
@@ -105,9 +96,18 @@
           "extension": ".py",
           "type": "Python脚本",
           "hash": "905ddd6d"
+        },
+        {
+          "path": "01_Active_Projects\\market_supervision_agent\\tests\\test_browser_controller.py",
+          "name": "test_browser_controller.py",
+          "size": 1075,
+          "modified": "2026-01-11 12:15:06",
+          "extension": ".py",
+          "type": "Python脚本",
+          "hash": "f0d190e9"
         }
       ],
-      "last_modified": "2026-01-11 16:15:07"
+      "last_modified": "2026-01-11 16:00:57"
     },
     {
       "name": "memory_agent",

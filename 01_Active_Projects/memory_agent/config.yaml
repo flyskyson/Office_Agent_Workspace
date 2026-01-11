@@ -1,0 +1,48 @@
+# 学习记忆助手Agent 配置文件
+
+# 向量数据库配置
+vector_db:
+  persist_directory: "../06_Learning_Journal/workspace_memory/chroma_db"
+  collection_name: "learning_memory"
+
+# 文本嵌入模型配置
+embedding:
+  model_name: "paraphrase-multilingual-mpnet-base-v2"  # 支持中文的优质模型
+  device: "cpu"  # 可选: "cuda" 如果有GPU
+  batch_size: 32
+
+# 笔记源配置
+sources:
+  learning_journal:
+    path: "../06_Learning_Journal"
+    patterns:
+      - "daily_logs/**/*.md"
+      - "challenges_solved/**/*.md"
+      - "code_patterns/**/*.md"
+      - "workspace_memory/**/*.md"
+    exclude_patterns:
+      - "**/node_modules/**"
+      - "**/.git/**"
+
+  projects:
+    path: "../01_Active_Projects"
+    patterns:
+      - "**/*.py"
+      - "**/README.md"
+    exclude_patterns:
+      - "**/venv/**"
+      - "**/__pycache__/**"
+      - "**/node_modules/**"
+
+# 搜索配置
+search:
+  top_k: 5  # 返回最相关的结果数
+  similarity_threshold: 0.5  # 相似度阈值
+
+# 复习提醒配置
+review:
+  enable: true
+  # 间隔重复算法参数（天）
+  intervals: [1, 3, 7, 14, 30, 90]
+  # 每天最多提醒数量
+  daily_limit: 5

@@ -1,6 +1,6 @@
 {
-  "scan_time": "2026-01-11 17:24:27",
-  "workspace_root": "c:\\Users\\flyskyson\\Office_Agent_Workspace",
+  "scan_time": "2026-01-09 12:40:19",
+  "workspace_root": "C:\\Users\\flyskyson\\Office_Agent_Workspace",
   "projects": [
     {
       "name": "file_organizer",
@@ -8,9 +8,9 @@
       "path": "01_Active_Projects\\file_organizer",
       "has_readme": true,
       "readme_path": "01_Active_Projects\\file_organizer\\README.md",
-      "py_files_count": 4,
+      "py_files_count": 2,
       "js_files_count": 0,
-      "doc_files_count": 5,
+      "doc_files_count": 2,
       "main_scripts": [
         {
           "path": "01_Active_Projects\\file_organizer\\file_organizer.py",
@@ -25,147 +25,13 @@
           "path": "01_Active_Projects\\file_organizer\\file_organizer_学习版.py",
           "name": "file_organizer_学习版.py",
           "size": 14968,
-          "modified": "2026-01-10 09:49:26",
+          "modified": "2026-01-08 18:04:09",
           "extension": ".py",
           "type": "Python脚本",
           "hash": "99df7faf"
-        },
-        {
-          "path": "01_Active_Projects\\file_organizer\\improved_identify.py",
-          "name": "improved_identify.py",
-          "size": 4637,
-          "modified": "2026-01-09 12:48:42",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "aae68bce"
-        },
-        {
-          "path": "01_Active_Projects\\file_organizer\\tests\\test.py",
-          "name": "test.py",
-          "size": 2018,
-          "modified": "2026-01-10 09:01:10",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "7de0fd66"
         }
       ],
-      "last_modified": "2026-01-11 03:11:13"
-    },
-    {
-      "name": "market_supervision_agent",
-      "status": "active",
-      "path": "01_Active_Projects\\market_supervision_agent",
-      "has_readme": true,
-      "readme_path": "01_Active_Projects\\market_supervision_agent\\README.md",
-      "py_files_count": 504,
-      "js_files_count": 287,
-      "doc_files_count": 9,
-      "main_scripts": [
-        {
-          "path": "01_Active_Projects\\market_supervision_agent\\quick_test.py",
-          "name": "quick_test.py",
-          "size": 1956,
-          "modified": "2026-01-11 16:04:30",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "021e23bb"
-        },
-        {
-          "path": "01_Active_Projects\\market_supervision_agent\\src\\agent_core.py",
-          "name": "agent_core.py",
-          "size": 5345,
-          "modified": "2026-01-11 12:12:13",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "3ec1b7ec"
-        },
-        {
-          "path": "01_Active_Projects\\market_supervision_agent\\src\\browser_controller.py",
-          "name": "browser_controller.py",
-          "size": 5678,
-          "modified": "2026-01-11 16:02:11",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "7ed20a37"
-        },
-        {
-          "path": "01_Active_Projects\\market_supervision_agent\\src\\__init__.py",
-          "name": "__init__.py",
-          "size": 182,
-          "modified": "2026-01-11 12:12:11",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "946f56a4"
-        },
-        {
-          "path": "01_Active_Projects\\market_supervision_agent\\tests\\test_agent_core.py",
-          "name": "test_agent_core.py",
-          "size": 1630,
-          "modified": "2026-01-11 12:15:08",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "905ddd6d"
-        }
-      ],
-      "last_modified": "2026-01-11 16:15:07"
-    },
-    {
-      "name": "memory_agent",
-      "status": "active",
-      "path": "01_Active_Projects\\memory_agent",
-      "has_readme": true,
-      "readme_path": "01_Active_Projects\\memory_agent\\README.md",
-      "py_files_count": 7,
-      "js_files_count": 0,
-      "doc_files_count": 1,
-      "main_scripts": [
-        {
-          "path": "01_Active_Projects\\memory_agent\\embedder.py",
-          "name": "embedder.py",
-          "size": 3645,
-          "modified": "2026-01-10 10:52:52",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "8bd11d4f"
-        },
-        {
-          "path": "01_Active_Projects\\memory_agent\\indexer.py",
-          "name": "indexer.py",
-          "size": 9298,
-          "modified": "2026-01-10 10:54:32",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "147b9423"
-        },
-        {
-          "path": "01_Active_Projects\\memory_agent\\memory_agent.py",
-          "name": "memory_agent.py",
-          "size": 9005,
-          "modified": "2026-01-10 10:58:14",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "2cf3dea5"
-        },
-        {
-          "path": "01_Active_Projects\\memory_agent\\recommender.py",
-          "name": "recommender.py",
-          "size": 9496,
-          "modified": "2026-01-10 10:56:03",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "3ff138e9"
-        },
-        {
-          "path": "01_Active_Projects\\memory_agent\\review_scheduler.py",
-          "name": "review_scheduler.py",
-          "size": 13236,
-          "modified": "2026-01-10 10:57:19",
-          "extension": ".py",
-          "type": "Python脚本",
-          "hash": "a2e1e114"
-        }
-      ],
-      "last_modified": "2026-01-10 10:59:48"
+      "last_modified": "2026-01-08 18:09:39"
     },
     {
       "name": "my_first_agent",
@@ -434,16 +300,6 @@
       "extension": ".py",
       "type": "Python脚本",
       "hash": "4905d0a5",
-      "description": "工作区工具"
-    },
-    {
-      "path": "generate_tree.py",
-      "name": "generate_tree.py",
-      "size": 5270,
-      "modified": "2026-01-11 12:05:51",
-      "extension": ".py",
-      "type": "Python脚本",
-      "hash": "248b49f3",
       "description": "工作区工具"
     },
     {
@@ -779,10 +635,10 @@
     }
   ],
   "statistics": {
-    "total_projects": 7,
-    "active_projects": 5,
+    "total_projects": 5,
+    "active_projects": 3,
     "archived_projects": 2,
-    "total_tools": 39,
+    "total_tools": 38,
     "code_snippets": 10,
     "prompt_templates": 3
   }

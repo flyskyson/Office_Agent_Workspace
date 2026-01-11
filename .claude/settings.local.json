@@ -53,7 +53,9 @@
       "Bash(butler_mode.bat)",
       "Bash(explorer .)",
       "Bash(explorer \"c:\\\\Users\\\\flyskyson\\\\Office_Agent_Workspace\")",
-      "Bash(call:*)"
+      "Bash(call:*)",
+      "Bash(source:*)",
+      "Bash(echo:*)"
     ]
   },
   "model": "deepseek-chat",
