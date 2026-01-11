@@ -35,6 +35,7 @@ class WorkspaceButler:
             'project_tracker': 'project_tracker.py',
             'project_query': '智能管家项目查询.py',
             'daily_launcher': 'daily_launcher.py',
+            'memory_agent': '01_Active_Projects/memory_agent/memory_agent.py',
         }
 
     def show_status(self):
@@ -67,13 +68,15 @@ class WorkspaceButler:
         print("  2. 查看所有项目进度")
         print("  3. 查看特定项目状态")
         print("  4. 生成智能推荐")
+        print("\n🧠 知识管理")
+        print("  5. 学习记忆助手")
         print("\n🛠️ 工具执行")
-        print("  5. 扫描工作区")
-        print("  6. 文件管理中心")
-        print("  7. 今日启动器")
+        print("  6. 扫描工作区")
+        print("  7. 文件管理中心")
+        print("  8. 今日启动器")
         print("\n📝 项目管理")
-        print("  8. 记录项目进度")
-        print("  9. 暂停/恢复项目")
+        print("  9. 记录项目进度")
+        print("  10. 暂停/恢复项目")
         print("\n  0. 退出")
         print()
 
@@ -126,24 +129,28 @@ class WorkspaceButler:
                 self.run_tool('project_query', ['recommend'])
 
             elif choice == '5':
+                print("\n启动学习记忆助手...")
+                self.run_tool('memory_agent')
+
+            elif choice == '6':
                 print("\n正在扫描工作区...")
                 self.run_tool('scanner')
 
-            elif choice == '6':
+            elif choice == '7':
                 print("\n启动文件管理中心...")
                 subprocess.run([sys.executable, str(self.workspace_root / 'file_manager_center.py')])
 
-            elif choice == '7':
+            elif choice == '8':
                 print("\n启动今日启动器...")
                 subprocess.run([sys.executable, str(self.workspace_root / 'daily_launcher.py')])
 
-            elif choice == '8':
+            elif choice == '9':
                 project = input("项目名: ").strip()
                 progress = input("进度%: ").strip()
                 task = input("当前任务: ").strip()
                 self.run_tool('project_tracker', ['update', project, progress, task])
 
-            elif choice == '9':
+            elif choice == '10':
                 print("\n暂停项目: pause | 恢复项目: resume")
                 action = input("操作 (pause/resume): ").strip()
                 project = input("项目名: ").strip()
