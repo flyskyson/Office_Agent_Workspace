@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+
+{% block title %}申请书生成 - 市场监管智能体 v4.0{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>📄 申请书生成</h2>
+    <p class="text-muted">选择经营户记录，自动生成个体工商户开业登记申请书</p>
+</div>
+
+<!-- 选择经营户 -->
+<div class="card">
+    <h3>选择经营户</h3>
+
+    <form method="POST" action="{{ url_for('generate_application') }}">
+        <div class="form-group">
+            <label for="operator_id">选择记录</label>
+            <select name="operator_id" id="operator_id" class="form-control" required>
+                <option value="">-- 请选择 --</option>
+                {% for op in operators %}
+                <option value="{{ op.id }}">
+                    {{ op.operator_name }} - {{ op.business_name or '未命名店铺' }} ({{ op.id_card }})
+                </option>
+                {% endfor %}
+            </select>
+            <small class="text-muted">{{ operators|length }} 条记录可选</small>
+        </div>
+
+        <!-- 选中的记录详情预览 -->
+        <div id="operatorDetail" style="display: none; margin-top: 1.5rem;">
+            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 5px;">
+                <h4>预览信息</h4>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-top: 1rem;">
+                    <div>
+                        <strong>姓名:</strong> <span id="detail_name">-</span><br>
+                        <strong>身份证:</strong> <span id="detail_id">-</span><br>
+                        <strong>性别:</strong> <span id="detail_gender">-</span><br>
+                        <strong>民族:</strong> <span id="detail_nation">-</span>
+                    </div>
+                    <div>
+                        <strong>店名:</strong> <span id="detail_shop">-</span><br>
+                        <strong>地址:</strong> <span id="detail_address">-</span><br>
+                        <strong>电话:</strong> <span id="detail_phone">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin-top: 1.5rem;">
+            <button type="submit" class="btn btn-success btn-lg">📄 生成申请书</button>
+            <a href="{{ url_for('database_page') }}" class="btn btn-secondary">返回数据库</a>
+        </div>
+    </form>
+</div>
+
+<!-- 使用说明 -->
+<div class="card">
+    <h3>使用说明</h3>
+    <ol style="margin-top: 1rem; padding-left: 2rem;">
+        <li>从下拉列表中选择要生成申请书的经营户</li>
+        <li>查看预览信息确认无误</li>
+        <li>点击"生成申请书"按钮</li>
+        <li>系统会自动生成 Word 格式的申请书并下载</li>
+    </ol>
+
+    <div class="alert alert-info" style="margin-top: 1.5rem;">
+        <strong>提示:</strong> 生成的申请书采用标准格式，包含经营者基本信息、经营场所信息、经营范围等内容。下载后可以进一步编辑完善。
+    </div>
+</div>
+
+<!-- 数据存储（用于 JavaScript） -->
+<script>
+const operatorsData = [
+    {% for op in operators %}
+    {
+        id: "{{ op.id }}",
+        name: "{{ op.operator_name or '' }}",
+        id_card: "{{ op.id_card or '' }}",
+        gender: "{{ op.gender or '' }}",
+        nation: "{{ op.nation or '' }}",
+        business_name: "{{ op.business_name or '' }}",
+        business_address: "{{ op.business_address or '' }}",
+        phone: "{{ op.phone or '' }}"
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
+];
+</script>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+const select = document.getElementById('operator_id');
+const detailDiv = document.getElementById('operatorDetail');
+
+// 显示选中的经营户详情
+select.addEventListener('change', function() {
+    const selectedId = this.value;
+
+    if (!selectedId) {
+        detailDiv.style.display = 'none';
+        return;
+    }
+
+    const operator = operatorsData.find(op => op.id === selectedId);
+    if (operator) {
+        document.getElementById('detail_name').textContent = operator.name || 'N/A';
+        document.getElementById('detail_id').textContent = operator.id_card || 'N/A';
+        document.getElementById('detail_gender').textContent = operator.gender || 'N/A';
+        document.getElementById('detail_nation').textContent = operator.nation || 'N/A';
+        document.getElementById('detail_shop').textContent = operator.business_name || 'N/A';
+        document.getElementById('detail_address').textContent = operator.business_address || 'N/A';
+        document.getElementById('detail_phone').textContent = operator.phone || 'N/A';
+
+        detailDiv.style.display = 'block';
+    }
+});
+</script>
+{% endblock %}

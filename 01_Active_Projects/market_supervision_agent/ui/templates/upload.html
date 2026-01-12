@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}文件处理 - 市场监管智能体 v4.0{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>📤 文件处理</h2>
+    <p class="text-muted">上传身份证、营业执照等文件，自动识别并提取信息</p>
+
+    <form method="POST" enctype="multipart/form-data" id="uploadForm">
+        <div class="form-group">
+            <label for="files">选择文件</label>
+            <input type="file" name="files" id="files" class="form-control" multiple accept=".jpg,.jpeg,.png,.pdf,.bmp,.gif,.webp" required>
+            <small class="text-muted">支持 JPG, PNG, PDF 格式，最大 50MB</small>
+        </div>
+
+        <div class="form-group">
+            <label>处理选项</label>
+            <div style="margin-top: 0.5rem;">
+                <label style="display: block; margin-bottom: 0.5rem; cursor: pointer;">
+                    <input type="checkbox" name="skip_ocr" value="true">
+                    跳过 OCR 识别（测试模式）
+                </label>
+                <label style="display: block; cursor: pointer;">
+                    <input type="checkbox" name="auto_archive" value="true" checked>
+                    自动归档文件
+                </label>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="submitBtn">
+            <span id="btnText">🚀 开始处理</span>
+            <span id="btnSpinner" style="display: none;">处理中...</span>
+        </button>
+    </form>
+</div>
+
+<div class="card">
+    <h3>支持的文件类型</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-top: 1rem;">
+        <div style="padding: 1rem; background: #f8f9fa; border-radius: 5px;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📇</div>
+            <strong>身份证</strong>
+            <p class="text-muted" style="font-size: 0.9rem;">正反面照片</p>
+        </div>
+        <div style="padding: 1rem; background: #f8f9fa; border-radius: 5px;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📋</div>
+            <strong>营业执照</strong>
+            <p class="text-muted" style="font-size: 0.9rem;">高清照片</p>
+        </div>
+        <div style="padding: 1rem; background: #f8f9fa; border-radius: 5px;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">📄</div>
+            <strong>租赁合同</strong>
+            <p class="text-muted" style="font-size: 0.9rem;">合同照片</p>
+        </div>
+        <div style="padding: 1rem; background: #f8f9fa; border-radius: 5px;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏠</div>
+            <strong>产权证明</strong>
+            <p class="text-muted" style="font-size: 0.9rem;">房产证等</p>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h3>OCR 识别内容</h3>
+    <ul style="margin-top: 1rem; padding-left: 2rem;">
+        <li><strong>基本信息：</strong>姓名、身份证号、性别、民族、地址</li>
+        <li><strong>经营信息：</strong>店名、经营地址、经营范围</li>
+        <li><strong>联系方式：</strong>电话号码（如有）</li>
+    </ul>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.getElementById('uploadForm').addEventListener('submit', function(e) {
+    const files = document.getElementById('files').files;
+    if (files.length === 0) {
+        e.preventDefault();
+        alert('请选择至少一个文件');
+        return;
+    }
+
+    // 显示加载状态
+    document.getElementById('btnText').style.display = 'none';
+    document.getElementById('btnSpinner').style.display = 'inline';
+    document.getElementById('submitBtn').disabled = true;
+});
+
+// 文件选择提示
+document.getElementById('files').addEventListener('change', function(e) {
+    const count = e.target.files.length;
+    if (count > 0) {
+        const btnText = document.getElementById('btnText');
+        btnText.textContent = `🚀 处理 ${count} 个文件`;
+    } else {
+        document.getElementById('btnText').textContent = '🚀 开始处理';
+    }
+});
+</script>
+{% endblock %}

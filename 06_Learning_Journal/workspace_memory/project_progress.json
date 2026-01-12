@@ -5,5 +5,12 @@
     "current_task": "添加进度提示和错误处理",
     "notes": "MVP版本基本完成,需要优化用户体验",
     "last_updated": "2026-01-09 11:32:56"
+  },
+  "market_supervision_agent": {
+    "status": "active",
+    "progress": 95,
+    "current_task": "--note 完成Flask Web UI，集成百度OCR，修复中文文件名问题，支持多文件上传和数据合并",
+    "notes": "",
+    "last_updated": "2026-01-12 23:27:56"
   }
 }

@@ -1,0 +1,123 @@
+{% extends "base.html" %}
+
+{% block title %}数据库管理 - 市场监管智能体 v4.0{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>🗄️ 数据库管理</h2>
+    <p class="text-muted">查看和搜索经营户数据记录</p>
+
+    <!-- 搜索表单 -->
+    <form method="GET" action="{{ url_for('database_page') }}" style="margin-top: 1.5rem;">
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 250px;">
+                <input type="text" name="keyword" class="form-control" placeholder="搜索姓名、店名或身份证号..." value="{{ search_term }}">
+            </div>
+            <div style="width: 150px;">
+                <select name="limit" class="form-control">
+                    <option value="20" {% if limit == 20 %}selected{% endif %}>20 条</option>
+                    <option value="50" {% if limit == 50 %}selected{% endif %}>50 条</option>
+                    <option value="100" {% if limit == 100 %}selected{% endif %}>100 条</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">搜索</button>
+            {% if search_term %}
+            <a href="{{ url_for('database_page') }}" class="btn btn-secondary">清除</a>
+            {% endif %}
+        </div>
+    </form>
+</div>
+
+<!-- 数据统计 -->
+<div style="margin-top: 1.5rem;">
+    {% if search_term %}
+    <div class="alert alert-info">
+        找到 <strong>{{ operators|length }}</strong> 条匹配 "{{ search_term }}" 的记录
+    </div>
+    {% else %}
+    <div class="alert alert-success">
+        共 <strong>{{ operators|length }}</strong> 条记录
+    </div>
+    {% endif %}
+</div>
+
+<!-- 数据表格 -->
+{% if operators %}
+<div class="card" style="padding: 0; overflow-x: auto;">
+    <table class="table" style="margin: 0;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>姓名</th>
+                <th>身份证号</th>
+                <th>性别</th>
+                <th>店名</th>
+                <th>经营地址</th>
+                <th>电话</th>
+                <th>创建时间</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for op in operators %}
+            <tr>
+                <td>{{ op.id }}</td>
+                <td><strong>{{ op.operator_name or '-' }}</strong></td>
+                <td>{{ op.id_card or '-' }}</td>
+                <td>{{ op.gender or '-' }}</td>
+                <td>{{ op.business_name or '-' }}</td>
+                <td>{{ (op.business_address or '-')[:30] }}{% if op.business_address and op.business_address|length > 30 %}...{% endif %}</td>
+                <td>{{ op.phone or '-' }}</td>
+                <td style="font-size: 0.9rem; color: #6c757d;">{{ op.created_at or '-' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+<!-- 分页提示 -->
+<div class="card" style="background: #f8f9fa; box-shadow: none;">
+    <p class="text-muted">
+        {% if search_term %}
+        显示搜索结果（最多 {{ limit }} 条）
+        {% else %}
+        显示最近 {{ limit }} 条记录
+        {% endif %}
+    </p>
+</div>
+{% else %}
+<div class="alert alert-warning">
+    <h4>暂无数据</h4>
+    <p>数据库中还没有记录。请先<a href="{{ url_for('upload_page') }}">上传文件</a>进行 OCR 识别。</p>
+</div>
+{% endif %}
+
+<!-- 操作按钮 -->
+<div style="margin-top: 2rem;">
+    <a href="{{ url_for('upload_page') }}" class="btn btn-primary">上传文件</a>
+    {% if operators %}
+    <a href="{{ url_for('generate_page') }}" class="btn btn-success">生成申请书</a>
+    {% endif %}
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.table {
+    font-size: 0.95rem;
+}
+
+.table th {
+    position: sticky;
+    top: 0;
+    background: #f8f9fa !important;
+    z-index: 10;
+}
+
+.table td {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+</style>
+{% endblock %}

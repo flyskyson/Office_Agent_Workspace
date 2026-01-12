@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}错误 {{ error_code }} - 市场监管智能体 v4.0{% endblock %}
+
+{% block content %}
+<div class="card text-center" style="padding: 4rem 2rem;">
+    <div style="font-size: 5rem; margin-bottom: 1rem;">⚠️</div>
+    <h2>错误 {{ error_code }}</h2>
+    <p class="text-muted" style="font-size: 1.2rem; margin: 1.5rem 0;">{{ error_message }}</p>
+
+    <div style="margin-top: 2rem;">
+        <a href="{{ url_for('index') }}" class="btn btn-primary">返回首页</a>
+        <a href="javascript:history.back()" class="btn btn-secondary">返回上一页</a>
+    </div>
+
+    {% if error_code == 404 %}
+    <div class="alert alert-info" style="margin-top: 2rem; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <strong>可能的原因:</strong>
+        <ul style="margin-top: 0.5rem; padding-left: 2rem;">
+            <li>页面地址输入错误</li>
+            <li>该页面已被移动或删除</li>
+            <li>访问了不存在的资源</li>
+        </ul>
+    </div>
+    {% elif error_code == 500 %}
+    <div class="alert alert-warning" style="margin-top: 2rem; text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+        <strong>建议操作:</strong>
+        <ul style="margin-top: 0.5rem; padding-left: 2rem;">
+            <li>刷新页面重试</li>
+            <li>检查系统状态</li>
+            <li>联系管理员</li>
+        </ul>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

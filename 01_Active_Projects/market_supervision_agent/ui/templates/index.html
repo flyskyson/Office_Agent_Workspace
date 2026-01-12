@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card text-center">
+    <h2>欢迎使用市场监管智能体</h2>
+    <p class="mb-4">自动化 OCR 识别、数据提取和申请书生成工具</p>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+        <div style="padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">📤</div>
+            <h3>文件处理</h3>
+            <p class="text-muted mb-3">上传身份证、营业执照等文件，自动识别并提取信息</p>
+            <a href="{{ url_for('upload_page') }}" class="btn btn-primary">开始处理</a>
+        </div>
+
+        <div style="padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">🗄️</div>
+            <h3>数据库管理</h3>
+            <p class="text-muted mb-3">查看、搜索和管理经营户数据记录</p>
+            <a href="{{ url_for('database_page') }}" class="btn btn-primary">查看数据</a>
+        </div>
+
+        <div style="padding: 2rem; background: #f8f9fa; border-radius: 10px;">
+            <div style="font-size: 3rem; margin-bottom: 1rem;">📄</div>
+            <h3>申请书生成</h3>
+            <p class="text-muted mb-3">根据数据库记录自动生成个体工商户开业登记申请书</p>
+            <a href="{{ url_for('generate_page') }}" class="btn btn-primary">生成文书</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>系统状态</h2>
+    <div id="status" style="padding: 1rem; background: #f8f9fa; border-radius: 5px;">
+        <p>正在检查系统状态...</p>
+    </div>
+</div>
+
+<div class="card">
+    <h2>使用说明</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div>
+            <h4>1. 文件处理</h4>
+            <p class="text-muted">上传身份证、营业执照、租赁合同等文件的图片，系统会自动识别并提取相关信息。</p>
+            <p class="text-muted"><strong>支持的格式：</strong>JPG, PNG, PDF</p>
+        </div>
+        <div>
+            <h4>2. 数据管理</h4>
+            <p class="text-muted">识别的数据会自动保存到数据库，可以通过姓名、身份证号、店名等关键词搜索。</p>
+        </div>
+        <div>
+            <h4>3. 文书生成</h4>
+            <p class="text-muted">从数据库选择经营户记录，一键生成标准格式的个体工商户开业登记申请书。</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+fetch('/api/status')
+    .then(response => response.json())
+    .then(data => {
+        const statusDiv = document.getElementById('status');
+        let html = '<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">';
+
+        html += `<div>
+            <strong>OCR 引擎:</strong><br>
+            <span style="color: ${data.ocr_status === 'ok' ? '#28a745' : '#dc3545'}">
+                ${data.ocr_engine || '未加载'}
+            </span>
+        </div>`;
+
+        html += `<div>
+            <strong>数据库:</strong><br>
+            <span style="color: ${data.database_status === 'ok' ? '#28a745' : '#dc3545'}">
+                ${data.database_status === 'ok' ? data.record_count + ' 条记录' : data.database_status}
+            </span>
+        </div>`;
+
+        html += `<div>
+            <strong>版本:</strong><br>
+            <span class="text-muted">${data.version}</span>
+        </div>`;
+
+        html += '</div>';
+        statusDiv.innerHTML = html;
+    })
+    .catch(error => {
+        document.getElementById('status').innerHTML = '<p style="color: #dc3545;">无法获取系统状态</p>';
+    });
+</script>
+{% endblock %}

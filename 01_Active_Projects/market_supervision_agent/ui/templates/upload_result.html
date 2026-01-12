@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %}处理结果 - 市场监管智能体 v4.0{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>处理结果</h2>
+    <p class="text-muted mb-4">已处理 {{ files|length }} 个文件</p>
+
+    <!-- 提取的数据 -->
+    {% if result.extracted_data %}
+    <div class="alert alert-success">
+        <h4>✅ 数据提取成功</h4>
+    </div>
+
+    <div class="card" style="background: #f8f9fa; box-shadow: none;">
+        <h3>📋 提取的数据</h3>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+            <div>
+                <h4>基本信息</h4>
+                <table class="table" style="background: white;">
+                    <tr><td><strong>姓名</strong></td><td>{{ result.extracted_data.operator_name or 'N/A' }}</td></tr>
+                    <tr><td><strong>身份证</strong></td><td>{{ result.extracted_data.id_card or 'N/A' }}</td></tr>
+                    <tr><td><strong>性别</strong></td><td>{{ result.extracted_data.gender or 'N/A' }}</td></tr>
+                    <tr><td><strong>民族</strong></td><td>{{ result.extracted_data.nation or 'N/A' }}</td></tr>
+                    <tr><td><strong>地址</strong></td><td>{{ result.extracted_data.address or 'N/A' }}</td></tr>
+                </table>
+            </div>
+
+            <div>
+                <h4>经营信息</h4>
+                <table class="table" style="background: white;">
+                    <tr><td><strong>店名</strong></td><td>{{ result.extracted_data.business_name or 'N/A' }}</td></tr>
+                    <tr><td><strong>经营地址</strong></td><td>{{ result.extracted_data.business_address or 'N/A' }}</td></tr>
+                    <tr><td><strong>经营范围</strong></td><td>{{ (result.extracted_data.business_scope or 'N/A')[:100] }}</td></tr>
+                    <tr><td><strong>电话</strong></td><td>{{ result.extracted_data.phone or 'N/A' }}</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="alert alert-info">
+        <h4>ℹ️ 处理完成</h4>
+        <p>文件已处理，但没有提取到数据。这可能是因为：</p>
+        <ul style="margin-top: 0.5rem; padding-left: 2rem;">
+            <li>选择了"跳过 OCR 识别"模式</li>
+            <li>图片质量不佳或格式不支持</li>
+            <li>图片类型不在识别范围内</li>
+        </ul>
+    </div>
+    {% endif %}
+
+    <!-- 处理消息 -->
+    {% if result.messages %}
+    <div class="card" style="background: #f8f9fa; box-shadow: none;">
+        <h3>处理日志</h3>
+        {% for message in result.messages %}
+            <div class="alert {% if '成功' in message %}alert-success{% elif '失败' in message or '错误' in message %}alert-error{% else %}alert-info{% endif %}" style="margin-bottom: 0.5rem;">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    <!-- 错误信息 -->
+    {% if result.error_message %}
+    <div class="alert alert-error">
+        <h4>❌ 错误</h4>
+        <p>{{ result.error_message }}</p>
+    </div>
+    {% endif %}
+
+    <!-- 操作按钮 -->
+    <div style="margin-top: 2rem;">
+        <a href="{{ url_for('upload_page') }}" class="btn btn-primary">继续上传</a>
+        {% if result.extracted_data %}
+        <a href="{{ url_for('generate_page') }}" class="btn btn-success">生成申请书</a>
+        {% endif %}
+        <a href="{{ url_for('database_page') }}" class="btn btn-secondary">查看数据库</a>
+    </div>
+</div>
+
+<!-- 处理的文件列表 -->
+<div class="card">
+    <h3>处理的文件</h3>
+    <ul style="margin-top: 1rem; padding-left: 2rem;">
+        {% for file in files %}
+        <li>{{ file.filename }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,57 @@
+# 市场监管智能体 v4.0 依赖清单
+# 创建日期: 2026-01-12
+
+# ============ 核心依赖 ============
+
+# OCR识别（二选一）
+paddleocr>=2.7.0              # PaddleOCR - 文字识别（本地OCR）
+paddlepaddle>=2.5.0           # PaddlePaddle深度学习框架
+baidu-aip>=4.16.0             # 百度 OCR API（云端OCR，推荐）
+chardet>=5.0.0                # 字符编码检测（百度 OCR 依赖）
+
+# 图像处理
+pillow>=10.0.0                # 图像处理
+opencv-python>=4.8.0          # OpenCV - 图像处理增强
+
+# Word文档操作
+python-docx>=1.0.0            # Word文档操作
+docxtpl>=0.16.0               # Word模板填充（Jinja2）
+
+# PDF处理
+pypdf>=3.17.0                 # PDF表单处理
+
+# 数据验证
+pydantic>=2.0.0               # 数据验证
+
+# 配置文件
+pyyaml>=6.0.0                 # YAML配置文件
+
+# ============ 工作流引擎 ============
+
+# LangGraph - 可选，用于工作流编排
+# langgraph>=0.0.20
+# langchain>=0.1.0
+
+# ============ 日志和工具 ============
+
+loguru>=0.7.0                 # 日志记录
+rich>=13.0.0                  # 终端美化
+tqdm>=4.65.0                  # 进度条
+
+# ============ UI界面 ============
+
+flask>=3.0.0                  # Flask Web 框架（推荐，兼容 Python 3.14+）
+werkzeug>=3.0.0               # Flask 依赖
+streamlit>=1.28.0             # Web界面（可能不兼容 Python 3.14+）
+pandas>=2.0.0                 # 数据处理（UI用）
+
+# ============ 开发工具（可选） ============
+
+# 测试
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+
+# 代码质量
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.5.0
