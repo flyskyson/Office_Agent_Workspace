@@ -113,3 +113,7 @@ github_token.txt
 *_token.txt
 *token.txt
 nul
+01_Active_Projects/market_supervision_agent/output/
+01_Active_Projects/market_supervision_agent/venv_py312/
+*.tmp
+tmpclaude-*
