@@ -1,0 +1,103 @@
+{
+  "_说明": "Jinja2 模板测试数据 - 用于测试新版本的填充工具",
+  "_版本": "v3.0",
+
+  "single_test": {
+    "_说明": "单个申请测试数据",
+    "business_name": "张三便利店",
+    "operator_name": "张三",
+    "phone": "13800138000",
+    "email": "zhangsan@example.com",
+    "business_address": "广西玉林市兴业县蒲塘镇商业街88号",
+    "postal_code": "537820",
+    "employee_count": "3",
+    "registered_capital": "50000",
+    "id_card": "450101199001011234",
+    "gender": "男",
+    "nation": "汉族",
+    "political_status": "群众",
+    "education": "高中",
+    "business_scope": "食品销售；日用百货；烟草制品零售",
+    "operation_period": "长期"
+  },
+
+  "batch_test": [
+    {
+      "_comment": "第一条测试数据",
+      "business_name": "李四超市",
+      "operator_name": "李四",
+      "phone": "13900139000",
+      "email": "lisi@example.com",
+      "business_address": "广西玉林市兴业县石南镇人民路12号",
+      "postal_code": "537821",
+      "employee_count": "5",
+      "registered_capital": "100000",
+      "id_card": "450101199205156789",
+      "gender": "女",
+      "nation": "汉族",
+      "political_status": "党员",
+      "education": "大专",
+      "business_scope": "食品销售；日用百货；服装零售",
+      "operation_period": "长期"
+    },
+    {
+      "_comment": "第二条测试数据",
+      "business_name": "王五餐饮店",
+      "operator_name": "王五",
+      "phone": "13700137000",
+      "email": "wangwu@example.com",
+      "business_address": "广西玉林市兴业县蒲塘镇美食街33号",
+      "postal_code": "537820",
+      "employee_count": "2",
+      "registered_capital": "30000",
+      "id_card": "450101198810123456",
+      "gender": "男",
+      "nation": "汉族",
+      "political_status": "群众",
+      "education": "初中",
+      "business_scope": "餐饮服务",
+      "operation_period": "10年"
+    }
+  ],
+
+  "advanced_test": {
+    "_说明": "高级功能测试数据 - 测试条件判断和循环",
+    "business_name": "赵六综合商店",
+    "operator_name": "赵六",
+    "phone": "13600136000",
+    "email": "zhaoliu@example.com",
+    "business_address": "广西玉林市兴业县城区中心路66号",
+    "postal_code": "537800",
+    "employee_count": "8",
+    "registered_capital": "200000",
+    "id_card": "450101198512129876",
+    "gender": "女",
+    "nation": "壮族",
+    "political_status": "群众",
+    "education": "本科",
+    "business_scope": "食品销售；日用百货；服装零售；家用电器；文具用品",
+    "operation_period": "长期",
+    "_additional": {
+      "_说明": "这些字段用于测试高级功能",
+      "has_license": true,
+      "licensed_items": ["烟草制品", "食品经营"],
+      "business_scope_list": [
+        "食品销售",
+        "日用百货",
+        "服装零售",
+        "家用电器",
+        "文具用品"
+      ]
+    }
+  },
+
+  "minimal_test": {
+    "_说明": "最小化测试数据 - 只包含必填字段",
+    "business_name": "测试小店",
+    "operator_name": "测试员",
+    "phone": "13500135000",
+    "business_address": "测试地址123号",
+    "id_card": "450101200001011234",
+    "gender": "男"
+  }
+}

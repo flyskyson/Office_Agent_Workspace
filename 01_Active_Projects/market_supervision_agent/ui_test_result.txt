@@ -1,0 +1,11 @@
+
+    You need to enable JavaScript to run this app.
+    keyboard_double_arrow_left🏢 市场监管智能体v4.0 - 自动化申请处理选择功能📤 文件处理🗄️ 数据库管理📄 申请书生成📁 归档管理总记录数 0 本月新增 0 Deploy📤 文件处理上传文件进行自动OCR识别和数据提取上传文件选择要上传的文件Drag and drop files hereLimit 200MB per file • JPG, JPEG, PNG, PDFBrowse files经营者身份证正面.jpg3.0MB处理选项跳过OCR识别（测试模式）自动归档文件自动清理桌面桌面路径🚀 开始处理处理结果开始文件分类...已分类 1 个文件开始OCR识别...OCR识别失败 C:\Users\FLYSKY~1\AppData\Local\Temp\tmp5v4reehb.jpg: No module named 'paddleocr'开始数据提取...数据验证失败: 2 validation errors for OperatorData
+operator_name
+Field required [type=missing, input_value={}, input_type=dict]
+For further information visit https://errors.pydantic.dev/2.12/v/missing
+id_card
+Field required [type=missing, input_value={}, input_type=dict]
+For further information visit https://errors.pydantic.dev/2.12/v/missing保存到数据库...缺少身份证号，无法保存处理出错: 缺少身份证号，无法保存❌ 错误: 缺少身份证号，无法保存
+  
+

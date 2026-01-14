@@ -1,0 +1,65 @@
+{
+  "total": 12,
+  "conversions": [
+    {
+      "find": "兴业县蒲塘镇源兴快餐店",
+      "replace": "{{business_name}}",
+      "field": "个体工商户名称"
+    },
+    {
+      "find": "李奕凤",
+      "replace": "{{operator_name}}",
+      "field": "经营者姓名"
+    },
+    {
+      "find": "18207759518",
+      "replace": "{{phone}}",
+      "field": "联系电话"
+    },
+    {
+      "find": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号",
+      "replace": "{{business_address}}",
+      "field": "经营场所"
+    },
+    {
+      "find": "537820",
+      "replace": "{{postal_code}}",
+      "field": "邮政编码"
+    },
+    {
+      "find": "2",
+      "replace": "{{employee_count}}",
+      "field": "从业人数"
+    },
+    {
+      "find": "10000",
+      "replace": "{{registered_capital}}",
+      "field": "注册资金"
+    },
+    {
+      "find": "452501196705095123",
+      "replace": "{{id_card}}",
+      "field": "身份证号码"
+    },
+    {
+      "find": "女",
+      "replace": "{{gender}}",
+      "field": "性别"
+    },
+    {
+      "find": "汉",
+      "replace": "{{nation}}",
+      "field": "民族"
+    },
+    {
+      "find": "群众",
+      "replace": "{{political_status}}",
+      "field": "政治面貌"
+    },
+    {
+      "find": "初中",
+      "replace": "{{education}}",
+      "field": "文化程度"
+    }
+  ]
+}

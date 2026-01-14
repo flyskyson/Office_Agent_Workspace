@@ -1,0 +1,199 @@
+# 本地 AI 配置文件 - 市场监管智能体 v4.1
+# 优化版：支持多模型、GPU 加速、智能降级
+
+# ==================== OCR 配置 ====================
+ocr:
+  # 主 OCR 引擎（本地优先）
+  primary_engine: "paddleocr"
+
+  # 备用 OCR 引擎（API 备份）
+  fallback_engine: "baidu"
+
+  # PaddleOCR 配置
+  paddleocr:
+    # GPU 加速（如果有 NVIDIA GPU）
+    use_gpu: false           # 设为 true 启用 GPU
+    gpu_id: 0                # GPU 设备 ID
+    # GPU 内存优化
+    enable_mkldnn: true      # 启用 MKL-DNN 加速
+    mem_optim: true          # 内存优化
+
+    # 语言设置
+    lang: "ch"               # ch=中文, en=英文
+    use_angle_cls: true      # 启用文字方向分类
+    show_log: false          # 显示详细日志
+
+    # 模型选择（可选不同精度模型）
+    det_model_dir: null      # null=使用默认模型
+    rec_model_dir: null      # null=使用默认模型
+    cls_model_dir: null      # null=使用默认模型
+
+    # 性能优化
+    max_batch_size: 10       # 批处理大小
+    cpu_threads: 4           # CPU 线程数
+
+  # 百度 OCR 配置（备用）
+  baidu_ocr:
+    api_key: ""
+    secret_key: ""
+    # 自动降级触发条件
+    trigger_on_confidence: 0.7  # 置信度低于此值时切换
+    trigger_on_error: true      # 出错时切换
+
+# ==================== 文本嵌入配置 ====================
+embedding:
+  # 嵌入模型（用于语义搜索）
+  model_name: "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+
+  # 本地模型路径（可选，避免每次下载）
+  model_path: null
+
+  # 设备配置
+  device: "cpu"             # cpu | cuda | mps（Mac）
+  num_workers: 4            # 并行工作数
+
+  # 性能优化
+  batch_size: 32            # 批处理大小
+  normalize_embeddings: true # 标准化向量
+
+# ==================== 大语言模型配置 ====================
+llm:
+  # 主模型（本地）
+  primary: "deepseek-chat"
+
+  # 本地模型（可选，使用 Ollama）
+  local:
+    enabled: false          # 启用本地 LLM
+    model: "ollama/llama3"  # 或 "ollama/qwen2"
+    base_url: "http://localhost:11434"
+
+  # API 模型（当前使用）
+  api:
+    provider: "deepseek"
+    base_url: "https://api.deepseek.com/v1"
+    api_key_env: "DEEPSEEK_API_KEY"
+    model: "deepseek-chat"
+    temperature: 0.7
+    max_tokens: 4096
+
+  # 智能降级
+  fallback_to_local: false  # API 失败时降级到本地
+  fallback_on_timeout: 30   # 超时时间（秒）
+
+# ==================== 图像处理配置 ====================
+image_processing:
+  # 预处理
+  preprocessing:
+    enabled: true
+    # 调整大小
+    resize:
+      enabled: true
+      max_width: 2000        # 最大宽度
+      max_height: 2000       # 最大高度
+      maintain_aspect: true  # 保持宽高比
+
+    # 二值化
+    threshold:
+      enabled: true
+      method: "otsu"         # otsu | adaptive
+      block_size: 11         # adaptive 模式的块大小
+
+    # 去噪
+    denoise:
+      enabled: true
+      strength: 5            # 1-10
+
+    # 锐化
+    sharpen:
+      enabled: true
+      strength: 1.5          # 0.5-3.0
+
+  # 后处理
+  postprocessing:
+    # 文本清洗
+    text_cleaning:
+      enabled: true
+      remove_whitespace: true
+      normalize_quotes: true
+
+    # 置信度过滤
+    confidence_threshold: 0.6
+    min_text_length: 2
+
+# ==================== 性能监控 ====================
+performance:
+  # 启用性能分析
+  profiling: false
+
+  # 缓存配置
+  cache:
+    enabled: true
+    max_size: 1000           # 最大缓存条目
+    ttl: 3600                # 缓存生存时间（秒）
+
+  # 批处理
+  batch_processing:
+    enabled: true
+    max_batch_size: 10
+    timeout: 5               # 批处理超时（秒）
+
+# ==================== 错误处理 ====================
+error_handling:
+  # 重试策略
+  max_retries: 3
+  retry_delay: 1
+  exponential_backoff: true # 指数退避
+
+  # 降级策略
+  fallback_strategy: "graceful"  # graceful | strict | none
+
+  # 错误日志
+  log_errors: true
+  log_level: "INFO"         # DEBUG | INFO | WARNING | ERROR
+
+# ==================== 日志配置 ====================
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+  # 文件日志
+  file:
+    enabled: true
+    path: "logs/local_ai.log"
+    rotation: "10 MB"
+    backup_count: 5
+
+  # 控制台日志
+  console:
+    enabled: true
+    colored: true
+
+# ==================== 资源限制 ====================
+resources:
+  # 内存限制
+  max_memory_mb: 4096       # 最大内存使用（MB）
+
+  # CPU 限制
+  max_cpu_percent: 80       # 最大 CPU 使用率
+
+  # GPU 限制
+  max_gpu_memory_mb: 2048   # 最大 GPU 内存（MB）
+
+# ==================== 特性开关 ====================
+features:
+  # AI 功能开关（用户控制）
+  ocr_enabled: true
+  auto_fill_enabled: true
+  smart_validation: true
+  semantic_search: true
+
+  # 实验性功能
+  experimental_gpu_optimization: false
+  experimental_batch_processing: false
+
+# ==================== 元数据 ====================
+metadata:
+  version: "4.1"
+  created: "2026-01-14"
+  description: "本地 AI 优化配置 - 支持 GPU 加速和智能降级"
+  author: "Claude Code (超级管家模式)"

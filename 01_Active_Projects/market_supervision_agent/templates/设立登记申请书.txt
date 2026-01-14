@@ -1,0 +1,36 @@
+个体工商户设立登记申请书
+
+申请事项：个体工商户设立登记
+
+一、基本信息
+1. 个体工商户名称：{business_name}
+2. 经营者姓名：{operator_name}
+3. 性别：{gender}
+4. 身份证号码：{id_card}
+5. 联系电话：{phone}
+6. 电子邮箱：{email}
+
+二、经营信息
+1. 经营场所：{business_address}
+2. 邮政编码：{postal_code}
+3. 经营面积：{business_area}平方米
+4. 经营范围：{business_scope}
+5. 主营业务：{main_business}
+6. 行业类型：{business_type}
+
+三、资金信息
+1. 资金数额：{registered_capital}元
+2. 资金来源：{capital_source}
+3. 出资形式：{investment_form}
+4. 经营期限：{operation_period}
+
+四、经营者声明
+本人承诺所填写内容及提交的材料真实、合法、有效，并对申请材料的真实性负责。
+
+经营者签字：___________________
+申请日期：{application_date}
+
+五、附件清单
+1. 经营者身份证复印件
+2. 经营场所使用证明
+3. 其他相关材料

@@ -1,0 +1,269 @@
+{% extends "base.html" %}
+
+{% block title %}编辑经营户信息{% endblock %}
+
+{% block content %}
+<div class="edit-page">
+    <h2>✏️ 编辑经营户信息</h2>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <form method="POST" class="edit-form" action="">
+        <div class="form-section">
+            <h3>基本信息</h3>
+
+            <div class="form-group">
+                <label>经营者姓名</label>
+                <input type="text" name="operator_name" value="{{ operator.operator_name }}" required>
+            </div>
+
+            <div class="form-group">
+                <label>身份证号</label>
+                <input type="text" name="id_card" value="{{ operator.id_card }}" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>性别</label>
+                    <select name="gender">
+                        <option value="男" {% if operator.gender == '男' %}selected{% endif %}>男</option>
+                        <option value="女" {% if operator.gender == '女' %}selected{% endif %}>女</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>民族</label>
+                    <input type="text" name="nation" value="{{ operator.nation or '' }}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>联系电话 <span class="required">*</span></label>
+                <input type="text" name="phone" value="{{ operator.phone or '' }}" required
+                       placeholder="请输入联系电话（必填）">
+                <small class="help-text">用于申请书记录，必填项</small>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>电子邮箱</label>
+                    <input type="email" name="email" value="{{ operator.email or '' }}">
+                </div>
+
+                <div class="form-group">
+                    <label>联系地址</label>
+                    <input type="text" name="address" value="{{ operator.address or '' }}">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>经营信息</h3>
+
+            <div class="form-group">
+                <label>店铺名称</label>
+                <input type="text" name="business_name" value="{{ operator.business_name or '' }}">
+            </div>
+
+            <div class="form-group">
+                <label>经营地址</label>
+                <textarea name="business_address" rows="3">{{ operator.business_address or '' }}</textarea>
+            </div>
+
+            <div class="form-group">
+                <label>经营范围</label>
+                <textarea name="business_scope" rows="3">{{ operator.business_scope or '' }}</textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>统一社会信用代码</label>
+                    <input type="text" name="credit_code" value="{{ operator.credit_code or '' }}">
+                </div>
+
+                <div class="form-group">
+                    <label>房主姓名</label>
+                    <input type="text" name="property_owner" value="{{ operator.property_owner or '' }}">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label>租赁开始日期</label>
+                    <input type="date" name="lease_start" value="{{ operator.lease_start or '' }}">
+                </div>
+
+                <div class="form-group">
+                    <label>租赁结束日期</label>
+                    <input type="date" name="lease_end" value="{{ operator.lease_end or '' }}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>租金金额</label>
+                <input type="text" name="rent_amount" value="{{ operator.rent_amount or '' }}">
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" name="submit" value="save" class="btn btn-primary">💾 保存修改</button>
+            <a href="{{ url_for('database_page') }}" class="btn btn-secondary">取消</a>
+        </div>
+
+        <input type="hidden" name="operator_id" value="{{ operator.id }}">
+    </form>
+
+    <div class="info-box">
+        <h4>📌 说明</h4>
+        <ul>
+            <li><strong>联系电话</strong>是申请书的必填项，请务必填写</li>
+            <li>其他字段可以根据实际情况补充</li>
+            <li>修改后会自动记录到操作日志</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+.edit-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.edit-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.help-text {
+    display: block;
+    margin-top: 5px;
+    color: #7f8c8d;
+    font-size: 12px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ecf0f1;
+}
+
+.btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+.info-box {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+    border-left: 4px solid #3498db;
+}
+
+.info-box h4 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.info-box ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.info-box li {
+    margin: 8px 0;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+{% endblock %}

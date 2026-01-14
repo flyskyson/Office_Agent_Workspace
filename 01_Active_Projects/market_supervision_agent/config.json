@@ -1,0 +1,75 @@
+{
+  "_说明": "全局配置文件 - 包含常量数据和默认值",
+  "_版本": "v2.0",
+  "_最后更新": "2026-01-12",
+
+  "constants": {
+    "_说明": "经营户数据区常量 - 这些字段在每次申请时保持不变",
+    "_注意": "邮政编码和身份证件类型是固定的，不需要每次输入",
+    "postal_code": "537820",
+    "postal_code_说明": "广西玉林市兴业县蒲塘镇邮政编码",
+    "id_card_type": "身份证",
+    "id_card_type_说明": "经营者身份证件类型，固定为身份证",
+    "region": "广西壮族自治区玉林市兴业县蒲塘镇",
+    "region_说明": "所属行政区域"
+  },
+
+  "defaults": {
+    "_说明": "默认值 - 当用户没有提供时使用这些值",
+    "business_scope_licensed": "小餐饮",
+    "business_scope_general": "食品销售（仅销售预包装食品）",
+    "business_scope_note_licensed": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准",
+    "business_scope_note_general": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+    "operation_period": "长期"
+  },
+
+  "field_mappings": {
+    "_说明": "字段映射 - 模板字段名到数据字段的映射",
+    "个体工商户名称": "business_name",
+    "经营者姓名": "operator_name",
+    "经营者": "operator_name",
+    "联系电话": "phone",
+    "电话": "phone",
+    "电子邮箱": "email",
+    "邮箱": "email",
+    "经营场所": "business_address",
+    "住所": "business_address",
+    "地址": "business_address",
+    "邮政编码": "postal_code",
+    "邮编": "postal_code",
+    "从业人数": "employee_count",
+    "人数": "employee_count",
+    "注册资金": "registered_capital",
+    "资金": "registered_capital",
+    "身份证号码": "id_card",
+    "身份证": "id_card",
+    "性别": "gender",
+    "民族": "nation",
+    "政治面貌": "political_status",
+    "政治": "political_status",
+    "文化程度": "education",
+    "学历": "education",
+    "经营范围": "business_scope",
+    "经营期限": "operation_period",
+    "期限": "operation_period"
+  },
+
+  "data_template": {
+    "_说明": "数据模板 - 新用户可以参考这个格式准备数据",
+    "business_name": "示例：张三便利店",
+    "operator_name": "示例：张三",
+    "phone": "示例：13800138000",
+    "email": "示例：zhangsan@example.com",
+    "business_address": "示例：XX市XX区XX街道XX号",
+    "postal_code": "示例：537820",
+    "employee_count": "示例：3",
+    "registered_capital": "示例：50000",
+    "id_card": "示例：450101199001011234",
+    "gender": "示例：男",
+    "nation": "示例：汉族",
+    "political_status": "示例：群众",
+    "education": "示例：高中",
+    "business_scope": "示例：日用百货销售",
+    "operation_period": "示例：长期"
+  }
+}

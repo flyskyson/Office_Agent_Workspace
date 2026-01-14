@@ -1,0 +1,10 @@
+{
+  "Hello World, AI is amazing|zh|auto": {
+    "original": "Hello World, AI is amazing",
+    "translated": "Hello World, AI is amazing",
+    "engine": "deepl",
+    "source_lang": "auto",
+    "target_lang": "zh",
+    "timestamp": "2026-01-14T08:34:03.145754"
+  }
+}

@@ -1,0 +1,11293 @@
+{
+  "red_fields": [
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 1,
+      "text": "兴业县蒲塘镇源兴快餐店（个体工商户）（个体工商户）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 2,
+      "text": "兴业县蒲塘镇源兴快餐店（个体工商户）（个体工商户）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 1,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 2,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 1,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 2,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 3,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 4,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 5,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 6,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 1,
+      "text": "2",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "1",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "1",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 1,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 2,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 3,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 5,
+      "text": "女",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 7,
+      "text": "汉",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 5,
+      "text": "群众",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 1,
+      "text": "452501196705095123",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 2,
+      "text": "452501196705095123",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 3,
+      "text": "452501196705095123",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 7,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 5,
+      "text": "平塘一队5号",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 6,
+      "text": "平塘一队5号",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 7,
+      "text": "平塘一队5号",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 3,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 4,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 0,
+      "cell": 1,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 0,
+      "cell": 2,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "cell": 1,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "cell": 2,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "cell": 4,
+      "text": "452501196705095123",
+      "color": "RGB(255,0,0)"
+    }
+  ],
+  "green_fields": [],
+  "black_fields": [
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 0,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 1,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 2,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 3,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 4,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 5,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 6,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 0,
+      "text": "名",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 0,
+      "text": "称",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 0,
+      "text": "(选填)",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 3,
+      "text": "统一社会信用代码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 3,
+      "text": "（设立登记不填写）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 4,
+      "text": "统一社会信用代码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 4,
+      "text": "（设立登记不填写）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 5,
+      "text": "统一社会信用代码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 5,
+      "text": "（设立登记不填写）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 0,
+      "text": "联系电话",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 3,
+      "text": "邮政编码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 4,
+      "text": "邮政编码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 5,
+      "text": "邮政编码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 0,
+      "text": "经营场所",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 0,
+      "text": "电子商务经营者",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 1,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 1,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 2,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 2,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 3,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 3,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 4,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 4,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 5,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 5,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 6,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 6,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 0,
+      "text": "出",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 0,
+      "text": "资",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 0,
+      "text": "额",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 1,
+      "text": "万元（人民币）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 2,
+      "text": "申领执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 3,
+      "text": "申领执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 4,
+      "text": "申领执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "申领纸质执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "其中：副本",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "个（电子执照系统自动生成，纸质执照自行勾选）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "申领纸质执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "其中：副本",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "个（电子执照系统自动生成，纸质执照自行勾选）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 0,
+      "text": "经营范围",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 0,
+      "text": "（根据登记机关公布的经营项目分类标准办理经营范围登记）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 0,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 1,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 2,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 3,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 4,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 5,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 6,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 0,
+      "text": "变更事项",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 0,
+      "text": "（可多选）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 1,
+      "text": "原登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 2,
+      "text": "原登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 3,
+      "text": "原登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 4,
+      "text": "变更后登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 5,
+      "text": "变更后登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 6,
+      "text": "变更后登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "cell": 0,
+      "text": "□名称",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "cell": 0,
+      "text": "□经营场所",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 0,
+      "text": "□经营范围（根据登记机关公布的经营项目分类标准办理经营范围登记）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "(涉及",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "事项办理的，申请人须根据市场主体自身情况填写《",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "政府部门共享信息项》相关内容。)",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "(涉及",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "事项办理的，申请人须根据市场主体自身情况填写《",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "政府部门共享信息项》相关内容。)",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "(涉及",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "事项办理的，申请人须根据市场主体自身情况填写《",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "政府部门共享信息项》相关内容。)",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "cell": 0,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "cell": 0,
+      "text": "出资额",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 0,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 0,
+      "text": "组成形式",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 1,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 1,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 2,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 2,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 3,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 3,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 4,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 4,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 5,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 5,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 6,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 6,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "cell": 0,
+      "text": "□经营者",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "cell": 0,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "cell": 0,
+      "text": "变更经营者姓名、住所",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 0,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 1,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 2,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 3,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 4,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 5,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 6,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 7,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 0,
+      "text": "事",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 0,
+      "text": "项",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 1,
+      "text": "事",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 1,
+      "text": "项",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 2,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 2,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 3,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 3,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 4,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 4,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 5,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 5,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 6,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 6,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 7,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 7,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 7,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 0,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 1,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 2,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 3,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 4,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 5,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 6,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 7,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 7,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 0,
+      "text": "经营者姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 4,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 4,
+      "text": "性别",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 6,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 6,
+      "text": "民族",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 0,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 0,
+      "text": "文化程度",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 4,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 4,
+      "text": "政治面貌",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 6,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 6,
+      "text": "身份证件类型",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 0,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 0,
+      "text": "身份证件号码",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 4,
+      "text": "固定电话",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 6,
+      "text": "移动电话",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 0,
+      "text": "职业状况",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 4,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 4,
+      "text": "住所",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 0,
+      "text": "组成形式",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 1,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 1,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 2,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 2,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 3,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 3,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 4,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 4,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 5,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 5,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 6,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 6,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 7,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 7,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 7,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 7,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 0,
+      "text": "参加经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 1,
+      "text": "参加经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 2,
+      "text": "参加经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 3,
+      "text": "参加经营的家庭成员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 3,
+      "text": "身份证件类型",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 4,
+      "text": "参加经营的家庭成员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 4,
+      "text": "身份证件类型",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 5,
+      "text": "参加经营的家庭成员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 5,
+      "text": "身份证件号码",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 6,
+      "text": "参加经营的家庭成员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 6,
+      "text": "身份证件号码",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 7,
+      "text": "参加经营的",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 7,
+      "text": "家庭成员政治面貌",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 0,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 1,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 2,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 3,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 4,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 5,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 6,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 7,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 0,
+      "text": "注销方式",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 1,
+      "text": "注销方式",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 2,
+      "text": "注销方式",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 3,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 4,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 5,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 6,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 7,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 0,
+      "text": "注销原因",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 1,
+      "text": "注销原因",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 2,
+      "text": "注销原因",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 3,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 3,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 3,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 4,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 4,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 4,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 5,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 5,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 5,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 6,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 6,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 6,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 7,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 7,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 7,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 0,
+      "text": "清税情况",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 1,
+      "text": "清税情况",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 2,
+      "text": "清税情况",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 3,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 3,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 4,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 4,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 5,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 5,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 6,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 6,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 7,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 7,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 0,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 1,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 2,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 3,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 4,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 5,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 6,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 0,
+      "text": "委托权限",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 0,
+      "text": "固定电话",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 2,
+      "text": "移动电话",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 5,
+      "text": "指定代表/委托代理人签字",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 0,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 1,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 2,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 3,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 4,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 5,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 6,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 0,
+      "cell": 0,
+      "text": "姓    名",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 0,
+      "cell": 3,
+      "text": "固定电话",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "cell": 0,
+      "text": "移动电话",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "cell": 3,
+      "text": "电子邮箱",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "cell": 0,
+      "text": "身份证件类型",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "cell": 3,
+      "text": "身份证件号码",
+      "color": "default"
+    }
+  ],
+  "all_fields": [
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 0,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 1,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 2,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 3,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 4,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 5,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 0,
+      "cell": 6,
+      "text": "基本信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 0,
+      "text": "名",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 0,
+      "text": "称",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 0,
+      "text": "(选填)",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 1,
+      "text": "兴业县蒲塘镇源兴快餐店（个体工商户）（个体工商户）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 2,
+      "text": "兴业县蒲塘镇源兴快餐店（个体工商户）（个体工商户）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 3,
+      "text": "统一社会信用代码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 3,
+      "text": "（设立登记不填写）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 4,
+      "text": "统一社会信用代码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 4,
+      "text": "（设立登记不填写）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 5,
+      "text": "统一社会信用代码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 1,
+      "cell": 5,
+      "text": "（设立登记不填写）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 0,
+      "text": "联系电话",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 1,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 2,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 3,
+      "text": "邮政编码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 4,
+      "text": "邮政编码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 5,
+      "text": "邮政编码",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 2,
+      "cell": 6,
+      "text": "537820",
+      "color": "RGB(0,176,80)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 0,
+      "text": "经营场所",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 1,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 2,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 3,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 4,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 5,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 3,
+      "cell": 6,
+      "text": "广西壮族自治区玉林市兴业县蒲塘镇蒲安路238号（蒲塘镇客运站旁）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 0,
+      "text": "电子商务经营者",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 1,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 1,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 2,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 2,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 3,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 3,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 4,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 4,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 5,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 5,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 6,
+      "text": "是",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 4,
+      "cell": 6,
+      "text": "否",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 0,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 1,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 2,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 3,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 4,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 5,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "设立",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "（",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "仅设立登记填写",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 5,
+      "cell": 6,
+      "text": "）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 0,
+      "text": "出",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 0,
+      "text": "资",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 0,
+      "text": "额",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 1,
+      "text": "2",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 1,
+      "text": "万元（人民币）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 2,
+      "text": "申领执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 3,
+      "text": "申领执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 4,
+      "text": "申领执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "申领纸质执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "其中：副本",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "1",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 5,
+      "text": "个（电子执照系统自动生成，纸质执照自行勾选）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "申领纸质执照",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "其中：副本",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "1",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 6,
+      "cell": 6,
+      "text": "个（电子执照系统自动生成，纸质执照自行勾选）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 0,
+      "text": "经营范围",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 0,
+      "text": "（根据登记机关公布的经营项目分类标准办理经营范围登记）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 1,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 2,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 3,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 4,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 5,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "许可项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "小餐饮",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "（依法须经批准的项目，经相关部门批准后方可开展经营活动，具体经营项目以相关部门批准文件或许可证件为准）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "一般项目：",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "食品销售（仅销售预包装食品）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 7,
+      "cell": 6,
+      "text": "（除依法须经批准的项目外，凭营业执照依法自主开展经营活动）",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 0,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 1,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 2,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 3,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 4,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 5,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 8,
+      "cell": 6,
+      "text": "□变更（仅变更登记填写，只填写与本次申请有关的事项）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 0,
+      "text": "变更事项",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 0,
+      "text": "（可多选）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 1,
+      "text": "原登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 2,
+      "text": "原登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 3,
+      "text": "原登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 4,
+      "text": "变更后登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 5,
+      "text": "变更后登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 9,
+      "cell": 6,
+      "text": "变更后登记内容",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 10,
+      "cell": 0,
+      "text": "□名称",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 11,
+      "cell": 0,
+      "text": "□经营场所",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 0,
+      "text": "□经营范围（根据登记机关公布的经营项目分类标准办理经营范围登记）",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "(涉及",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "事项办理的，申请人须根据市场主体自身情况填写《",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 4,
+      "text": "政府部门共享信息项》相关内容。)",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "(涉及",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "事项办理的，申请人须根据市场主体自身情况填写《",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 5,
+      "text": "政府部门共享信息项》相关内容。)",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "(涉及",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "事项办理的，申请人须根据市场主体自身情况填写《",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "“",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "多证合一",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "”",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 12,
+      "cell": 6,
+      "text": "政府部门共享信息项》相关内容。)",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "cell": 0,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 13,
+      "cell": 0,
+      "text": "出资额",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 0,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 0,
+      "text": "组成形式",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 1,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 1,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 2,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 2,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 3,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 3,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 4,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 4,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 5,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 5,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 6,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 14,
+      "cell": 6,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 15,
+      "cell": 0,
+      "text": "□经营者",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "cell": 0,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 0,
+      "row": 16,
+      "cell": 0,
+      "text": "变更经营者姓名、住所",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 0,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 1,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 2,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 3,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 4,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 5,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 6,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 0,
+      "cell": 7,
+      "text": "□备案（仅备案填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 0,
+      "text": "事",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 0,
+      "text": "项",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 1,
+      "text": "事",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 1,
+      "text": "项",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 2,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 2,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 3,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 3,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 4,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 4,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 5,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 5,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 6,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 6,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 7,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 7,
+      "text": "联络员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 1,
+      "cell": 7,
+      "text": "□参加家庭经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 0,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 1,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 2,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 3,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 4,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 5,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 6,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 7,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 2,
+      "cell": 7,
+      "text": "经营者及家庭成员信息（设立登记必填项，变更经营者、备案家庭成员填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 0,
+      "text": "经营者姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 1,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 2,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 3,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 4,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 4,
+      "text": "性别",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 5,
+      "text": "女",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 6,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 6,
+      "text": "民族",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 3,
+      "cell": 7,
+      "text": "汉",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 0,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 0,
+      "text": "文化程度",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 4,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 4,
+      "text": "政治面貌",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 5,
+      "text": "群众",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 6,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 6,
+      "text": "身份证件类型",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 4,
+      "cell": 7,
+      "text": "身份证",
+      "color": "RGB(0,176,80)"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 0,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 0,
+      "text": "身份证件号码",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 1,
+      "text": "452501196705095123",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 2,
+      "text": "452501196705095123",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 3,
+      "text": "452501196705095123",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 4,
+      "text": "固定电话",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 6,
+      "text": "移动电话",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 5,
+      "cell": 7,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 0,
+      "text": "职业状况",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 4,
+      "text": "经营者",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 4,
+      "text": "住所",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 5,
+      "text": "平塘一队5号",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 6,
+      "text": "平塘一队5号",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 6,
+      "cell": 7,
+      "text": "平塘一队5号",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 0,
+      "text": "组成形式",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 1,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 1,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 1,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 2,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 2,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 2,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 3,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 3,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 3,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 4,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 4,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 4,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 5,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 5,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 5,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 6,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 6,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 6,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 7,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 7,
+      "text": "个人经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 7,
+      "text": "□",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 7,
+      "cell": 7,
+      "text": "家庭经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 0,
+      "text": "参加经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 1,
+      "text": "参加经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 2,
+      "text": "参加经营的家庭成员姓名",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 3,
+      "text": "参加经营的家庭成员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 3,
+      "text": "身份证件类型",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 4,
+      "text": "参加经营的家庭成员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 4,
+      "text": "身份证件类型",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 5,
+      "text": "参加经营的家庭成员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 5,
+      "text": "身份证件号码",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 6,
+      "text": "参加经营的家庭成员",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 6,
+      "text": "身份证件号码",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 7,
+      "text": "参加经营的",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 8,
+      "cell": 7,
+      "text": "家庭成员政治面貌",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "cell": 0,
+      "text": "身份证正面",
+      "color": "RGB(0,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "cell": 1,
+      "text": "身份证正面",
+      "color": "RGB(0,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "cell": 2,
+      "text": "身份证正面",
+      "color": "RGB(0,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "cell": 3,
+      "text": "身份证正面",
+      "color": "RGB(0,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "cell": 4,
+      "text": "身份证正面",
+      "color": "RGB(0,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "cell": 5,
+      "text": "身份证背面",
+      "color": "RGB(0,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "cell": 6,
+      "text": "身份证背面",
+      "color": "RGB(0,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 12,
+      "cell": 7,
+      "text": "身份证背面",
+      "color": "RGB(0,0,0)"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 0,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 1,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 2,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 3,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 4,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 5,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 6,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 13,
+      "cell": 7,
+      "text": "□注销（仅注销登记填写）",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 0,
+      "text": "注销方式",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 1,
+      "text": "注销方式",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 2,
+      "text": "注销方式",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 3,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 4,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 5,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 6,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 14,
+      "cell": 7,
+      "text": "□普通注销      □简易注销",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 0,
+      "text": "注销原因",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 1,
+      "text": "注销原因",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 2,
+      "text": "注销原因",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 3,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 3,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 3,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 4,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 4,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 4,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 5,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 5,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 5,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 6,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 6,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 6,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 7,
+      "text": "□停止经营",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 7,
+      "text": "□转型升级为企业",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 15,
+      "cell": 7,
+      "text": "□其他",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 0,
+      "text": "清税情况",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 1,
+      "text": "清税情况",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 2,
+      "text": "清税情况",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 3,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 3,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 4,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 4,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 5,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 5,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 6,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 6,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 7,
+      "text": "□已清理完毕",
+      "color": "default"
+    },
+    {
+      "table": 1,
+      "row": 16,
+      "cell": 7,
+      "text": "□未涉及纳税义务",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 0,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 1,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 2,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 3,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 4,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 5,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 0,
+      "cell": 6,
+      "text": "指定代表/委托代理人信息（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 0,
+      "text": "委托权限",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 1,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 2,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 3,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 4,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 5,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "1、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "不同意□核对登记材料中的复印件并签署核对意见；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "2、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "不同意□修改企业自备文件的错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "3、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "不同意□修改有关表格的填写错误；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "4、同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 1,
+      "cell": 6,
+      "text": "不同意□领取营业执照和有关文书。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 0,
+      "text": "固定电话",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 2,
+      "text": "移动电话",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 3,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 4,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 2,
+      "row": 2,
+      "cell": 5,
+      "text": "指定代表/委托代理人签字",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 0,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 0,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 1,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 1,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 2,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 2,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 3,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 3,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 4,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 4,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 5,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 5,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 6,
+      "text": "☑",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 4,
+      "cell": 6,
+      "text": "申请人签署（必填项）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 0,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 1,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 2,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 3,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 4,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 5,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "本申请人和签字人承诺如下，并承担相应的法律责任。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "（一）填报的信息及提交的材料真实、准确、有效、完整。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "（二）使用的名称符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "市场主体名称",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "有关要求，不含有损国家、社会公共利益或违背公序良俗及有其他不良影响的内容；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "名称与他人",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "名称近似侵犯他人合法权益的，依法承担法律责任",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "；",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "如使用的名称被登记机关认定为不适宜名称，将主动配合登记机关进行纠正。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "（三）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "已依法取得住所（经营场所）",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "的合法",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "使用权，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "申请登记的住所（经营场所）信息与实际一致",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "不属于",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "法律法规规定不得使用的",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "非法场所，不从事",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "法律法规规定不得开展的生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "如",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "将住宅",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "改变为经营性用房",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "的，承诺符合",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "《中华人民共和国",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "民法典",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "》",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "及相关法律法规规定，并",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "已",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "经征得有利害关系的业主同意",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "以网络经营场所作为经营场所登记的，仅通过互联网开展经营",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "活动，不擅自改变其住宅房屋用途用于从事线下生产经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "（四）经营范围涉及",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "法律、行政法规、国务院决定规定、地方行政法规和地方规章规定，",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "需要办理许可的，在取得相关部门批准前，不从事相关经营活动。",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "经营者签字：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "参加经营的家庭成员签字（仅家庭经营）：",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "年",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "月",
+      "color": "default"
+    },
+    {
+      "table": 2,
+      "row": 5,
+      "cell": 6,
+      "text": "日",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 0,
+      "cell": 0,
+      "text": "姓    名",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 0,
+      "cell": 1,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 0,
+      "cell": 2,
+      "text": "李奕凤",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 0,
+      "cell": 3,
+      "text": "固定电话",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "cell": 0,
+      "text": "移动电话",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "cell": 1,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "cell": 2,
+      "text": "18207759518",
+      "color": "RGB(255,0,0)"
+    },
+    {
+      "table": 3,
+      "row": 1,
+      "cell": 3,
+      "text": "电子邮箱",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "cell": 0,
+      "text": "身份证件类型",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "cell": 1,
+      "text": "身份证",
+      "color": "RGB(0,176,80)"
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "cell": 2,
+      "text": "身份证",
+      "color": "RGB(0,176,80)"
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "cell": 3,
+      "text": "身份证件号码",
+      "color": "default"
+    },
+    {
+      "table": 3,
+      "row": 2,
+      "cell": 4,
+      "text": "452501196705095123",
+      "color": "RGB(255,0,0)"
+    }
+  ]
+}

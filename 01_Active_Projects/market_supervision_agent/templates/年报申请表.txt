@@ -1,0 +1,34 @@
+个体工商户年度报告表
+
+报告年度：{report_year}
+
+一、基本信息
+1. 个体工商户名称：{business_name}
+2. 统一社会信用代码：{credit_code}
+3. 经营者姓名：{operator_name}
+4. 经营场所：{business_address}
+5. 联系电话：{phone}
+
+二、经营情况
+1. 年营业收入：{annual_revenue}元
+2. 营业成本：{operating_costs}元
+3. 毛利润：{gross_profit}元
+4. 净利润：{net_profit}元
+5. 从业人数：{employee_count}人
+6. 资产总额：{asset_total}元
+7. 负债总额：{liability_total}元
+
+三、行政许可情况
+1. 是否取得行政许可：{has_license}
+2. 许可证类型：{license_type}
+3. 许可证编号：{license_number}
+4. 有效期限：{validity_period}
+
+四、经营者声明
+本人承诺所报告内容真实、合法、有效，并对报告内容的真实性负责。
+
+经营者签字：___________________
+报告日期：{report_date}
+
+五、备注
+{remarks}

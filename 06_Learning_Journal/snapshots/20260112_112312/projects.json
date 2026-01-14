@@ -1,0 +1,27 @@
+[
+  {
+    "name": "file_organizer",
+    "has_readme": true,
+    "modified": "2026-01-11 03:11:13"
+  },
+  {
+    "name": "market_supervision_agent",
+    "has_readme": true,
+    "modified": "2026-01-12 10:04:53"
+  },
+  {
+    "name": "memory_agent",
+    "has_readme": true,
+    "modified": "2026-01-12 11:22:56"
+  },
+  {
+    "name": "my_first_agent",
+    "has_readme": true,
+    "modified": "2026-01-04 13:45:43"
+  },
+  {
+    "name": "pdf_processor",
+    "has_readme": true,
+    "modified": "2026-01-07 15:09:53"
+  }
+]

@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+
+{% block title %}相似问题 - 🧠 学习记忆助手{% endblock %}
+
+{% block content %}
+<style>
+.similar-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.search-box h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.problem-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    padding: 15px 30px;
+    background: white;
+    color: #667eea;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.similar-card {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    border-left: 4px solid #f5576c;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.similar-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(245, 87, 108, 0.2);
+}
+
+.similar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.similar-score {
+    background: #f5576c;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.similar-content {
+    color: #333;
+    line-height: 1.6;
+}
+
+.similar-solution {
+    margin-top: 15px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    border-left: 3px solid #28a745;
+}
+
+.similar-solution-label {
+    font-weight: 600;
+    color: #28a745;
+    margin-bottom: 5px;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #999;
+}
+</style>
+
+<div class="similar-container">
+    <div class="search-box">
+        <h1>💭 查找相似问题</h1>
+        <p style="color: rgba(255,255,255,0.9); margin-bottom: 20px;">
+            描述你遇到的问题，我会查找你之前解决过的类似问题
+        </p>
+        <form action="{{ url_for('similar_page') }}" method="get" class="search-form">
+            <input type="text"
+                   name="problem"
+                   class="problem-input"
+                   placeholder="例如：为什么我的代码报 FileNotFoundError？"
+                   value="{{ problem }}"
+                   autofocus>
+            <button type="submit" class="search-button">🔍 查找</button>
+        </form>
+    </div>
+
+    {% if problem %}
+        {% if similar_problems %}
+            <p style="color: #666; margin-bottom: 20px;">找到 {{ similar_problems|length }} 个相似问题</p>
+
+            {% for item in similar_problems %}
+            <div class="similar-card">
+                <div class="similar-header">
+                    <div style="font-weight: 600; color: #333;">{{ item.get('title', '未知问题') }}</div>
+                    <div class="similar-score">{{ (item.get('similarity', 0) * 100)|int }}% 相似</div>
+                </div>
+                <div class="similar-content">{{ item.get('description', '')|truncate(300) }}</div>
+                {% if item.get('solution') %}
+                <div class="similar-solution">
+                    <div class="similar-solution-label">💡 解决方案</div>
+                    <div>{{ item.solution|truncate(200) }}</div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+
+        {% else %}
+            <div class="no-results">
+                <div style="font-size: 64px; margin-bottom: 20px;">🤔</div>
+                <p>没有找到相似的问题</p>
+                <p style="font-size: 14px; margin-top: 10px;">这可能是一个新问题，尝试更详细的描述</p>
+            </div>
+        {% endif %}
+    {% else %}
+        <div class="no-results">
+            <div style="font-size: 64px; margin-bottom: 20px;">💭</div>
+            <p>描述你遇到的问题，我会帮你查找历史解决方案</p>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

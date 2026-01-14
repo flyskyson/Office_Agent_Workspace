@@ -1,0 +1,171 @@
+{% extends "base.html" %}
+
+{% block title %}学习路径 - 🧠 学习记忆助手{% endblock %}
+
+{% block content %}
+<style>
+.learning-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.search-box {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.search-box h1 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.search-box p {
+    color: rgba(255,255,255,0.9);
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.topic-input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    padding: 15px 30px;
+    background: white;
+    color: #4facfe;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.learning-path {
+    position: relative;
+    padding-left: 40px;
+}
+
+.path-item {
+    position: relative;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.path-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(79, 172, 254, 0.2);
+}
+
+.path-number {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.path-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.path-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.path-meta {
+    font-size: 12px;
+    color: #999;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #999;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+</style>
+
+<div class="learning-container">
+    <div class="search-box">
+        <h1>📚 智能学习路径</h1>
+        <p>输入你想学习的主题，我会根据你的知识库推荐学习路径</p>
+        <form action="{{ url_for('learning_page') }}" method="get" class="search-form">
+            <input type="text"
+                   name="topic"
+                   class="topic-input"
+                   placeholder="例如：Python文件操作、Flask Web开发..."
+                   value="{{ topic }}"
+                   autofocus>
+            <button type="submit" class="search-button">🎯 生成路径</button>
+        </form>
+    </div>
+
+    {% if topic %}
+        {% if learning_path %}
+            <div class="learning-path">
+                {% for item in learning_path %}
+                <div class="path-item">
+                    <div class="path-number">{{ loop.index }}</div>
+                    <div class="path-title">{{ item.get('title', '未知主题') }}</div>
+                    <div class="path-description">{{ item.get('description', '') }}</div>
+                    {% if item.get('source') %}
+                    <div class="path-meta">📄 来源: {{ item.source }}</div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <div class="no-results">
+                <div style="font-size: 64px; margin-bottom: 20px;">📚</div>
+                <p>没有找到关于 "{{ topic }}" 的学习资料</p>
+                <p style="font-size: 14px; margin-top: 10px;">尝试其他关键词或先构建索引</p>
+            </div>
+        {% endif %}
+    {% else %}
+        <div class="empty-state">
+            <div style="font-size: 64px; margin-bottom: 20px;">🎯</div>
+            <p>输入一个主题，我会帮你规划学习路径</p>
+            <div style="margin-top: 30px; text-align: left; max-width: 500px; margin-left: auto; margin-right: auto;">
+                <h3 style="margin-bottom: 15px; color: #333;">热门主题示例:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li style="padding: 10px; background: #f8f9fa; margin-bottom: 10px; border-radius: 8px; cursor: pointer;" onclick="window.location.href='?topic=Python文件操作'">📁 Python文件操作</li>
+                    <li style="padding: 10px; background: #f8f9fa; margin-bottom: 10px; border-radius: 8px; cursor: pointer;" onclick="window.location.href='?topic=Flask Web开发'">🌐 Flask Web开发</li>
+                    <li style="padding: 10px; background: #f8f9fa; margin-bottom: 10px; border-radius: 8px; cursor: pointer;" onclick="window.location.href='?topic=数据库操作'">🗄️ 数据库操作</li>
+                </ul>
+            </div>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

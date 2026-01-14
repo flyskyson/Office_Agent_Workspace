@@ -520,6 +520,91 @@ class DatabaseManager:
             VALUES (?, ?, ?)
         ''', (operator_id, operation, details))
 
+    def update_operator(self, operator_id: int, updates: Dict[str, Any]) -> bool:
+        """更新经营户信息
+
+        Args:
+            operator_id: 经营户ID
+            updates: 要更新的字段字典
+
+        Returns:
+            是否成功
+        """
+        import sys
+        print(f"[DEBUG] update_operator called: ID={operator_id}, updates={updates}", file=sys.stderr)
+
+        try:
+            if not updates:
+                print("[DEBUG] updates is empty, returning False", file=sys.stderr)
+                return False
+
+            # 构建更新SQL
+            set_clauses = []
+            values = []
+
+            valid_fields = {
+                'operator_name', 'id_card', 'gender', 'nation', 'phone',
+                'email', 'address', 'business_name', 'business_address',
+                'business_scope', 'credit_code', 'property_owner',
+                'lease_start', 'lease_end', 'rent_amount'
+            }
+
+            for field, value in updates.items():
+                if field in valid_fields:
+                    set_clauses.append(f"{field} = ?")
+                    values.append(value)
+
+            if not set_clauses:
+                return False
+
+            values.append(operator_id)
+
+            with self._get_connection() as conn:
+                conn.execute(f'''
+                    UPDATE operators
+                    SET {', '.join(set_clauses)}
+                    WHERE id = ?
+                ''', values)
+
+                # 记录操作日志
+                update_details = ', '.join([f"{k}={v}" for k, v in updates.items()])
+                self._log_operation(conn, operator_id, 'update', update_details)
+
+            logger.info(f"更新经营户 ID={operator_id}: {update_details}")
+            return True
+
+        except Exception as e:
+            logger.error(f"更新失败: {e}")
+            return False
+
+    def delete_operator(self, operator_id: int) -> bool:
+        """删除经营户记录（软删除，设置 status 为 deleted）
+
+        Args:
+            operator_id: 经营户ID
+
+        Returns:
+            是否成功
+        """
+        try:
+            with self._get_connection() as conn:
+                # 软删除：设置 status 为 deleted
+                conn.execute('''
+                    UPDATE operators
+                    SET status = 'deleted'
+                    WHERE id = ?
+                ''', (operator_id,))
+
+                # 记录操作日志
+                self._log_operation(conn, operator_id, 'delete', f'删除记录 ID={operator_id}')
+
+            logger.info(f"删除经营户 ID={operator_id}")
+            return True
+
+        except Exception as e:
+            logger.error(f"删除失败: {e}")
+            return False
+
 
 # 便捷函数
 def get_db(db_path: str = "data/operators_database.db") -> DatabaseManager:

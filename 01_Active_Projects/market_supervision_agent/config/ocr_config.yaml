@@ -1,0 +1,115 @@
+# OCR配置文件 - 市场监管智能体 v4.0
+
+# PaddleOCR配置
+paddleocr:
+  use_gpu: false        # 是否使用GPU加速
+  lang: ch              # 语言：ch=中文
+  use_angle_cls: true   # 启用文字方向分类
+  show_log: false       # 是否显示日志
+
+# 文件分类规则
+file_classification:
+  id_card:
+    name: "身份证"
+    keywords:
+      - "身份证"
+      - "id_card"
+      - "idcard"
+      - "sfz"
+    extensions: [".jpg", ".jpeg", ".png", ".bmp"]
+
+  business_license:
+    name: "营业执照"
+    keywords:
+      - "营业执照"
+      - "license"
+      - "yyzz"
+    extensions: [".jpg", ".jpeg", ".png", ".pdf", ".bmp"]
+
+  lease_contract:
+    name: "租赁合同"
+    keywords:
+      - "租赁"
+      - "合同"
+      - "lease"
+      - "contract"
+      - "zlht"
+    extensions: [".pdf", ".jpg", ".png", ".docx"]
+
+  property_cert:
+    name: "产权证明"
+    keywords:
+      - "产权"
+      - "房产"
+      - "property"
+      - "cqzm"
+    extensions: [".pdf", ".jpg", ".png", ".docx"]
+
+  application:
+    name: "申请书"
+    keywords:
+      - "申请"
+      - "application"
+    extensions: [".docx", ".pdf"]
+
+  other:
+    name: "其他"
+    keywords: []
+    extensions: []
+
+# OCR提取规则
+extraction_rules:
+  id_card:
+    fields:
+      - name              # 姓名
+      - id_card           # 身份证号
+      - gender            # 性别
+      - ethnicity         # 民族
+      - address           # 地址
+
+  business_license:
+    fields:
+      - company_name      # 名称
+      - credit_code       # 统一社会信用代码
+      - legal_person      # 法定代表人
+      - address           # 地址
+      - business_scope    # 经营范围
+
+  lease_contract:
+    fields:
+      - landlord          # 房东/出租方
+      - tenant            # 承租方
+      - lease_start       # 租赁开始日期
+      - lease_end         # 租赁结束日期
+      - rent_amount       # 租金
+
+  property_cert:
+    fields:
+      - property_owner    # 房产所有人
+
+# 图像预处理配置
+image_preprocessing:
+  enabled: true
+  # 二值化
+  threshold:
+    enabled: true
+    method: "otsu"        # otsu | adaptive
+  # 去噪
+  denoise:
+    enabled: true
+    strength: 5           # 1-10
+  # 锐化
+  sharpen:
+    enabled: false
+
+# 错误处理
+error_handling:
+  max_retries: 3          # OCR失败最大重试次数
+  retry_delay: 1          # 重试延迟（秒）
+  fallback_to_manual: true  # 失败后是否提示手动输入
+
+# 日志配置
+logging:
+  level: "INFO"           # DEBUG | INFO | WARNING | ERROR
+  file: "logs/ocr.log"
+  rotation: "10 MB"       # 日志文件大小限制

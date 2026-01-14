@@ -1,0 +1,158 @@
+{
+  "milestones": [
+    {
+      "date": "2026-01-13T17:19:40.000000",
+      "title": "修复百度 OCR 依赖缺失问题",
+      "description": "\n        **问题**: 市场监管智能体启动时显示\"OCR 引擎初始化失败\"，尽管 baidu-aip 已安装\n\n        **根本原因**: baidu-aip SDK 依赖 chardet 模块，但虚拟环境中未安装\n\n        **问题链条**:\n        1. 启动 Flask 服务 (使用全局 Python)\n        2. 导入 baidu-aip SDK\n        3. 缺少 chardet 依赖导致导入失败\n        4. HAS_BAIDU_OCR = False\n        5. OCR 适配器报告\"没有可用的 OCR 引擎\"\n\n        **解决方案**:\n        1. 安装 chardet: pip install chardet\n        2. 使用虚拟环境 Python 启动: venv_py312\\\\Scripts\\\\python.exe ui\\\\flask_app.py\n\n        **验证结果**:\n        - [INFO] 使用百度 OCR 引擎\n        - [OK] OCR 引擎: BAIDU\n\n        **经验教训**:\n        - 依赖清单 requirements_v4.txt 已包含 chardet，但虚拟环境未同步安装\n        - 启动服务时应始终使用虚拟环境 Python\n        - 需要定期同步依赖: pip install -r requirements_v4.txt\n        ",
+      "tools_affected": [
+        "market_supervision_agent",
+        "baidu_ocr_engine",
+        "ocr_adapter"
+      ],
+      "patterns_used": [
+        "Dependency Management",
+        "Virtual Environment Isolation"
+      ],
+      "benefits": [
+        "百度 OCR 现已完全可用",
+        "识别出启动脚本应使用虚拟环境",
+        "文档化了故障排查流程"
+      ],
+      "prevention": "下次启动前运行: venv_py312\\Scripts\\pip.exe install -r requirements_v4.txt"
+    },
+    {
+      "date": "2026-01-12T19:42:10.751081",
+      "title": "基于 zread 调研的全面升级",
+      "description": "\n        基于 zread 对顶级开源项目的调研，实施了三大核心技术:\n\n        1. **AutoGen AgentTool 模式**\n           - 创建工具互操作框架\n           - 实现工具注册表\n           - 支持工具相互调用\n\n        2. **LangGraph 状态管理**\n           - 创建工作流引擎\n           - 实现节点和边系统\n           - 支持条件分支\n\n        3. **AutoGen Studio GUI**\n           - 创建统一 Streamlit 界面\n           - 实现工具状态监控\n           - 提供工作流可视化\n        ",
+      "tools_affected": [
+        "file_organizer",
+        "market_supervision_agent",
+        "memory_agent",
+        "agent_toolkit",
+        "workflow_engine",
+        "office_agent_studio"
+      ],
+      "patterns_used": [
+        "AgentTool Pattern",
+        "State Management",
+        "Graph-based Workflow",
+        "Unified GUI",
+        "Version Management"
+      ],
+      "benefits": [
+        "工具可以相互调用和协作",
+        "复杂流程有清晰的状态管理",
+        "统一的用户界面",
+        "完整的版本控制和回滚能力",
+        "向后兼容，旧功能继续可用"
+      ]
+    },
+    {
+      "date": "2026-01-12T19:42:50.821120",
+      "title": "基于 zread 调研的全面升级",
+      "description": "\n        基于 zread 对顶级开源项目的调研，实施了三大核心技术:\n\n        1. **AutoGen AgentTool 模式**\n           - 创建工具互操作框架\n           - 实现工具注册表\n           - 支持工具相互调用\n\n        2. **LangGraph 状态管理**\n           - 创建工作流引擎\n           - 实现节点和边系统\n           - 支持条件分支\n\n        3. **AutoGen Studio GUI**\n           - 创建统一 Streamlit 界面\n           - 实现工具状态监控\n           - 提供工作流可视化\n        ",
+      "tools_affected": [
+        "file_organizer",
+        "market_supervision_agent",
+        "memory_agent",
+        "agent_toolkit",
+        "workflow_engine",
+        "office_agent_studio"
+      ],
+      "patterns_used": [
+        "AgentTool Pattern",
+        "State Management",
+        "Graph-based Workflow",
+        "Unified GUI",
+        "Version Management"
+      ],
+      "benefits": [
+        "工具可以相互调用和协作",
+        "复杂流程有清晰的状态管理",
+        "统一的用户界面",
+        "完整的版本控制和回滚能力",
+        "向后兼容，旧功能继续可用"
+      ]
+    }
+  ],
+  "patterns_learned": [
+    {
+      "name": "AgentTool Pattern",
+      "description": "工具可以作为其他工具的组件被调用，实现工具间的互操作性",
+      "source": "Microsoft AutoGen",
+      "learned": "2026-01-12T19:42:10.751517",
+      "use_cases": [
+        "file_organizer 可以被 application_generator 调用",
+        "memory_agent 可以作为所有工具的共享知识库",
+        "工具注册表统一管理所有工具"
+      ]
+    },
+    {
+      "name": "State-based Workflow",
+      "description": "使用状态机和图式架构管理复杂流程，每个节点更新状态",
+      "source": "LangGraph",
+      "learned": "2026-01-12T19:42:10.751984",
+      "use_cases": [
+        "申请书生成: 验证→选择模板→生成→审查",
+        "文件整理: 扫描→识别→移动→报告",
+        "支持条件分支和循环"
+      ]
+    },
+    {
+      "name": "Version Compatibility",
+      "description": "新版本不删除旧代码，而是添加新功能，保持旧API可用",
+      "source": "Best Practice",
+      "learned": "2026-01-12T19:42:10.752458",
+      "use_cases": [
+        "所有工具保持向后兼容",
+        "提供API包装层",
+        "配置文件自动迁移",
+        "升级前自动备份"
+      ]
+    }
+  ],
+  "next_steps": [
+    {
+      "title": "工具间实际通信",
+      "priority": "high",
+      "description": "让 file_organizer、application_generator、memory_agent 真正相互调用",
+      "dependencies": [
+        "agent_toolkit",
+        "workflow_engine"
+      ],
+      "status": "planned",
+      "created": "2026-01-12T19:42:10.752915"
+    },
+    {
+      "title": "自定义工作流编辑器",
+      "priority": "medium",
+      "description": "在 GUI 中添加可视化工作流编辑器",
+      "dependencies": [
+        "office_agent_studio"
+      ],
+      "status": "planned",
+      "created": "2026-01-12T19:42:10.753435"
+    },
+    {
+      "title": "工具间实际通信",
+      "priority": "high",
+      "description": "让 file_organizer、application_generator、memory_agent 真正相互调用",
+      "dependencies": [
+        "agent_toolkit",
+        "workflow_engine"
+      ],
+      "status": "planned",
+      "created": "2026-01-12T19:42:50.821632"
+    },
+    {
+      "title": "自定义工作流编辑器",
+      "priority": "medium",
+      "description": "在 GUI 中添加可视化工作流编辑器",
+      "dependencies": [
+        "office_agent_studio"
+      ],
+      "status": "planned",
+      "created": "2026-01-12T19:42:50.822102"
+    }
+  ]
+}

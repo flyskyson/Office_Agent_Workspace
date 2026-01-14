@@ -1,0 +1,37 @@
+个体工商户开业登记申请书（测试）
+
+一、基本信息
+
+个体工商户名称：{{business_name}}
+经营者姓名：{{operator_name}}
+联系电话：{{phone}}
+电子邮箱：{% if email %}{{email}}{% else %}未提供{% endif %}
+
+经营场所：{{business_address}}
+邮政编码：{{postal_code|default('537820')}}
+
+二、经营者信息
+
+性别：{{gender}}
+民族：{{nation}}
+政治面貌：{{political_status}}
+文化程度：{{education}}
+身份证号码：{{id_card}}
+
+三、经营信息
+
+从业人数：{{employee_count}}人
+注册资金：{{registered_capital}}元
+
+{% if operation_period == '长期' %}
+经营期限：长期
+{% else %}
+经营期限：{{operation_period}}
+{% endif %}
+
+经营范围：
+{% for item in business_scope_list %}
+- {{item}}
+{% endfor %}
+
+申请日期：{{today_year}}年{{today_month}}月{{today_day}}日

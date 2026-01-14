@@ -6,7 +6,7 @@ import sys
 from pathlib import Path
 
 # 添加 src 到路径
-sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
+sys.path.insert(0, str(Path(__file__).parent / "src"))
 
 from browser_controller import BrowserController
 import logging

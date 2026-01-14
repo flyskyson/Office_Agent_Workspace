@@ -184,9 +184,11 @@ def generate_application():
             return redirect(url_for('generate_page'))
 
         generator = ApplicationGenerator()
+        # 使用绝对路径，因为 Flask 从 ui/ 目录运行
+        output_dir = Path(__file__).parent.parent / "output"
         output_path = generator.generate_application(
             operator_data=operator,
-            output_dir="output"
+            output_dir=str(output_dir)
         )
 
         flash(f'申请书已生成: {output_path}', 'success')
@@ -203,6 +205,95 @@ def generate_application():
     except Exception as e:
         flash(f'生成失败: {str(e)}', 'error')
         return redirect(url_for('generate_page'))
+
+@app.route('/edit/<int:operator_id>', methods=['GET', 'POST'])
+def edit_page(operator_id):
+    """编辑经营户信息页面"""
+    import sys
+    import os
+
+    # 记录到文件
+    log_file = 'debug_edit.log'
+    with open(log_file, 'a', encoding='utf-8') as f:
+        f.write(f"\n[{datetime.now()}] edit_page called: ID={operator_id}, Method={request.method}\n")
+        if request.method == 'POST':
+            f.write(f"Form data: {dict(request.form)}\n")
+
+    print(f"[DEBUG] edit_page 被调用: ID={operator_id}, Method={request.method}", file=sys.stderr)
+
+    db = DatabaseManager()
+    operator = db.get_operator_by_id(operator_id)
+
+    if not operator:
+        flash('找不到该经营户记录', 'error')
+        return redirect(url_for('database_page'))
+
+    if request.method == 'POST':
+        # 处理表单提交
+        updates = {}
+
+        # 获取表单数据
+        form_fields = [
+            'operator_name', 'id_card', 'gender', 'nation', 'phone',
+            'email', 'address', 'business_name', 'business_address',
+            'business_scope', 'credit_code', 'property_owner',
+            'lease_start', 'lease_end', 'rent_amount'
+        ]
+
+        # 必填字段列表（这些字段如果是空字符串，也要更新）
+        required_fields = {'phone'}
+
+        for field in form_fields:
+            value = request.form.get(field, '').strip()
+            # 必填字段或非空字段才更新
+            if value or field in required_fields:
+                updates[field] = value
+
+        # 调试信息
+        import sys
+        print(f"[DEBUG] 收到表单数据: {dict(request.form)}", file=sys.stderr)
+        print(f"[DEBUG] 准备更新: {updates}", file=sys.stderr)
+
+        # 执行更新
+        if updates:
+            print(f"[DEBUG] 调用 db.update_operator({operator_id}, {updates})", file=sys.stderr)
+            success = db.update_operator(operator_id, updates)
+            print(f"[DEBUG] 更新结果: {success}", file=sys.stderr)
+        else:
+            print(f"[DEBUG] updates 为空，更新失败", file=sys.stderr)
+            success = False
+
+        print(f"[DEBUG] 最终 success = {success}", file=sys.stderr)
+
+        if success:
+            flash(f'✅ 更新成功！', 'success')
+            return redirect(url_for('database_page'))
+        else:
+            flash('❌ 更新失败，请重试', 'error')
+            return redirect(url_for('edit_page', operator_id=operator_id))
+
+    # GET 请求，显示编辑表单
+    return render_template('edit.html', operator=operator)
+
+@app.route('/delete/<int:operator_id>', methods=['POST'])
+def delete_operator(operator_id):
+    """删除经营户记录"""
+    db = DatabaseManager()
+    operator = db.get_operator_by_id(operator_id)
+
+    if not operator:
+        flash('找不到该经营户记录', 'error')
+        return redirect(url_for('database_page'))
+
+    # 执行删除
+    success = db.delete_operator(operator_id)
+
+    if success:
+        flash(f'✅ 已删除记录: {operator["operator_name"]}', 'success')
+    else:
+        flash('❌ 删除失败，请重试', 'error')
+
+    return redirect(url_for('database_page'))
 
 @app.route('/api/status')
 def api_status():

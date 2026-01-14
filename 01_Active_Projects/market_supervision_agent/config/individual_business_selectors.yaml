@@ -1,0 +1,243 @@
+# 个体工商户专用选择器配置
+# 专为个体工商户证照办理自动化设计
+
+# 登录页面（与现有配置共用）
+login:
+  username: "#username"  # 用户名/统一社会信用代码输入框
+  password: "#password"  # 密码输入框
+  captcha: "#captcha"    # 验证码输入框（如果有）
+  submit: "button[type='submit']"  # 登录按钮
+  success_indicator: ".user-info"  # 登录成功后的标志元素
+
+# 个体工商户设立登记
+individual_registration:
+  # 页面导航
+  menu_item: "text=个体工商户设立登记"  # 菜单项
+  start_button: "text=开始办理"  # 开始办理按钮
+
+  # 第一步：基本信息
+  step1:
+    business_name: "#businessName"  # 个体工商户名称
+    operator_name: "#operatorName"  # 经营者姓名
+    operator_gender: "#gender"      # 性别选择
+    id_card: "#idCard"              # 身份证号码
+    id_card_validity: "#idCardValidity"  # 身份证有效期
+    phone: "#phone"                 # 联系电话
+    email: "#email"                 # 电子邮箱
+
+  # 第二步：经营信息
+  step2:
+    business_address: "#businessAddress"  # 经营场所
+    business_area: "#businessArea"        # 经营面积（平方米）
+    postal_code: "#postalCode"            # 邮政编码
+    business_scope: "#businessScope"      # 经营范围
+    main_business: "#mainBusiness"        # 主营业务
+    business_type: "#businessType"        # 行业类型
+
+  # 第三步：资金信息
+  step3:
+    registered_capital: "#registeredCapital"  # 资金数额
+    capital_source: "#capitalSource"          # 资金来源
+    investment_form: "#investmentForm"        # 出资形式
+    operation_period: "#operationPeriod"      # 经营期限
+
+  # 第四步：材料上传
+  step4:
+    id_card_front: "#idCardFront"          # 身份证正面
+    id_card_back: "#idCardBack"            # 身份证反面
+    business_premises_proof: "#premisesProof"  # 经营场所证明
+    application_form: "#applicationForm"   # 申请表
+    other_documents: "#otherDocs"          # 其他材料
+
+  # 导航按钮
+  navigation:
+    next_button: "text=下一步"
+    prev_button: "text=上一步"
+    save_draft: "text=保存草稿"
+
+  # 提交部分
+  submit:
+    review_button: "text=提交审核"
+    confirm_button: "text=确认提交"
+    success_message: ".success-message"    # 成功提示
+    application_number: ".app-number"      # 申请编号
+
+# 个体工商户变更登记
+individual_change:
+  # 页面导航
+  menu_item: "text=个体工商户变更登记"
+  start_button: "text=开始变更"
+
+  # 变更类型选择
+  change_type_selector: "#changeType"
+  change_types:
+    name_change: "text=名称变更"
+    operator_change: "text=经营者变更"
+    address_change: "text=地址变更"
+    scope_change: "text=经营范围变更"
+
+  # 名称变更
+  name_change:
+    original_name: "#originalName"      # 原名称
+    new_name: "#newName"                # 新名称
+    change_reason: "#nameChangeReason"  # 变更原因
+    approval_document: "#nameApprovalDoc"  # 名称核准文件
+
+  # 经营者变更
+  operator_change:
+    original_operator: "#originalOperator"  # 原经营者
+    new_operator: "#newOperator"            # 新经营者
+    new_id_card: "#newIdCard"               # 新身份证号
+    transfer_agreement: "#transferAgreement"  # 转让协议
+
+  # 地址变更
+  address_change:
+    original_address: "#originalAddress"  # 原地址
+    new_address: "#newAddress"            # 新地址
+    premises_proof: "#newPremisesProof"   # 新场所证明
+    change_reason: "#addressChangeReason" # 地址变更原因
+
+  # 提交部分
+  submit:
+    submit_button: "text=提交变更"
+    confirm_button: "text=确认变更"
+    success_message: ".change-success"
+
+# 个体工商户注销登记
+individual_cancellation:
+  # 页面导航
+  menu_item: "text=个体工商户注销登记"
+  start_button: "text=开始注销"
+
+  # 注销信息
+  cancellation_info:
+    business_name: "#cancelBusinessName"      # 个体工商户名称
+    credit_code: "#cancelCreditCode"          # 统一社会信用代码
+    cancellation_reason: "#cancellationReason"  # 注销原因
+    liquidation_status: "#liquidationStatus"  # 清算情况
+    tax_clearance: "#taxClearance"            # 税务清税证明
+    social_insurance_clearance: "#socialInsuranceClearance"  # 社保清缴证明
+
+  # 材料上传
+  documents:
+    cancellation_application: "#cancellationApplication"  # 注销申请书
+    business_license: "#businessLicense"                  # 营业执照正副本
+    operator_id_card: "#operatorIdCard"                   # 经营者身份证
+    liquidation_report: "#liquidationReport"              # 清算报告
+    other_certificates: "#otherCertificates"              # 其他证明文件
+
+  # 提交部分
+  submit:
+    submit_button: "text=提交注销申请"
+    confirm_button: "text=确认注销"
+    success_message: ".cancellation-success"
+    cancellation_number: ".cancel-number"
+
+# 个体工商户年报
+individual_annual_report:
+  # 页面导航
+  menu_item: "text=个体工商户年报"
+  year_selector: "#reportYear"  # 年度选择
+  start_button: "text=开始填报"
+
+  # 基本信息（自动带出）
+  basic_info:
+    business_name: "#reportBusinessName"      # 个体工商户名称
+    credit_code: "#reportCreditCode"          # 统一社会信用代码
+    operator_name: "#reportOperatorName"      # 经营者姓名
+    business_address: "#reportBusinessAddress"  # 经营场所
+
+  # 经营情况
+  operation_info:
+    annual_revenue: "#annualRevenue"          # 年营业收入
+    operating_costs: "#operatingCosts"        # 营业成本
+    gross_profit: "#grossProfit"              # 毛利润
+    net_profit: "#netProfit"                  # 净利润
+    employee_count: "#employeeCount"          # 从业人数
+    asset_total: "#assetTotal"                # 资产总额
+    liability_total: "#liabilityTotal"        # 负债总额
+
+  # 行政许可情况
+  license_info:
+    has_license: "#hasLicense"                # 是否取得行政许可
+    license_type: "#licenseType"              # 许可证类型
+    license_number: "#licenseNumber"          # 许可证编号
+    validity_period: "#licenseValidity"       # 有效期限
+
+  # 提交部分
+  submit:
+    save_button: "text=保存"
+    submit_button: "text=提交年报"
+    confirm_button: "text=确认提交"
+    success_message: ".annual-report-success"
+    report_number: ".report-number"
+
+# 通用元素（所有页面共用）
+common:
+  # 页面状态
+  loading: ".loading-spinner"          # 加载中
+  error_message: ".error-message"      # 错误提示
+  success_message: ".success-message"  # 成功提示
+  warning_message: ".warning-message"  # 警告提示
+
+  # 按钮类
+  button_primary: ".btn-primary"       # 主要按钮
+  button_secondary: ".btn-secondary"   # 次要按钮
+  button_danger: ".btn-danger"         # 危险操作按钮
+
+  # 表单类
+  form_group: ".form-group"            # 表单组
+  form_label: ".form-label"            # 表单标签
+  form_control: ".form-control"        # 表单控件
+  form_select: ".form-select"          # 下拉选择
+
+  # 导航类
+  breadcrumb: ".breadcrumb"            # 面包屑导航
+  pagination: ".pagination"            # 分页
+  tab_nav: ".nav-tabs"                 # 标签页导航
+
+# 网站特定元素（根据实际网站调整）
+website_specific:
+  # 顶部导航
+  header: ".site-header"
+  main_menu: ".main-menu"
+  user_menu: ".user-menu"
+
+  # 侧边栏
+  sidebar: ".sidebar"
+  quick_links: ".quick-links"
+
+  # 内容区域
+  content_area: ".content-area"
+  form_container: ".form-container"
+
+  # 底部
+  footer: ".site-footer"
+  copyright: ".copyright"
+
+# 验证码处理（如果需要）
+captcha:
+  # 图片验证码
+  image_captcha: "#captchaImage"       # 验证码图片
+  refresh_button: "#refreshCaptcha"    # 刷新验证码按钮
+  audio_button: "#audioCaptcha"        # 语音验证码按钮
+
+  # 短信验证码
+  phone_input: "#phoneForCaptcha"      # 接收短信的手机号
+  send_sms_button: "#sendSmsCaptcha"   # 发送短信按钮
+  sms_code_input: "#smsCode"           # 短信验证码输入框
+
+# 文件上传元素
+file_upload:
+  upload_button: "input[type='file']"  # 文件上传按钮
+  browse_button: "text=浏览"            # 浏览文件按钮
+  upload_progress: ".upload-progress"  # 上传进度
+  file_list: ".file-list"              # 已上传文件列表
+  remove_file: ".remove-file"          # 删除文件按钮
+
+# 提示和帮助
+hints:
+  tooltip: ".tooltip"                  # 工具提示
+  popover: ".popover"                  # 弹出提示
+  help_icon: ".help-icon"              # 帮助图标
+  required_mark: ".required-mark"      # 必填标记

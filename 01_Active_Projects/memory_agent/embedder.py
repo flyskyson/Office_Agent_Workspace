@@ -23,8 +23,8 @@ class TextEmbedder:
 
         embedding_config = config['embedding']
 
-        print(f"📦 加载嵌入模型: {embedding_config['model_name']}")
-        print(f"   设备: {embedding_config['device']}")
+        print(f"[INFO] Loading embedding model: {embedding_config['model_name']}")
+        print(f"       Device: {embedding_config['device']}")
 
         # 加载模型（首次会下载，约500MB）
         self.model = SentenceTransformer(
@@ -36,7 +36,7 @@ class TextEmbedder:
 
         # 获取向量维度
         self.embedding_dim = self.model.get_sentence_embedding_dimension()
-        print(f"✅ 模型加载完成！向量维度: {self.embedding_dim}")
+        print(f"[OK] Model loaded! Embedding dimension: {self.embedding_dim}")
 
     def embed_texts(self, texts: List[str], show_progress=False) -> List[List[float]]:
         """

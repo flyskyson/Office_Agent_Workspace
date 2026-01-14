@@ -1,0 +1,19 @@
+{
+  "business_name": "张三小吃店",
+  "operator_name": "张三",
+  "phone": "13800138000",
+  "email": "zhangsan@example.com",
+  "business_address": "北京市东城区王府井大街1号",
+  "postal_code": "100006",
+  "employee_count": "3",
+  "registered_capital": "50000",
+  "id_card": "110101199001011234",
+  "gender": "男",
+  "nation": "汉族",
+  "political_status": "群众",
+  "education": "高中",
+  "business_scope": "餐饮服务；小吃店经营",
+  "operation_period": "长期",
+  "application_date": "2026年01月11日",
+  "sign_date": "2026年01月11日"
+}

@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}错误 {{ error_code }} - 🧠 学习记忆助手{% endblock %}
+
+{% block content %}
+<style>
+.error-container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.error-message {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.error-description {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+
+.back-button:hover {
+    transform: translateY(-2px);
+}
+</style>
+
+<div class="error-container">
+    <div class="error-code">{{ error_code }}</div>
+    <div class="error-message">{{ error_message }}</div>
+    <p class="error-description">
+        抱歉，出现了意外的错误
+    </p>
+    <a href="{{ url_for('index') }}" class="back-button">🏠 返回首页</a>
+</div>
+{% endblock %}

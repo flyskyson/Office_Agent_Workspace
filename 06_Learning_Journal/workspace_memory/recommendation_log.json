@@ -1,0 +1,250 @@
+[
+  {
+    "timestamp": "2026-01-14T11:34:31.038059",
+    "context": "我要生成个体工商户申请书",
+    "recommendations": [
+      {
+        "tool_id": "application_generator",
+        "name": "申请书生成器",
+        "desc": "OCR识别 + Word模板填充",
+        "score": 0.8,
+        "command": "",
+        "url": "",
+        "skill": "application-generator",
+        "reason": "检测到关键词: 申请书, 生成",
+        "category": "市场监管"
+      },
+      {
+        "tool_id": "market_supervision",
+        "name": "市场监管智能体",
+        "desc": "营业执照 OCR + 申请书自动生成",
+        "score": 0.32000000000000006,
+        "command": "python 01_Active_Projects/market_supervision_agent/ui/flask_app.py",
+        "url": "http://127.0.0.1:5000",
+        "skill": "",
+        "reason": "检测到关键词: 申请书, 个体工商户",
+        "category": "市场监管"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.038059",
+    "context": "帮我整理一下桌面文件",
+    "recommendations": [
+      {
+        "tool_id": "file_organizer",
+        "name": "文件整理工具",
+        "desc": "智能识别并分类归档文件",
+        "score": 0.8,
+        "command": "python 01_Active_Projects/file_organizer/file_organizer.py",
+        "url": "",
+        "skill": "",
+        "reason": "检测到关键词: 整理, 文件",
+        "category": "文件管理"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.043141",
+    "context": "今天有什么AI新闻",
+    "recommendations": [
+      {
+        "tool_id": "news_monitor",
+        "name": "智能新闻监控",
+        "desc": "个性化热点新闻推送",
+        "score": 0.5599999999999999,
+        "command": "python 00_Agent_Library/smart_news_monitor.py",
+        "url": "",
+        "skill": "",
+        "reason": "检测到关键词: 新闻, AI",
+        "category": "资讯获取"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.043141",
+    "context": "我需要搜索之前的笔记",
+    "recommendations": [
+      {
+        "tool_id": "memory_agent",
+        "name": "学习记忆助手",
+        "desc": "知识管理 + 语义搜索 + 间隔复习",
+        "score": 0.5599999999999999,
+        "command": "streamlit run 01_Active_Projects/memory_agent/ui/app.py",
+        "url": "http://localhost:8501",
+        "skill": "",
+        "reason": "检测到关键词: 笔记, 搜索",
+        "category": "知识管理"
+      },
+      {
+        "tool_id": "knowledge_indexer",
+        "name": "知识索引器",
+        "desc": "向量化索引 + 语义搜索",
+        "score": 0.4,
+        "command": "",
+        "url": "",
+        "skill": "knowledge-indexer",
+        "reason": "检测到关键词: 搜索",
+        "category": "知识管理"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.043141",
+    "context": "营业执照OCR识别",
+    "recommendations": [
+      {
+        "tool_id": "license_organizer",
+        "name": "证照整理助手",
+        "desc": "智能识别并分类归档证照材料",
+        "score": 0.7600000000000001,
+        "command": "",
+        "url": "",
+        "skill": "license-organizer",
+        "reason": "检测到关键词: 识别, 营业执照",
+        "category": "证照管理"
+      },
+      {
+        "tool_id": "market_supervision",
+        "name": "市场监管智能体",
+        "desc": "营业执照 OCR + 申请书自动生成",
+        "score": 0.27999999999999997,
+        "command": "python 01_Active_Projects/market_supervision_agent/ui/flask_app.py",
+        "url": "http://127.0.0.1:5000",
+        "skill": "",
+        "reason": "检测到关键词: 营业执照",
+        "category": "市场监管"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.043141",
+    "context": "我要填个表格",
+    "recommendations": [
+      {
+        "tool_id": "application_generator",
+        "name": "申请书生成器",
+        "desc": "OCR识别 + Word模板填充",
+        "score": 0.4,
+        "command": "",
+        "url": "",
+        "skill": "application-generator",
+        "reason": "检测到关键词: 表格",
+        "category": "市场监管"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.043141",
+    "context": "帮我归类这些文档",
+    "recommendations": [
+      {
+        "tool_id": "file_organizer",
+        "name": "文件整理工具",
+        "desc": "智能识别并分类归档文件",
+        "score": 0.4,
+        "command": "python 01_Active_Projects/file_organizer/file_organizer.py",
+        "url": "",
+        "skill": "",
+        "reason": "检测到关键词: 归类",
+        "category": "文件管理"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.048147",
+    "context": "看看最近有什么热点",
+    "recommendations": [
+      {
+        "tool_id": "news_monitor",
+        "name": "智能新闻监控",
+        "desc": "个性化热点新闻推送",
+        "score": 0.27999999999999997,
+        "command": "python 00_Agent_Library/smart_news_monitor.py",
+        "url": "",
+        "skill": "",
+        "reason": "检测到关键词: 热点",
+        "category": "资讯获取"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.048147",
+    "context": "查找之前的记录",
+    "recommendations": [
+      {
+        "tool_id": "memory_agent",
+        "name": "学习记忆助手",
+        "desc": "知识管理 + 语义搜索 + 间隔复习",
+        "score": 0.24,
+        "command": "streamlit run 01_Active_Projects/memory_agent/ui/app.py",
+        "url": "http://localhost:8501",
+        "skill": "",
+        "reason": "根据您的任务推荐",
+        "category": "知识管理"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.048147",
+    "context": "我要开店注册",
+    "recommendations": [
+      {
+        "tool_id": "market_supervision",
+        "name": "市场监管智能体",
+        "desc": "营业执照 OCR + 申请书自动生成",
+        "score": 0.4,
+        "command": "python 01_Active_Projects/market_supervision_agent/ui/flask_app.py",
+        "url": "http://127.0.0.1:5000",
+        "skill": "",
+        "reason": "检测到关键词: 注册",
+        "category": "市场监管"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.048147",
+    "context": "证照材料处理",
+    "recommendations": [
+      {
+        "tool_id": "license_organizer",
+        "name": "证照整理助手",
+        "desc": "智能识别并分类归档证照材料",
+        "score": 0.4,
+        "command": "",
+        "url": "",
+        "skill": "license-organizer",
+        "reason": "检测到关键词: 证照",
+        "category": "证照管理"
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-14T11:34:31.048147",
+    "context": "知识库查询",
+    "recommendations": [
+      {
+        "tool_id": "knowledge_indexer",
+        "name": "知识索引器",
+        "desc": "向量化索引 + 语义搜索",
+        "score": 0.5300000000000001,
+        "command": "",
+        "url": "",
+        "skill": "knowledge-indexer",
+        "reason": "检测到关键词: 知识库, 查询",
+        "category": "知识管理"
+      },
+      {
+        "tool_id": "memory_agent",
+        "name": "学习记忆助手",
+        "desc": "知识管理 + 语义搜索 + 间隔复习",
+        "score": 0.44000000000000006,
+        "command": "streamlit run 01_Active_Projects/memory_agent/ui/app.py",
+        "url": "http://localhost:8501",
+        "skill": "",
+        "reason": "检测到关键词: 知识, 查询",
+        "category": "知识管理"
+      }
+    ]
+  }
+]

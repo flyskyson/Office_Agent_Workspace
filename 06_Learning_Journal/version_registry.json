@@ -1,0 +1,54 @@
+{
+  "tools": {
+    "file_organizer": {
+      "name": "file_organizer",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "file_path": "01_Active_Projects/file_organizer/file_organizer.py",
+          "released": "2026-01-12T19:42:10.749511",
+          "api_version": "1.0",
+          "changelog": []
+        }
+      ],
+      "current_version": "1.0.0",
+      "api_version": "1.0",
+      "description": "证照材料智能整理工具",
+      "dependencies": []
+    },
+    "market_supervision_agent": {
+      "name": "market_supervision_agent",
+      "versions": [
+        {
+          "version": "3.0.0",
+          "file_path": "01_Active_Projects/market_supervision_agent/jinja2_filler.py",
+          "released": "2026-01-12T19:42:10.750089",
+          "api_version": "3.0",
+          "changelog": []
+        }
+      ],
+      "current_version": "3.0.0",
+      "api_version": "3.0",
+      "description": "市场监管申请书生成工具 (Jinja2模板版)",
+      "dependencies": []
+    },
+    "memory_agent": {
+      "name": "memory_agent",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "file_path": "01_Active_Projects/memory_agent/memory_agent.py",
+          "released": "2026-01-12T19:42:10.750562",
+          "api_version": "1.0",
+          "changelog": []
+        }
+      ],
+      "current_version": "1.0.0",
+      "api_version": "1.0",
+      "description": "学习记忆助手",
+      "dependencies": []
+    }
+  },
+  "last_update": "2026-01-12T19:42:50.820710",
+  "current_version": "1.0.0"
+}

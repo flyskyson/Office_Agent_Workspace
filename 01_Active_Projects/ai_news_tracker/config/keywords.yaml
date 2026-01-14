@@ -1,0 +1,65 @@
+# AI 新闻追踪关键词配置
+
+# 追踪的关键词
+keywords:
+  - MCP
+  - Model Context Protocol
+  - Claude Code
+  - Claude Cowork
+  - AI Agent
+  - LLM
+  - Browser Automation
+  - RAG
+  - Vector Database
+  - LangChain
+  - AutoGen
+  - Streamlit
+  - Flask
+  - Playwright
+  - Chrome DevTools
+
+# 新闻源配置
+sources:
+  github:
+    enabled: true
+    languages:
+      - python
+      - javascript
+      - typescript
+    topics:
+      - artificial-intelligence
+      - machine-learning
+      - agent
+
+  hacker_news:
+    enabled: true
+    min_score: 50
+
+  reddit:
+    enabled: true
+    subreddits:
+      - MachineLearning
+      - ArtificialIntelligence
+      - LocalLLaMA
+
+  mcp_pulse:
+    enabled: true
+    url: https://www.pulsemcp.com
+
+# 过滤规则
+filters:
+  exclude_keywords:
+    - cryptocurrency
+    - blockchain
+    - nft
+
+  require_keywords:
+    - AI
+    - ML
+    - LLM
+    - agent
+
+# 更新频率
+schedule:
+  daily: "09:00"
+  weekly: "Monday 09:00"

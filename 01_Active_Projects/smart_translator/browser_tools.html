@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能翻译书签工具</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+        }
+
+        .bookmark-section {
+            margin: 30px 0;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            border-left: 4px solid #667eea;
+        }
+
+        .bookmark-section h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bookmark-code {
+            background: #2d3748;
+            color: #48bb78;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            word-break: break-all;
+            margin: 15px 0;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s;
+        }
+
+        .bookmark-code:hover {
+            background: #1a202c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .bookmark-code::after {
+            content: '点击复制';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #48bb78;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .bookmark-code:hover::after {
+            opacity: 1;
+        }
+
+        .instructions {
+            background: #e7f3ff;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .engine-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .engine-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .engine-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.2);
+        }
+
+        .engine-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .engine-card .rating {
+            color: #f6ad55;
+            margin-bottom: 10px;
+        }
+
+        .engine-card p {
+            color: #666;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #48bb78;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: all 0.3s;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .emoji {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="emoji">🌐</span> 智能翻译书签工具</h1>
+        <p class="subtitle">一键翻译网页内容 - 支持 DeepL、微软、百度等多种引擎</p>
+
+        <!-- 翻译引擎推荐 -->
+        <div class="bookmark-section">
+            <h2><span class="emoji">⭐</span> 推荐翻译引擎</h2>
+            <div class="engine-grid">
+                <div class="engine-card" onclick="window.open('https://chromewebstore.google.com/detail/immersive-translate-trans/bpoadfkcbjbfhfodiogcnhhhpibjhbnh', '_blank')">
+                    <h3>Immersive Translate</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>双语对照、PDF 翻译、支持多引擎</p>
+                </div>
+                <div class="engine-card" onclick="window.open('https://chromewebstore.google.com/detail/deepl-for-chrome/clneakkikoojmpfofhlppjmbmfeodoje', '_blank')">
+                    <h3>DeepL for Chrome</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>最高翻译质量、快速准确</p>
+                </div>
+                <div class="engine-card" onclick="window.open('https://www.deepl.com/translator', '_blank')">
+                    <h3>DeepL 网页版</h3>
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p>无需安装、直接使用</p>
+                </div>
+                <div class="engine-card" onclick="window.open('https://www.bing.com/translator', '_blank')">
+                    <h3>微软必应翻译</h3>
+                    <div class="rating">⭐⭐⭐⭐</div>
+                    <p>稳定可靠、国内可用</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 书签工具 -->
+        <div class="bookmark-section">
+            <h2><span class="emoji">📚</span> 翻译书签（拖拽到书签栏）</h2>
+
+            <h3>🔗 DeepL 快速翻译</h3>
+            <p>使用 DeepL 翻译当前页面选中的文本</p>
+            <div class="bookmark-code" onclick="copyBookmark(this, 'deepl')">
+                javascript:(function(){var t=window.getSelection().toString();if(t){window.open('https://www.deepl.com/translator#en/zh/'+encodeURIComponent(t));}else{alert('请先选择要翻译的文本！');}})();
+            </div>
+
+            <h3>🔗 微软必应翻译</h3>
+            <p>使用微软翻译翻译当前页面</p>
+            <div class="bookmark-code" onclick="copyBookmark(this, 'bing')">
+                javascript:(function(){window.location.href='https://www.bing.com/translator?from=&to=zh-Hans&text='+encodeURIComponent(document.body.innerText);})();
+            </div>
+
+            <h3>🔗 页面文本提取翻译</h3>
+            <p>提取页面文本并跳转到 DeepL 翻译</p>
+            <div class="bookmark-code" onclick="copyBookmark(this, 'extract')">
+                javascript:(function(){var t=document.body.innerText;window.open('https://www.deepl.com/translator#en/zh/'+encodeURIComponent(t.substring(0,5000)));})();
+            </div>
+        </div>
+
+        <!-- 使用说明 -->
+        <div class="instructions">
+            <h2><span class="emoji">📖</span> 使用说明</h2>
+            <ol>
+                <li><strong>显示书签栏</strong>：按 <code>Ctrl+Shift+B</code> (Windows) 或 <code>⌘+Shift+B</code> (Mac)</li>
+                <li><strong>添加书签</strong>：点击上面的代码块，会自动复制到剪贴板</li>
+                <li><strong>创建书签</strong>：在书签栏右键 → "添加页面" → 粘贴代码 → 保存</li>
+                <li><strong>使用书签</strong>：在任意网页上点击书签即可翻译</li>
+            </ol>
+        </div>
+
+        <!-- Chrome DevTools 集成 -->
+        <div class="bookmark-section">
+            <h2><span class="emoji">🤖</span> Chrome DevTools MCP 集成</h2>
+            <p>如果您已配置 Chrome DevTools MCP，可以直接对我说：</p>
+            <ul style="margin-left: 20px; margin-top: 15px; line-height: 1.8;">
+                <li>"用 Chrome 打开这个网页并翻译成中文"</li>
+                <li>"提取这个页面的文本并翻译"</li>
+                <li>"使用 DeepL 翻译选中的内容"</li>
+            </ul>
+        </div>
+
+        <div class="footer">
+            <p>🚀 由 Office Agent Workspace 提供 | 智能翻译助手 v1.0</p>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script>
+        function copyBookmark(element, type) {
+            const code = element.textContent.trim();
+
+            // 复制到剪贴板
+            navigator.clipboard.writeText(code).then(() => {
+                showToast('✅ 书签代码已复制！现在可以在浏览器中创建书签了');
+            }).catch(() => {
+                // 备用方案
+                const textarea = document.createElement('textarea');
+                textarea.value = code;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                showToast('✅ 书签代码已复制！');
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.classList.add('show');
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // 页面加载时的动画效果
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.engine-card, .bookmark-section');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    card.style.transition = 'all 0.5s';
+
+                    requestAnimationFrame(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    });
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
