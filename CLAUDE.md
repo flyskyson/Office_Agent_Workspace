@@ -1,100 +1,84 @@
-# Office Agent Workspace - Claude Code 项目配置
+# Office Agent Workspace - 项目配置
 
 **项目类型**: Python 办公自动化工具集
 **主要框架**: Streamlit, Flask, Playwright, AutoGen AgentTool
-**目标用户**: 办公自动化开发者、市场监管从业者
-**最后更新**: 2026-01-13
+**Python版本**: 3.9+ (推荐 3.12)
+**更新日期**: 2026-01-14
 
 ---
 
-## 项目概览
+## 🎯 30秒快速导航
 
-这是一个**智能办公自动化系统**，包含四个核心工具：
-- **市场监管智能体**: 营业执照 OCR + 申请书自动生成
-- **学习记忆助手**: 知识管理 + 语义搜索 + 间隔复习
-- **证照整理工具**: 智能识别并分类归档证照材料
-- **广西政务登录**: Playwright 自动登录工具
-
-项目采用**模块化架构**和**版本演进管理**，确保向后兼容和可追踪性。
+| 我想... | 查看文档 |
+|---------|---------|
+| 🚀 **快速上手** | [GETTING_STARTED.md](docs/GETTING_STARTED.md) |
+| 🏗️ **了解架构** | [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
+| 📝 **查看编码规范** | [CODING_STANDARDS.md](docs/CODING_STANDARDS.md) |
+| 🔧 **开发新功能** | [guides/AGENT_DEVELOPMENT.md](docs/guides/AGENT_DEVELOPMENT.md) |
+| 🤖 **使用技能系统** | [guides/SKILLS_SYSTEM.md](docs/guides/SKILLS_SYSTEM.md) |
+| 💡 **想法落地工作流** | [guides/IDEA_WORKFLOW.md](docs/guides/IDEA_WORKFLOW.md) |
+| 🐛 **排查问题** | [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) |
 
 ---
 
-## 目录结构
+## 📂 核心目录结构
 
 ```
 Office_Agent_Workspace/
+├── office_agent_studio.py          # 🎯 统一启动器 (CLI菜单)
+├── CLAUDE.md                        # 📖 本文件 - 项目核心配置
+├── COMPLETE_SYSTEM_GUIDE.md         # 📚 完整系统指南
+├── PROJECT_ROADMAP.md               # 🗺️ 项目路线图
 │
-├── office_agent_studio.py          # 统一启动器 (CLI菜单)
-├── CLAUDE.md                        # 本文件 - 项目配置
-├── COMPLETE_SYSTEM_GUIDE.md         # 完整系统指南
-├── PROJECT_ROADMAP.md               # 项目路线图
+├── docs/                            # 📚 详细文档目录 ⭐ NEW
+│   ├── GETTING_STARTED.md           #    入门指南
+│   ├── ARCHITECTURE.md              #    架构设计
+│   ├── CODING_STANDARDS.md          #    编码规范
+│   ├── TROUBLESHOOTING.md           #    问题排查
+│   └── guides/                      #    专题指南
+│       ├── IDEA_WORKFLOW.md         #       想法落地详细指南
+│       ├── SKILLS_SYSTEM.md         #       技能系统说明
+│       ├── VERSION_MANAGEMENT.md    #       版本管理
+│       └── AGENT_DEVELOPMENT.md     #       智能体开发
 │
-├── skills/                          # Claude Code 技能 ⭐ NEW
-│   ├── application-generator/       # 申请书生成技能
-│   │   └── SKILL.md
-│   ├── license-organizer/           # 证照整理技能
-│   │   └── SKILL.md
-│   └── knowledge-indexer/           # 知识索引技能
-│       └── SKILL.md
+├── skills/                          # 🤖 Claude Code 技能
+│   ├── idea-to-product/SKILL.md     #    想法落地技能
+│   ├── super-butler/SKILL.md        #    超级管家技能
+│   ├── application-generator/       #    申请书生成技能
+│   ├── license-organizer/           #    证照整理技能
+│   └── knowledge-indexer/           #    知识索引技能
 │
-├── 00_Agent_Library/                # 核心框架库
-│   ├── agent_toolkit.py             # AgentTool 工具框架 (AutoGen模式)
-│   ├── workflow_engine.py           # LangGraph 工作流引擎
-│   ├── version_manager.py           # 版本管理器
-│   ├── EVOLUTION_GUIDE.md           # 演进系统说明
-│   ├── GLM_4.7_开发参考.md          # GLM-4.7 API文档
-│   └── 99_Scripts_Tools/            # 启动脚本和工具
+├── 00_Agent_Library/                # 🔧 核心框架库
+│   ├── agent_toolkit.py             #    AgentTool 工具框架
+│   ├── workflow_engine.py           #    LangGraph 工作流引擎
+│   ├── idea_workflow_engine.py      #    想法落地工作流引擎
+│   ├── version_manager.py           #    版本管理器
+│   └── EVOLUTION_GUIDE.md           #    演进系统说明
 │
-├── 01_Active_Projects/              # 活跃项目
-│   ├── market_supervision_agent/    # 市场监管智能体
-│   │   ├── ui/flask_app.py          # Flask Web界面
-│   │   ├── jinja2_filler.py         # 申请书生成核心
-│   │   ├── config/                  # 配置文件
-│   │   ├── templates/               # Word模板
-│   │   └── generated_applications/  # 输出目录
-│   │
-│   ├── memory_agent/                # 记忆助手
-│   │   ├── ui/app.py                # Streamlit界面
-│   │   ├── memory_agent.py          # 核心逻辑
-│   │   └── data/                    # 向量数据库
-│   │
-│   ├── file_organizer/              # 文件整理工具
-│   │   ├── file_organizer.py        # 核心脚本
-│   │   └── config.json              # 配置
-│   │
-│   └── my_first_agent/              # 历史项目(已暂停)
+├── 01_Active_Projects/              # 🚀 活跃项目
+│   ├── market_supervision_agent/    #    市场监管智能体
+│   ├── memory_agent/                #    记忆助手
+│   └── file_organizer/              #    文件整理工具
 │
-├── 02_Project_Archive/              # 归档项目
-│   └── version_backups/             # 自动版本备份
-│
-├── 04_Data_&_Resources/             # 数据和资源
-│   └── Learning_Materials/          # 学习资料
-│
-├── 05_Outputs/                      # 输出文件
-│   └── Reports/                     # 报告存档
-│
-└── 06_Learning_Journal/             # 学习日志和演进记录
-    ├── evolution_log.json           # 演进日志
-    ├── version_registry.json        # 版本注册表
-    ├── workspace_memory/            # 工作区记忆
-    │   ├── workspace_index_latest.md
-    │   └── project_progress.json
-    └── snapshots/                   # 工作区快照
+├── 02_Project_Archive/              # 📦 归档项目
+├── 04_Data_&_Resources/             # 📊 数据和资源
+├── 05_Outputs/                      # 📤 输出文件
+└── 06_Learning_Journal/             # 📝 学习日志和演进记录
 ```
 
 ---
 
-## 快速开始
+## 🚀 快速启动
 
-### 1. 启动工具
+### 方式A: 统一启动器 (推荐)
 
-**方式A: 统一启动器 (推荐)**
 ```bash
 python office_agent_studio.py
 # 或双击: 启动_OA_Studio.bat
 ```
 
-**方式B: 直接启动各工具**
+### 方式B: 直接启动各工具
+
 ```bash
 # 市场监管智能体 (Flask Web)
 python 01_Active_Projects/market_supervision_agent/ui/flask_app.py
@@ -108,7 +92,7 @@ streamlit run 01_Active_Projects/memory_agent/ui/app.py
 python 01_Active_Projects/file_organizer/file_organizer.py
 ```
 
-### 2. 测试环境
+### 测试环境
 
 ```bash
 # 测试市场监管智能体
@@ -120,24 +104,21 @@ python 01_Active_Projects/memory_agent/memory_agent.py --test
 
 ---
 
-## 编码规范
+## 📋 核心规范速览
 
 ### 代码风格
-- **Python版本**: 3.9+ (推荐 3.12)
-- **编码**: UTF-8 with BOM (Windows兼容)
-- **缩进**: 4空格
-- **行长**: 100字符 (软限制120)
-- **导入顺序**: 标准库 -> 第三方库 -> 本地模块
+✅ **Python版本**: 3.9+ (推荐 3.12)
+✅ **编码**: UTF-8 with BOM (Windows兼容)
+✅ **缩进**: 4空格
+✅ **行长**: 100字符 (软限制120)
 
 ### 命名约定
-- **文件名**: `snake_case.py` (如 `file_organizer.py`)
-- **类名**: `PascalCase` (如 `FileOrganizer`)
-- **函数名**: `snake_case` (如 `execute_task`)
-- **常量**: `UPPER_SNAKE_CASE` (如 `MAX_RETRIES`)
-- **私有方法**: `_leading_underscore`
+✅ **文件名**: `snake_case.py` (如 `file_organizer.py`)
+✅ **类名**: `PascalCase` (如 `FileOrganizer`)
+✅ **函数名**: `snake_case` (如 `execute_task`)
+✅ **常量**: `UPPER_SNAKE_CASE` (如 `MAX_RETRIES`)
 
 ### Windows 兼容性
-项目运行在 Windows 环境，注意：
 ```python
 # 路径处理使用 pathlib
 from pathlib import Path
@@ -151,9 +132,57 @@ if sys.platform == 'win32':
 
 ---
 
-## 依赖管理
+## 🤖 可用技能速查
 
-### 核心依赖
+| 技能 | 触发关键词 | 详细文档 |
+|-----|-----------|---------|
+| 💡 **想法落地** | "我有个想法"、"想添加功能"、"能不能实现" | [SKILL.md](skills/idea-to-product/SKILL.md) |
+| 🏠 **超级管家** | "超级管家"、"管家模式"、"工作区状态" | [SKILL.md](skills/super-butler/SKILL.md) |
+| 📄 **申请书生成** | "生成申请书"、"填写申请表"、"个体工商户开业" | [SKILL.md](skills/application-generator/SKILL.md) |
+| 📁 **证照整理** | "整理证照"、"归类文件"、"归档证件" | [SKILL.md](skills/license-organizer/SKILL.md) |
+| 🔍 **知识索引** | "索引笔记"、"更新知识库"、"构建索引" | [SKILL.md](skills/knowledge-indexer/SKILL.md) |
+
+> 💡 **提示**: 技能系统会在检测到关键词时自动激活，无需手动调用。
+
+---
+
+## 🔗 重要文档索引
+
+### 系统文档
+- 📖 [完整系统指南](COMPLETE_SYSTEM_GUIDE.md)
+- 🔄 [演进系统说明](00_Agent_Library/EVOLUTION_GUIDE.md)
+- 🗂️ [工作区索引](06_Learning_Journal/workspace_memory/workspace_index_latest.md)
+
+### 快速链接
+- 🚀 [想法落地工作流](docs/guides/IDEA_WORKFLOW.md) - 从模糊想法到可用产品
+- 🤖 [超级管家模式](skills/super-butler/SKILL.md) - 统一工作区管理
+- 🛠️ [扩展开发指南](docs/guides/AGENT_DEVELOPMENT.md) - 开发新智能体
+
+---
+
+## 💡 常见问题
+
+### Q: 中文显示乱码?
+**A**: 在代码中添加：
+```python
+if sys.platform == 'win32':
+    import codecs
+    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
+```
+
+### Q: Flask 启动失败?
+**A**: 检查端口占用，默认 5000，可在 `flask_app.py` 中修改
+
+### Q: Playwright 浏览器未安装?
+**A**: 运行 `playwright install chromium`
+
+### Q: 旧版本代码在哪?
+**A**: 查看 `02_Project_Archive/version_backups/` 或保留在原目录的 `_v{版本}.py` 文件
+
+---
+
+## 📦 核心依赖
+
 ```
 streamlit>=1.28.0        # Web界面
 flask>=2.3.0             # Web服务
@@ -166,18 +195,15 @@ sentence-transformers    # 嵌入模型
 paddleocr>=2.7.0         # OCR (备用)
 ```
 
-### 安装
+安装命令:
 ```bash
-# 安装全部依赖
 pip install -r requirements.txt
-
-# 安装 Playwright 浏览器
 playwright install chromium
 ```
 
 ---
 
-## 常用命令
+## 🛠️ 常用维护命令
 
 ### 工作区维护
 ```bash
@@ -206,41 +232,9 @@ cat 06_Learning_Journal/evolution_log.json
 cat 06_Learning_Journal/version_registry.json
 ```
 
-### Git 操作
-```bash
-# 推荐的提交信息格式
-git commit -m "feat: 新增功能描述"
-git commit -m "fix: 修复问题描述"
-git commit -m "docs: 文档更新"
-```
-
 ---
 
-## 工作流程
-
-### 开发新功能
-1. 在 `01_Active_Projects/` 对应目录开发
-2. 使用 `agent_toolkit.py` 包装为 AgentTool
-3. 更新 `office_agent_studio.py` 添加到菜单
-4. 运行 `version_manager.py` 记录版本
-5. 测试并更新文档
-
-### 版本升级流程
-1. **自动备份**: 旧代码自动备份到 `02_Project_Archive/version_backups/`
-2. **保留兼容**: 旧版本文件不删除，添加 `_v{版本}` 后缀
-3. **记录变更**: 更新 `06_Learning_Journal/evolution_log.json`
-4. **生成报告**: 自动创建 `version_report_*.md` 和 `evolution_report_*.md`
-
-### 代码审查要点
-- ✅ Windows 编码兼容性
-- ✅ 路径使用 `pathlib`
-- ✅ 异常处理完整
-- ✅ 中文注释清晰
-- ✅ 向后兼容性
-
----
-
-## 关键工具说明
+## 🎯 核心智能体
 
 ### 市场监管智能体 (market_supervision_agent)
 - **入口**: `ui/flask_app.py`
@@ -264,211 +258,61 @@ git commit -m "docs: 文档更新"
 
 ---
 
-## 常见问题
+## ⚠️ 重要提醒
 
-### Q: Flask 启动失败?
-A: 检查端口占用，默认 5000，可在 `flask_app.py` 中修改
+### 不兼容的操作
+❌ 不要直接删除 `_v{版本}.py` 文件（历史版本）
+❌ 不要修改 `06_Learning_Journal/` 中的 JSON 文件（自动生成）
+❌ 不要移动 `02_Project_Archive/` 中的备份文件
 
-### Q: Playwright 浏览器未安装?
-A: 运行 `playwright install chromium`
+### 推荐做法
+✅ 使用 `workspace_scanner.py` 定期扫描工作区
+✅ 升级前查看 `evolution_log.json` 了解变更
+✅ 遇到问题查看 `COMPLETE_SYSTEM_GUIDE.md` 或 `docs/TROUBLESHOOTING.md`
+✅ 使用版本管理器追踪变化
 
-### Q: 中文显示乱码?
-A: 确保文件编码为 UTF-8 with BOM，或在代码中添加:
+---
+
+## 🚀 想法落地工作流 (Idea to Product) ⭐
+
+当您有**新想法、改进需求或项目构想**时，系统提供5阶段流程：
+
+```
+模糊想法 → 澄清 → 探索 → 设计 → 原型 → 验证 → 可用产品
+   (1分钟)  (10分)  (5分)  (15分)  (20分)  (10分)   总计<1小时
+```
+
+**快速启动**:
 ```python
-if sys.platform == 'win32':
-    import codecs
-    sys.stdout = codecs.getwriter('utf-8')(sys.stdout.buffer, 'strict')
+# 运行工作流引擎
+python 00_Agent_Library/idea_workflow_engine.py
+
+# 或在Python中使用
+from 00_Agent_Library.idea_workflow_engine import quick_start
+session = quick_start("我想添加智能推荐功能")
 ```
 
-### Q: 旧版本代码在哪?
-A: 查看 `02_Project_Archive/version_backups/` 或保留在原目录的 `_v{版本}.py` 文件
+**详细文档**: [docs/guides/IDEA_WORKFLOW.md](docs/guides/IDEA_WORKFLOW.md)
 
 ---
 
-## 配置文件位置
+## 📚 文档系统说明
 
-| 工具 | 配置文件 | 说明 |
-|------|----------|------|
-| 市场监管 | `01_Active_Projects/market_supervision_agent/config/*.yaml` | 数据库、OCR配置 |
-| 记忆助手 | `01_Active_Projects/memory_agent/data/` | ChromaDB数据库 |
-| 文件整理 | `01_Active_Projects/file_organizer/config.json` | 整理规则 |
+### 文档组织结构
 
----
+本项目采用**分层文档系统**：
 
-## 扩展开发
+1. **CLAUDE.md** (本文件) - 核心配置和快速导航
+2. **docs/** 目录 - 详细专题文档
+3. **skills/** 目录 - 技能执行清单
+4. **项目内文档** - 各项目的 README 和指南
 
-### 添加新工具
-1. 创建工具类继承 `BaseTool`:
-```python
-from agent_toolkit import BaseTool
+### 文档使用原则
 
-class NewTool(BaseTool):
-    def __init__(self):
-        super().__init__(name="new_tool", description="工具描述")
-
-    def validate_input(self, **kwargs):
-        return True, ""
-
-    def execute(self, **kwargs):
-        return {'success': True, 'result': None, 'message': '完成'}
-```
-
-2. 注册到 `office_agent_studio.py` 的 `tools` 字典
-
-### 添加工作流
-参考 `workflow_engine.py` 使用 LangGraph 模式:
-```python
-from workflow_engine import WorkflowEngine
-
-workflow = WorkflowEngine()
-workflow.add_node("step1", step1_function)
-workflow.add_edge("step1", "step2")
-result = workflow.run(initial_state)
-```
-
----
-
-## 重要提醒
-
-### ⚠️ 不兼容的操作
-- ❌ 不要直接删除 `_v{版本}.py` 文件（历史版本）
-- ❌ 不要修改 `06_Learning_Journal/` 中的 JSON 文件（自动生成）
-- ❌ 不要移动 `02_Project_Archive/` 中的备份文件
-
-### ✅ 推荐做法
-- ✅ 使用 `workspace_scanner.py` 定期扫描工作区
-- ✅ 升级前查看 `evolution_log.json` 了解变更
-- ✅ 遇到问题查看 `COMPLETE_SYSTEM_GUIDE.md`
-- ✅ 使用版本管理器追踪变化
-
----
-
-## Claude Code Skills ⭐
-
-工作区配置了 **Claude Code Skills** 系统，实现特定任务的自动化执行。
-
-### 可用技能
-
-| 技能名称 | 触发关键词 | 核心功能 | 文档 |
-|---------|-----------|---------|------|
-| **super-butler** ⭐ | `超级管家`、`管家模式`、`工作区状态`、`帮我管理` | **统一工作区管理 + 全方位服务** | [skills/super-butler/SKILL.md](skills/super-butler/SKILL.md) |
-| **application-generator** | `生成申请书`、`填写申请表`、`个体工商户开业` | OCR识别 + Word模板填充 | [skills/application-generator/SKILL.md](skills/application-generator/SKILL.md) |
-| **license-organizer** | `整理证照`、`归类文件`、`归档证件` | 智能识别 + 自动分类归档 | [skills/license-organizer/SKILL.md](skills/license-organizer/SKILL.md) |
-| **knowledge-indexer** | `索引笔记`、`更新知识库`、`构建索引` | 向量化索引 + 语义搜索 | [skills/knowledge-indexer/SKILL.md](skills/knowledge-indexer/SKILL.md) |
-
----
-
-## 🤖 超级管家模式 (Super Butler Mode) ⭐ NEW
-
-**核心功能**: 本工作区配置了**智能管家系统**，Claude 会自动识别并响应管理需求。
-
-### 自动激活条件
-
-当检测到以下任一情况时，Claude 自动进入超级管家模式：
-
-1. **触发关键词**
-   - "超级管家"、"管家模式"、"工作区状态"
-   - "帮我管理"、"工作区概览"、"启动工具"
-
-2. **管理类请求**
-   - 询问工具使用方法
-   - 请求启动某个智能体
-   - 工作区维护相关
-
-3. **新对话开始**
-   - Claude 会主动介绍工作区状态
-   - 提供可用操作选项
-
-### 管家能力
-
-| 能力类别 | 具体功能 |
-|---------|---------|
-| **🎯 工具启动** | 一键启动任何智能体或工具 |
-| **📊 状态监控** | 实时掌握工作区健康状态 |
-| **🔍 问题诊断** | 快速定位和解决技术问题 |
-| **📚 知识检索** | 利用 Memory Agent 搜索代码和解决方案 |
-| **🛠️ 工作流编排** | 多工具协作完成复杂任务 |
-
-### 使用示例
-
-```
-你: 超级管家，工作区什么状态？
-
-Claude: # 🤖 超级管家模式已激活
-
-       您好！我是您的智能工作区管家。
-
-       ## 📊 工作区状态
-       - 活跃项目: 5个
-       - 可用工具: 39个
-       - Python版本: 3.12.9
-
-       ## 🎯 核心智能体
-       ✅ 市场监管智能体 (生产就绪)
-       ✅ 学习记忆助手 (Web UI完成)
-       🔄 证照整理工具 (MVP阶段)
-       ✅ 广西政务登录 (可用)
-
-       ## 💡 我能帮您什么？
-       - 启动任何工具
-       - 搜索代码或解决方案
-       - 管理工作区
-       - 开发新功能
-
-       请告诉我您需要什么帮助？
-```
-
-### 管家文档
-
-完整功能说明请参阅: **[skills/super-butler/SKILL.md](skills/super-butler/SKILL.md)**
-
-### Skills 工作原理
-
-```
-用户说："帮我生成个体工商户申请书"
-    ↓
-Claude Code 检测关键词 → 匹配 application-generator 技能
-    ↓
-读取 SKILL.md → 按步骤执行：
-    1. OCR识别营业执照
-    2. 填充Word模板
-    3. 生成申请文档
-    ↓
-返回结果：申请书已生成到 generated_applications/
-```
-
-### 创建新技能
-
-1. 在 `skills/` 创建新目录
-2. 添加 `SKILL.md` 文件，包含：
-   - **名称**: 小写字母和连字符
-   - **描述**: 详细的触发场景和能力范围
-   - **执行步骤**: 结构化的任务清单
-   - **示例**: 具体使用案例
-   - **错误处理**: 常见问题和解决方案
-
-3. Claude Code 会自动识别并加载新技能
-
-### Skills vs CLAUDE.md
-
-| 维度 | CLAUDE.md | Skills |
-|------|-----------|--------|
-| **性质** | 项目百科全书 | 任务执行清单 |
-| **加载时机** | 每次对话 | 按需触发 |
-| **内容** | 项目结构、规范、工具 | 具体任务流程 |
-| **类比** | 建筑蓝图 | 施工手册 |
-
-**最佳实践**: CLAUDE.md 提供项目上下文，Skills 执行具体任务 ✨
-
----
-
-## 相关文档
-
-- **[COMPLETE_SYSTEM_GUIDE.md](COMPLETE_SYSTEM_GUIDE.md)** - 完整系统架构
-- **[OFFICE_AGENT_STUDIO_README.md](OFFICE_AGENT_STUDIO_README.md)** - GUI使用说明
-- **[00_Agent_Library/EVOLUTION_GUIDE.md](00_Agent_Library/EVOLUTION_GUIDE.md)** - 演进系统说明
-- **[06_Learning_Journal/workspace_memory/workspace_index_latest.md](06_Learning_Journal/workspace_memory/workspace_index_latest.md)** - 工作区索引
-- **[skills/](skills/)** - Claude Code 技能目录
+- ✅ **快速查询**: 先看 CLAUDE.md 的导航表
+- ✅ **深入学习**: 查阅 docs/ 目录的专题文档
+- ✅ **执行任务**: 参考 skills/ 目录的 SKILL.md
+- ✅ **系统理解**: 阅读 COMPLETE_SYSTEM_GUIDE.md
 
 ---
 
@@ -476,3 +320,5 @@ Claude Code 检测关键词 → 匹配 application-generator 技能
 **更新策略**: 增量升级，向后兼容
 **版本追踪**: 自动化演进管理系统
 **技能系统**: 自动化任务执行
+
+**需要详细信息?** 查看 [docs/](docs/) 目录 📚

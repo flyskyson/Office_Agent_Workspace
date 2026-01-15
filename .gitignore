@@ -26,6 +26,8 @@ env/
 ENV/
 env.bak/
 venv.bak/
+venv_*/
+venv_*.*/
 
 # IDE配置
 .vscode/
@@ -113,7 +115,70 @@ github_token.txt
 *_token.txt
 *token.txt
 nul
+*.key
+*.pem
+*.cert
+credentials.yaml
+secrets.yaml
+config/local_*.yaml
+.env.local
+.env.secrets
+# 市场监管智能体
 01_Active_Projects/market_supervision_agent/output/
-01_Active_Projects/market_supervision_agent/venv_py312/
+01_Active_Projects/market_supervision_agent/venv_**/
+01_Active_Projects/market_supervision_agent/generated_applications/
+01_Active_Projects/market_supervision_agent/data/browser_profile/
+01_Active_Projects/market_supervision_agent/data/test_reports/
+01_Active_Projects/market_supervision_agent/logs/
+01_Active_Projects/market_supervision_agent/__pycache__/
+01_Active_Projects/market_supervision_agent/*_backup/
+01_Active_Projects/market_supervision_agent/BACKUP_*.md
+01_Active_Projects/market_supervision_agent/temp_*/
+01_Active_Projects/market_supervision_agent/archives/
+
+# 测试脚本（保留tests/目录中的）
+test_*.py
+test_*.bat
+verify_*.py
+debug_*.py
+quick_*.py
+analyze_*.py
+detect_*.py
+extract_*.py
+save_*.py
+check_*.py
+interactive_*.py
+auto_*.py
+*_test_*.py
+*_tests.py
+
+# 临时脚本和文件
+*_v*.py
+*_backup.*
+*_backup_*/
+*_bak.*
+backup_*.py
+backup_*.bat
+use_existing*.py
+start_*.py
+start_*.bat
+create_*.py
+download_*.py
+
+# 配置备份
+*.yaml.bak
+*.json.bak
+*.md.bak
+
+# 生成的文档和报告
+test_render_output.docx
+print_log.json
+application_*.docx
+*_report.md
+*_report.json
+清理报告_*.md
+维护报告_*.md
+工作区健康报告_*.md
+
 *.tmp
 tmpclaude-*

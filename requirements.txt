@@ -1,0 +1,34 @@
+# Office Agent Workspace - 核心依赖
+# 自动生成于 2026-01-15
+
+# Web框架
+streamlit>=1.28.0
+flask>=2.3.0
+
+# 浏览器自动化
+playwright>=1.40.0
+
+# 文档处理
+python-docx>=1.0.0
+pypdf2>=3.0.0
+docxtpl>=0.16.0
+
+# 数据处理
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# OCR
+paddleocr>=2.7.0
+baidu-aip>=4.0.0
+
+# 向量数据库
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+
+# 工具库
+python-dotenv>=1.0.0
+pyyaml>=6.0
+requests>=2.31.0
+
+# 中文处理
+jieba>=0.42.0

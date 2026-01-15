@@ -1,0 +1,275 @@
+# 统一工作流配置
+# 市场监管智能体 v5.0
+
+# 工作流场景定义
+scenarios:
+  # 个体工商户设立
+  registration:
+    name: "个体工商户设立"
+    description: "新办个体工商户营业执照"
+
+    # 必需字段
+    required_fields:
+      - operator_name      # 经营者姓名
+      - id_card            # 身份证号
+      - phone              # 联系电话
+      - business_name      # 个体工商户名称
+      - business_address   # 经营场所地址
+      - business_scope     # 经营范围
+
+    # 可选字段
+    optional_fields:
+      - email              # 电子邮箱
+      - gender             # 性别
+      - nation             # 民族
+      - address            # 经营者地址
+
+    # 材料清单
+    materials:
+      - name: "身份证正面"
+        key: "id_card_front"
+        category: "id_card"
+        required: true
+        description: "经营者身份证正面照片"
+
+      - name: "身份证反面"
+        key: "id_card_back"
+        category: "id_card"
+        required: true
+        description: "经营者身份证反面照片"
+
+      - name: "经营场所证明"
+        key: "property_cert"
+        category: "property_cert"
+        required: true
+        description: "产权证明、租赁合同或申报表（三选一）"
+        options:
+          - property_cert      # 产权证明
+          - lease_contract     # 租赁合同
+          - declaration_form   # 申报表
+
+  # 变更登记
+  change:
+    name: "变更登记"
+    description: "个体工商户信息变更"
+
+    required_fields:
+      - operator_name
+      - id_card
+      - phone
+      - credit_code         # 统一社会信用代码
+      - change_items        # 变更事项
+
+    optional_fields:
+      - email
+      - gender
+      - nation
+
+    materials:
+      - name: "身份证正面"
+        key: "id_card_front"
+        category: "id_card"
+        required: true
+
+      - name: "身份证反面"
+        key: "id_card_back"
+        category: "id_card"
+        required: true
+
+      - name: "营业执照"
+        key: "business_license"
+        category: "license"
+        required: true
+        description: "原营业执照正本或副本"
+
+      - name: "变更证明"
+        key: "change_proof"
+        category: "other"
+        required: false
+        description: "相关部门的变更批准文件"
+
+  # 注销登记
+  cancellation:
+    name: "注销登记"
+    description: "个体工商户注销"
+
+    required_fields:
+      - operator_name
+      - id_card
+      - phone
+      - credit_code
+      - cancellation_reason  # 注销原因
+
+    optional_fields:
+      - email
+      - gender
+      - nation
+
+    materials:
+      - name: "身份证正面"
+        key: "id_card_front"
+        category: "id_card"
+        required: true
+
+      - name: "身份证反面"
+        key: "id_card_back"
+        category: "id_card"
+        required: true
+
+      - name: "营业执照"
+        key: "business_license"
+        category: "license"
+        required: true
+
+      - name: "清税证明"
+        key: "tax_clearance"
+        category: "other"
+        required: false
+        description: "税务部门出具的清税证明"
+
+  # 年度报告
+  annual_report:
+    name: "年度报告"
+    description: "个体工商户年度报告填报"
+
+    required_fields:
+      - operator_name
+      - id_card
+      - phone
+      - credit_code
+      - annual_year         # 报告年度
+
+    optional_fields:
+      - email
+
+    materials:
+      - name: "营业执照"
+        key: "business_license"
+        category: "license"
+        required: true
+        description: "用于提取统一社会信用代码"
+
+# 工作流阶段定义
+stages:
+  - id: "data_input"
+    name: "数据输入"
+    description: "从三个输入源收集数据"
+
+  - id: "data_fusion"
+    name: "数据融合"
+    description: "合并多源数据，智能补全"
+
+  - id: "validation"
+    name: "数据校验"
+    description: "检查数据完整性和材料状态"
+
+  - id: "supplement"
+    name: "数据补充"
+    description: "应用默认值和智能推断"
+
+  - id: "generation"
+    name: "输出生成"
+    description: "生成Word申请书、流程报告等"
+
+# 输入源配置
+input_sources:
+  ocr_upload:
+    name: "文件上传 + OCR"
+    description: "从证件照片中自动提取信息"
+    enabled: true
+    priority: 1  # 优先级（数字越小越低）
+
+    # 支持的文件类型
+    file_types:
+      - ".jpg"
+      - ".jpeg"
+      - ".png"
+      - ".pdf"
+      - ".bmp"
+
+    # OCR引擎配置
+    ocr_engine:
+      provider: "baidu"  # baidu | paddle
+      api_key: ""        # 百度OCR API Key
+      secret_key: ""     # 百度OCR Secret Key
+
+  web_portal:
+    name: "政务服务网"
+    description: "从广西数字政务一体化平台自动填写并提取数据"
+    enabled: true
+    priority: 2
+
+    # 自动化配置
+    automation:
+      headless: false
+      slow_mo: 500
+      auto_submit: false  # 是否自动提交（建议false）
+
+  web_form:
+    name: "Flask Web表单"
+    description: "通过Web表单补充缺失信息"
+    enabled: true
+    priority: 3  # 最高优先级
+
+# 数据融合规则
+data_fusion:
+  # 字段优先级（数字越大优先级越高）
+  field_priority:
+    operator_name: [web_form, web_portal, ocr_upload]
+    id_card: [web_form, web_portal, ocr_upload]
+    phone: [web_form, web_portal, ocr_upload]
+    business_name: [web_form, web_portal, ocr_upload]
+    business_address: [web_form, web_portal, ocr_upload]
+    business_scope: [web_form, web_portal, ocr_upload]
+
+  # 自动补充规则
+  auto_supplement:
+    # 性别推断（从身份证号）
+    gender_from_idcard: true
+
+    # 民族默认值
+    default_nation: "汉族"
+
+    # 行政区划固定
+    fixed_admin_area: "广西玉林市兴业县蒲塘镇"
+
+# 材料校验配置
+validation:
+  # 校验模式
+  mode: "lenient"  # strict | lenient
+
+  # 宽松模式：只警告，不阻断
+  lenient_mode:
+    warn_on_missing: true
+    allow_continue: true
+
+  # 严格模式：缺失必需材料时阻断
+  strict_mode:
+    warn_on_missing: true
+    allow_continue: false
+
+# 输出配置
+outputs:
+  # Word申请书生成
+  document:
+    enabled: true
+    template: "templates/official/individual_business_application_jinja2.docx"
+    output_dir: "generated_applications"
+
+  # 数据库记录
+  database:
+    enabled: true
+    db_path: "data/market_supervision.db"
+
+  # 流程报告
+  report:
+    enabled: true
+    format: "markdown"  # markdown | json | html
+    output_dir: "reports"
+
+  # 电子档案
+  archive:
+    enabled: true
+    output_dir: "archives"
+    include_materials: true
+    compress: false  # 是否压缩为zip

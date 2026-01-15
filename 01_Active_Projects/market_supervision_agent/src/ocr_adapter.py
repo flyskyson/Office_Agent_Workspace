@@ -105,8 +105,7 @@ class OCREngineAdapter:
         try:
             self._paddle_engine = PaddleOCR(
                 use_angle_cls=self.use_angle_cls,
-                lang=self.lang,
-                show_log=False
+                lang=self.lang
             )
             return True
         except Exception as e:
@@ -201,7 +200,8 @@ class OCREngineAdapter:
 
     def _paddle_recognize_image(self, image_path: str) -> Dict:
         """PaddleOCR 通用识别"""
-        result = self._paddle_engine.ocr(image_path, cls=True)
+        # 移除cls参数以兼容新版PaddleOCR
+        result = self._paddle_engine.ocr(image_path)
 
         if not result or not result[0]:
             return {"text": "", "words_result": []}

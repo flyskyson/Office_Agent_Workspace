@@ -1,0 +1,257 @@
+# 行业经营范围映射
+# 用于智能推荐和标准分类
+
+industries:
+  # 餐饮服务
+  餐饮服务:
+    description: "餐饮服务行业"
+    standard_scopes:
+      - name: "餐饮服务"
+        type: "general"
+        keywords: ["餐饮", "小吃", "快餐", "中餐", "西餐"]
+        description: "提供餐饮服务"
+
+      - name: "食品销售"
+        type: "licensed"
+        keywords: ["食品", "预包装食品", "散装食品"]
+        license: "食品经营许可证"
+        description: "销售预包装食品、散装食品"
+
+      - name: "冷食类食品制售"
+        type: "licensed"
+        keywords: ["冷食", "凉菜"]
+        license: "食品经营许可证"
+        description: "制作销售冷食类食品"
+
+      - name: "热食类食品制售"
+        type: "licensed"
+        keywords: ["热食", "炒菜"]
+        license: "食品经营许可证"
+        description: "制作销售热食类食品"
+
+  # 便利店/超市
+  便利店:
+    description: "便利店、小卖部、杂货店"
+    standard_scopes:
+      - name: "日用百货销售"
+        type: "general"
+        keywords: ["百货", "日用品", "杂货"]
+        description: "销售日用百货、日用品"
+
+      - name: "烟草制品零售"
+        type: "licensed"
+        keywords: ["烟草", "香烟"]
+        license: "烟草专卖零售许可证"
+        description: "卷烟、雪茄烟零售"
+
+      - name: "食品销售"
+        type: "licensed"
+        keywords: ["食品", "零食", "饮料"]
+        license: "食品经营许可证"
+        description: "销售预包装食品、饮料"
+
+      - name: "出版物零售"
+        type: "licensed"
+        keywords: ["图书", "报纸", "期刊"]
+        license: "出版物经营许可证"
+        description: "图书、报纸、期刊零售"
+
+  # 服装鞋帽
+  服装鞋帽:
+    description: "服装、鞋帽、箱包销售"
+    standard_scopes:
+      - name: "服装销售"
+        type: "general"
+        keywords: ["服装", "衣服", "男装", "女装", "童装"]
+        description: "服装零售"
+
+      - name: "鞋帽销售"
+        type: "general"
+        keywords: ["鞋", "帽子"]
+        description: "鞋帽零售"
+
+      - name: "箱包销售"
+        type: "general"
+        keywords: ["箱包", "包", "袋"]
+        description: "箱包零售"
+
+  # 家电维修
+  家电维修:
+    description: "家电维修、电子产品维修"
+    standard_scopes:
+      - name: "家用电器维修"
+        type: "general"
+        keywords: ["家电", "电器", "维修"]
+        description: "家用电器修理服务"
+
+      - name: "电子产品维修"
+        type: "general"
+        keywords: ["电子产品", "手机", "电脑"]
+        description: "电子产品维修服务"
+
+      - name: "家电销售"
+        type: "general"
+        keywords: ["家电", "电器"]
+        description: "家用电器销售"
+
+  # 美发美容
+  美发美容:
+    description: "理发、美容、美甲服务"
+    standard_scopes:
+      - name: "理发服务"
+        type: "general"
+        keywords: ["理发", "剪发", "美发"]
+        description: "理发、美发服务"
+
+      - name: "美容服务"
+        type: "licensed"
+        keywords: ["美容", "护肤"]
+        license: "公共场所卫生许可证"
+        description: "美容、护肤服务"
+
+      - name: "美甲服务"
+        type: "general"
+        keywords: ["美甲", "指甲"]
+        description: "美甲、美睫服务"
+
+      - name: "化妆品销售"
+        type: "general"
+        keywords: ["化妆品", "护肤品"]
+        description: "化妆品、护肤品零售"
+
+  # 农资销售
+  农资销售:
+    description: "农药、化肥、种子销售"
+    standard_scopes:
+      - name: "农药销售"
+        type: "licensed"
+        keywords: ["农药"]
+        license: "农药经营许可证"
+        description: "农药零售"
+
+      - name: "化肥销售"
+        type: "general"
+        keywords: ["化肥", "肥料"]
+        description: "化肥零售"
+
+      - name: "种子销售"
+        type: "licensed"
+        keywords: ["种子"]
+        license: "种子经营许可证"
+        description: "农作物种子零售"
+
+  # 建材装修
+  建材装修:
+    description: "建筑材料、装饰材料、装修服务"
+    standard_scopes:
+      - name: "建材销售"
+        type: "general"
+        keywords: ["建材", "建筑材料", "水泥", "钢材"]
+        description: "建筑材料零售"
+
+      - name: "装饰材料销售"
+        type: "general"
+        keywords: ["装饰", "装修", "瓷砖", "地板"]
+        description: "装饰材料零售"
+
+      - name: "室内装修"
+        type: "general"
+        keywords: ["装修", "装饰", "室内设计"]
+        description: "室内装饰、装修服务"
+
+  # 五金机电
+  五金机电:
+    description: "五金工具、机电设备销售"
+    standard_scopes:
+      - name: "五金产品销售"
+        type: "general"
+        keywords: ["五金", "工具", "螺丝"]
+        description: "五金工具零售"
+
+      - name: "机电设备销售"
+        type: "general"
+        keywords: ["机电", "电机", "水泵"]
+        description: "机电设备零售"
+
+      - name: "电动工具维修"
+        type: "general"
+        keywords: ["电动工具", "维修"]
+        description: "电动工具维修服务"
+
+# 常见许可项目清单
+licensed_items:
+  - name: "食品经营"
+    license: "食品经营许可证"
+    authority: "市场监督管理局"
+
+  - name: "烟草零售"
+    license: "烟草专卖零售许可证"
+    authority: "烟草专卖局"
+
+  - name: "出版物经营"
+    license: "出版物经营许可证"
+    authority: "新闻出版局"
+
+  - name: "农药经营"
+    license: "农药经营许可证"
+    authority: "农业农村局"
+
+  - name: "种子经营"
+    license: "种子经营许可证"
+    authority: "农业农村局"
+
+  - name: "药品经营"
+    license: "药品经营许可证"
+    authority: "药品监督管理局"
+
+  - name: "医疗器械经营"
+    license: "医疗器械经营许可证"
+    authority: "药品监督管理局"
+
+  - name: "餐饮服务"
+    license: "食品经营许可证"
+    authority: "市场监督管理局"
+
+  - name: "美容服务"
+    license: "公共场所卫生许可证"
+    authority: "卫生健康委员会"
+
+# 经营范围模板
+scope_templates:
+  # 简单模板
+  simple:
+    name: "简单经营"
+    template: "{industry}销售"
+    example: "日用百货销售"
+
+  # 复合模板
+  compound:
+    name: "复合经营"
+    template: "{industry1}销售；{industry2}销售"
+    example: "日用百货销售；食品销售"
+
+  # 服务+销售模板
+  service_sales:
+    name: "服务+销售"
+    template: "{service}服务；{industry}销售"
+    example: "家电维修服务；家用电器销售"
+
+# 默认配置
+defaults:
+  # 默认行政区划
+  admin_area: "广西玉林市兴业县蒲塘镇"
+
+  # 默认组织形式
+  organization_forms:
+    - "个体工商户"
+    - "个人经营"
+    - "家庭经营"
+
+  # 常见行业后缀
+  industry_suffixes:
+    - "销售"
+    - "零售"
+    - "服务"
+    - "制售"
+    - "维修"
+    - "加工"

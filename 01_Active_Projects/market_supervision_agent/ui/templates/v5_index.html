@@ -1,0 +1,59 @@
+{% extends "v5/v5_base.html" %}
+
+{% block title %}首页 - 市场监管智能体 v5.0{% endblock %}
+
+{% block content %}
+<div class="stats-grid">
+    <div class="stat-card">
+        <div class="number">{{ stats.total_operators }}</div>
+        <div class="label">总经营户数</div>
+    </div>
+    <div class="stat-card">
+        <div class="number">{{ stats.pending_applications }}</div>
+        <div class="label">待生成申请书</div>
+    </div>
+    <div class="stat-card">
+        <div class="number">{{ stats.generated_today }}</div>
+        <div class="label">今日生成</div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>快速开始</h2>
+    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+        <a href="{{ url_for('new_operator') }}" class="btn btn-primary">新建经营户</a>
+        <a href="{{ url_for('operator_list') }}" class="btn btn-success">查看经营户列表</a>
+    </div>
+</div>
+
+<div class="card">
+    <h2>工作流步骤</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px;">
+        <div style="text-align: center; padding: 20px; background: #f0f5ff; border-radius: 8px;">
+            <div style="font-size: 24px; font-weight: bold; color: #1890ff; margin-bottom: 10px;">1</div>
+            <div style="font-weight: 500; margin-bottom: 5px;">数据输入</div>
+            <div style="font-size: 12px; color: #666;">OCR识别 + Web表单</div>
+        </div>
+        <div style="text-align: center; padding: 20px; background: #f0f5ff; border-radius: 8px;">
+            <div style="font-size: 24px; font-weight: bold; color: #1890ff; margin-bottom: 10px;">2</div>
+            <div style="font-weight: 500; margin-bottom: 5px;">名称工具</div>
+            <div style="font-size: 12px; color: #666;">验证 + 生成建议</div>
+        </div>
+        <div style="text-align: center; padding: 20px; background: #f0f5ff; border-radius: 8px;">
+            <div style="font-size: 24px; font-weight: bold; color: #1890ff; margin-bottom: 10px;">3</div>
+            <div style="font-weight: 500; margin-bottom: 5px;">材料校验</div>
+            <div style="font-size: 12px; color: #666;">完整性检查</div>
+        </div>
+        <div style="text-align: center; padding: 20px; background: #f0f5ff; border-radius: 8px;">
+            <div style="font-size: 24px; font-weight: bold; color: #1890ff; margin-bottom: 10px;">4</div>
+            <div style="font-weight: 500; margin-bottom: 5px;">申请书生成</div>
+            <div style="font-size: 12px; color: #666;">Word文档 + 打印</div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>最近操作</h2>
+    <p style="color: #999; padding: 20px 0;">使用上方按钮开始操作...</p>
+</div>
+{% endblock %}

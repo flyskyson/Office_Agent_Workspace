@@ -1,0 +1,170 @@
+# 政务服务网配置
+# 广西数字政务一体化平台
+
+portal:
+  # 基础URL
+  base_url: "https://zwfw.gxzf.gov.cn/yct/"
+  login_url: "https://zwfw.gxzf.gov.cn/yct/login"
+
+  # 登录凭证（从环境变量读取）
+  # 设置环境变量: export PORTAL_USERNAME="your_username"
+  # 设置环境变量: export PORTAL_PASSWORD="your_password"
+  credentials:
+    username: "${PORTAL_USERNAME}"
+    password: "${PORTAL_PASSWORD}"
+
+    # Cookie会话持久化
+    cookies_path: "data/portal_cookies.json"
+    session_timeout: 1800  # 30分钟（秒）
+
+  # 浏览器自动化配置
+  automation:
+    headless: false        # 是否无头模式（建议false，方便观察）
+    slow_mo: 500          # 操作延迟（毫秒）
+    timeout: 30000        # 默认超时时间（毫秒）
+
+    # 截图和下载
+    screenshot_dir: "data/screenshots"
+    download_dir: "data/downloads"
+
+  # 验证码配置
+  captcha:
+    mode: "auto"           # auto=自动尝试滑块, manual=手动处理
+    timeout: 300          # 等待手动输入的秒数
+    max_retries: 3        # 最大重试次数
+
+  # 速率限制（避免被封禁）
+  rate_limiting:
+    max_concurrent: 3     # 最大并发数
+    requests_per_minute: 10  # 每分钟最大请求数
+    min_interval: 2000    # 请求间隔（毫秒）
+
+  # 反爬虫规避
+  evasion:
+    random_delay: true    # 随机延迟
+    user_agent_rotation: false  # UA轮换（暂不启用）
+    mouse_simulation: true  # 鼠标轨迹模拟
+
+# 选择器配置（页面结构变化时更新）
+selectors:
+  login:
+    # 用户名输入框（多个选择器，依次尝试）
+    username_input:
+      - 'input[name="username"]'
+      - 'input[type="text"][placeholder*="用户名"]'
+      - 'input[placeholder*="身份证"]'
+      - '#username'
+
+    # 密码输入框
+    password_input:
+      - 'input[name="password"]'
+      - 'input[type="password"][placeholder*="密码"]'
+      - '#password'
+
+    # 滑块验证码
+    slider_captcha:
+      - '.slider-btn'
+      - '.captcha-slider'
+      - '.verify-slider'
+      - '.slide-verify'
+
+    # 登录按钮
+    login_button:
+      - 'button:has-text("登录")'
+      - 'button[type="submit"]'
+      - '.login-btn'
+      - '#loginBtn'
+
+    # 登录成功标志
+    success_indicator:
+      - '.user-info'
+      - '.avatar'
+      - '[class*="user"]'
+      - 'a:has-text("退出")'
+
+  registration:
+    # 菜单导航
+    menu_link:
+      - 'a:has-text("个体工商户")'
+      - 'a:has-text("设立登记")'
+      - '[href*="registration"]'
+
+    # 名称输入
+    name_input:
+      - 'input[name="businessName"]'
+      - 'input[placeholder*="名称"]'
+      - '#businessName'
+
+    # 名称查重按钮
+    name_check_button:
+      - 'button:has-text("查重")'
+      - 'button:has-text("检查")'
+      - '.check-btn'
+
+    # 经营者姓名
+    operator_name_input:
+      - 'input[name="operatorName"]'
+      - 'input[placeholder*="经营者"]'
+      - '#operatorName'
+
+    # 身份证号
+    id_card_input:
+      - 'input[name="idCard"]'
+      - 'input[placeholder*="身份证"]'
+      - '#idCard'
+
+    # 联系电话
+    phone_input:
+      - 'input[name="phone"]'
+      - 'input[placeholder*="电话"]'
+      - '#phone'
+
+    # 经营场所地址
+    address_input:
+      - 'input[name="address"]'
+      - 'textarea[name="address"]'
+      - 'textarea[placeholder*="地址"]'
+
+    # 经营范围输入
+    scope_input:
+      - 'textarea[name="businessScope"]'
+      - 'input[name="businessScope"]'
+
+    # 经营范围选择按钮
+    scope_select_button:
+      - 'button:has-text("选择")'
+      - 'button:has-text("添加")'
+      - '.scope-select-btn'
+
+    # 保存按钮
+    save_button:
+      - 'button:has-text("保存")'
+      - 'button:has-text("暂存")'
+
+    # 提交按钮
+    submit_button:
+      - 'button:has-text("提交")'
+      - 'button:has-text("申请")'
+
+# 材料上传配置（待实现）
+materials_upload:
+  # 上传按钮选择器
+  upload_button:
+    - 'input[type="file"]'
+    - '.upload-btn'
+    - 'button:has-text("上传")'
+
+  # 材料类型映射
+  material_types:
+    id_card_front:
+      selector: 'input[name="idCardFront"]'
+      accept: ".jpg,.jpeg,.png,.pdf"
+    id_card_back:
+      selector: 'input[name="idCardBack"]'
+      accept: ".jpg,.jpeg,.png,.pdf"
+    property_cert:
+      selector: 'input[name="propertyCert"]'
+      accept: ".jpg,.jpeg,.png,.pdf"
+    lease_contract:
+      selector: 'input[name="leaseContract"]'
+      accept: ".jpg,.jpeg,.png,.pdf"

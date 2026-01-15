@@ -1,0 +1,178 @@
+{% extends "v5/v5_base.html" %}
+
+{% block title %}{{ '编辑' if operator else '新建' }}经营户 - 市场监管智能体 v5.0{% endblock %}
+
+{% block content %}
+<div class="card">
+    <h2>{{ '编辑' if operator else '新建' }}经营户</h2>
+
+    <form method="POST" style="max-width: 800px;">
+        <h3 style="margin: 30px 0 20px; color: #1890ff;">一、基本信息</h3>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="operator_name">经营者姓名 *</label>
+                <input type="text" id="operator_name" name="operator_name"
+                       value="{{ form_data.operator_name if form_data else (operator.operator_name if operator else '') }}"
+                       required>
+            </div>
+
+            <div class="form-group">
+                <label for="id_card">身份证号 *</label>
+                <input type="text" id="id_card" name="id_card"
+                       value="{{ form_data.id_card if form_data else (operator.id_card if operator else '') }}"
+                       required>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="phone">联系电话</label>
+                <input type="tel" id="phone" name="phone"
+                       value="{{ form_data.phone if form_data else (operator.phone if operator else '') }}">
+            </div>
+
+            <div class="form-group">
+                <label for="email">电子邮箱</label>
+                <input type="email" id="email" name="email"
+                       value="{{ form_data.email if form_data else (operator.email if operator else '') }}">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="gender">性别</label>
+                <select id="gender" name="gender">
+                    <option value="">请选择</option>
+                    <option value="男" {{ 'selected' if (form_data.gender if form_data else (operator.gender if operator else '')) == '男' else '' }}>男</option>
+                    <option value="女" {{ 'selected' if (form_data.gender if form_data else (operator.gender if operator else '')) == '女' else '' }}>女</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nation">民族</label>
+                <input type="text" id="nation" name="nation"
+                       value="{{ form_data.nation if form_data else (operator.nation if operator else '') }}"
+                       placeholder="如：汉族">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="address">经营者住址</label>
+            <input type="text" id="address" name="address"
+                   value="{{ form_data.address if form_data else (operator.address if operator else '') }}">
+        </div>
+
+        <h3 style="margin: 30px 0 20px; color: #1890ff;">二、经营信息</h3>
+
+        <div class="form-group">
+            <label for="business_name">个体工商户名称</label>
+            <input type="text" id="business_name" name="business_name"
+                   value="{{ form_data.business_name if form_data else (operator.business_name if operator else '') }}"
+                   placeholder="如：玉林市兴业县张三便利店（个体工商户）">
+        </div>
+
+        <div class="form-group">
+            <label for="business_address">经营场所地址 *</label>
+            <input type="text" id="business_address" name="business_address"
+                   value="{{ form_data.business_address if form_data else (operator.business_address if operator else '') }}"
+                   required>
+        </div>
+
+        <div class="form-group">
+            <label for="business_address_detail">详细地址</label>
+            <input type="text" id="business_address_detail" name="business_address_detail"
+                   value="{{ form_data.business_address_detail if form_data else (operator.business_address_detail if operator else '') }}">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="business_area">经营面积</label>
+                <input type="text" id="business_area" name="business_area"
+                       value="{{ form_data.business_area if form_data else (operator.business_area if operator else '') }}"
+                       placeholder="如：50平方米">
+            </div>
+
+            <div class="form-group">
+                <label for="business_type">经营类型</label>
+                <select id="business_type" name="business_type">
+                    <option value="">请选择</option>
+                    <option value="个体经营" {{ 'selected' if (form_data.business_type if form_data else (operator.business_type if operator else '')) == '个体经营' else '' }}>个体经营</option>
+                    <option value="家庭经营" {{ 'selected' if (form_data.business_type if form_data else (operator.business_type if operator else '')) == '家庭经营' else '' }}>家庭经营</option>
+                </select>
+            </div>
+        </div>
+
+        <h3 style="margin: 30px 0 20px; color: #1890ff;">三、经营范围</h3>
+
+        <div class="form-group">
+            <label for="business_scope">经营范围（完整）</label>
+            <textarea id="business_scope" name="business_scope" rows="3"
+                      placeholder="如：日用百货、烟酒零售">{{ form_data.business_scope if form_data else (operator.business_scope if operator else '') }}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="business_scope_licensed">许可经营项目</label>
+            <input type="text" id="business_scope_licensed" name="business_scope_licensed"
+                   value="{{ form_data.business_scope_licensed if form_data else (operator.business_scope_licensed if operator else '') }}">
+        </div>
+
+        <div class="form-group">
+            <label for="business_scope_general">一般经营项目</label>
+            <input type="text" id="business_scope_general" name="business_scope_general"
+                   value="{{ form_data.business_scope_general if form_data else (operator.business_scope_general if operator else '') }}">
+        </div>
+
+        <h3 style="margin: 30px 0 20px; color: #1890ff;">四、从业和资金</h3>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="employee_count">从业人数</label>
+                <input type="number" id="employee_count" name="employee_count"
+                       value="{{ form_data.employee_count if form_data else (operator.employee_count if operator else '1') }}"
+                       min="1" value="1">
+            </div>
+
+            <div class="form-group">
+                <label for="registered_capital">注册资金（万元）</label>
+                <input type="text" id="registered_capital" name="registered_capital"
+                       value="{{ form_data.registered_capital if form_data else (operator.registered_capital if operator else '0.01') }}">
+            </div>
+        </div>
+
+        <h3 style="margin: 30px 0 20px; color: #1890ff;">五、场所信息</h3>
+
+        <div class="form-group">
+            <label for="property_owner">房产所有人/房东</label>
+            <input type="text" id="property_owner" name="property_owner"
+                   value="{{ form_data.property_owner if form_data else (operator.property_owner if operator else '') }}">
+        </div>
+
+        <div class="form-row">
+            <div class="form-group">
+                <label for="lease_start">租赁开始日期</label>
+                <input type="date" id="lease_start" name="lease_start"
+                       value="{{ form_data.lease_start if form_data else (operator.lease_start if operator else '') }}">
+            </div>
+
+            <div class="form-group">
+                <label for="lease_end">租赁结束日期</label>
+                <input type="date" id="lease_end" name="lease_end"
+                       value="{{ form_data.lease_end if form_data else (operator.lease_end if operator else '') }}">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="rent_amount">租金金额</label>
+            <input type="text" id="rent_amount" name="rent_amount"
+                   value="{{ form_data.rent_amount if form_data else (operator.rent_amount if operator else '') }}"
+                   placeholder="如：2000元/月">
+        </div>
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #f0f0f0;">
+            <button type="submit" class="btn btn-primary">保存</button>
+            <a href="{{ url_for('index') }}" class="btn" style="margin-left: 10px;">取消</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -80,7 +80,11 @@
       "Bash(pip show:*)",
       "Bash(\"00_Agent_Library/99_Scripts_Tools/skill_creator.bat\" list)",
       "Bash(\"00_Agent_Library/99_Scripts_Tools/skill_creator.bat\" validate)",
-      "Bash(/chrome)"
+      "Bash(/chrome)",
+      "mcp__chrome-devtools__list_pages",
+      "mcp__zai-mcp-server__extract_text_from_screenshot",
+      "mcp__chrome-devtools__fill_form",
+      "Bash(netstat:*)"
     ]
   },
   "model": "deepseek-chat",

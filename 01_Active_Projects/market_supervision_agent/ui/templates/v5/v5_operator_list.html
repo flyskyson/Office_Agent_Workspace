@@ -1,0 +1,65 @@
+{% extends "v5/v5_base.html" %}
+
+{% block title %}经营户列表 - 市场监管智能体 v5.0{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+        <h2>经营户列表</h2>
+        <a href="{{ url_for('new_operator') }}" class="btn btn-primary">新建经营户</a>
+    </div>
+
+    {% if operators %}
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>经营者姓名</th>
+                <th>身份证号</th>
+                <th>个体工商户名称</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for operator in operators %}
+            <tr>
+                <td>{{ operator.id }}</td>
+                <td><strong>{{ operator.operator_name }}</strong></td>
+                <td>{{ operator.id_card }}</td>
+                <td>{{ operator.business_name or '-' }}</td>
+                <td>
+                    <div style="display: flex; flex-direction: column; gap: 5px;">
+                        <span class="badge {{ 'badge-success' if operator.application_generated else 'badge-warning' }}">
+                            申请书：{{ '已生成' if operator.application_generated else '待生成' }}
+                        </span>
+                        {% if operator.application_generated %}
+                        <span class="badge {{ 'badge-success' if operator.printed else 'badge-warning' }}">
+                            打印：{{ '已打印' if operator.printed else '待打印' }}
+                        </span>
+                        {% endif %}
+                        {% if operator.printed %}
+                        <span class="badge {{ 'badge-success' if operator.signed else 'badge-warning' }}">
+                            签字：{{ '已完成' if operator.signed else '待完成' }}
+                        </span>
+                        {% endif %}
+                    </div>
+                </td>
+                <td>
+                    <a href="{{ url_for('operator_detail', operator_id=operator.id) }}" class="btn btn-primary"
+                       style="padding: 5px 15px; font-size: 12px;">
+                        查看详情
+                    </a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <div style="text-align: center; padding: 60px 20px; color: #999;">
+        <p style="font-size: 18px; margin-bottom: 20px;">暂无经营户记录</p>
+        <a href="{{ url_for('new_operator') }}" class="btn btn-primary">创建第一个经营户</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
