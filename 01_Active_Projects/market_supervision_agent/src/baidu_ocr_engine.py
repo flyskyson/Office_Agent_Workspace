@@ -64,12 +64,34 @@ class BaiduOCREngine:
     def _load_config(self):
         """从 YAML 配置文件加载"""
         try:
+            import os
             import yaml
+            from dotenv import load_dotenv
+
+            # 加载环境变量
+            load_dotenv()
+
             with open(self.config_file, 'r', encoding='utf-8') as f:
                 config = yaml.safe_load(f)
-                self.app_id = config.get('app_id', '')
-                self.api_key = config.get('api_key', '')
-                self.secret_key = config.get('secret_key', '')
+
+                # 获取配置值，支持环境变量替换
+                app_id = config.get('app_id', '')
+                api_key = config.get('api_key', '')
+                secret_key = config.get('secret_key', '')
+
+                # 替换环境变量（格式：${VAR_NAME}）
+                if isinstance(api_key, str) and api_key.startswith('${') and api_key.endswith('}'):
+                    env_var = api_key[2:-1]
+                    api_key = os.getenv(env_var, '')
+
+                if isinstance(secret_key, str) and secret_key.startswith('${') and secret_key.endswith('}'):
+                    env_var = secret_key[2:-1]
+                    secret_key = os.getenv(env_var, '')
+
+                self.app_id = app_id
+                self.api_key = api_key
+                self.secret_key = secret_key
+
                 logger.info(f"从配置文件加载: {self.config_file}")
         except Exception as e:
             logger.warning(f"加载配置文件失败: {e}")

@@ -11,9 +11,35 @@
     "办公自动化",
     "市场监管",
     "Flask",
-    "人工智能"
+    "人工智能",
+    "GPT",
+    "ChatGPT",
+    "深度学习",
+    "机器学习",
+    "LLM",
+    "大模型",
+    "LangChain",
+    "RAG",
+    "Agent",
+    "智能体",
+    "向量数据库",
+    "Embedding",
+    "Transformer",
+    "神经网络",
+    "NLP",
+    "自然语言处理",
+    "计算机视觉",
+    "OpenAI",
+    "Anthropic",
+    "GLM",
+    "智谱"
   ],
-  "short_term": [],
+  "short_term": [
+    "GPT-5",
+    "Claude 4",
+    "AI Agent",
+    "MCP服务器"
+  ],
   "implicit": [],
-  "last_update": "2026-01-14T10:02:07.680238"
+  "last_update": "2026-01-15T12:00:00.000000"
 }

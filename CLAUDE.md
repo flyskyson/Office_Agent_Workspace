@@ -141,6 +141,7 @@ if sys.platform == 'win32':
 | 📄 **申请书生成** | "生成申请书"、"填写申请表"、"个体工商户开业" | [SKILL.md](skills/application-generator/SKILL.md) |
 | 📁 **证照整理** | "整理证照"、"归类文件"、"归档证件" | [SKILL.md](skills/license-organizer/SKILL.md) |
 | 🔍 **知识索引** | "索引笔记"、"更新知识库"、"构建索引" | [SKILL.md](skills/knowledge-indexer/SKILL.md) |
+| 📰 **新闻资讯** | "今日新闻"、"热点新闻"、"有什么新闻" | 见下方「📰 新闻资讯工具」 |
 
 > 💡 **提示**: 技能系统会在检测到关键词时自动激活，无需手动调用。
 
@@ -255,6 +256,71 @@ cat 06_Learning_Journal/version_registry.json
 - **入口**: `file_organizer.py`
 - **配置**: `config.json`
 - **功能**: 按类型/日期/关键词整理文件
+
+---
+
+## 📰 新闻资讯工具 ⭐ NEW
+
+### 🏠 新闻中心（统一入口）
+- **入口**: `news_center.py`
+- **功能**: 整合多种新闻获取方式，提供交互式菜单
+- **使用方式**:
+```bash
+python news_center.py
+```
+
+**支持的获取方式**:
+1. 🕷️ **Playwright 爬虫** - 微博真实数据
+2. 📦 **模拟数据** - 多平台演示
+3. 🌐 **MCP 服务器** - 标准化接口
+4. 📖 **部署教程** - DailyHotApi + Vercel
+5. 🔧 **TrendRadar** - GitHub Actions 自动化
+
+### 🕷️ Playwright 爬虫
+- **入口**: `00_Agent_Library/news_scraper.py`
+- **功能**: 直接爬取平台真实数据
+- **支持**: 微博（已验证）、知乎、百度
+- **使用方式**:
+```bash
+python 00_Agent_Library/news_scraper.py
+```
+
+### 📦 统一新闻读取器
+- **入口**: `00_Agent_Library/news_reader.py`
+- **功能**: 整合多个新闻源，提供一致的接口
+- **支持平台**: 知乎、微博、百度、B站、抖音、今日头条、36氪
+- **使用方式**:
+```bash
+# 获取默认平台（知乎、微博、B站）
+python 00_Agent_Library/news_reader.py
+
+# 指定平台
+python 00_Agent_Library/news_reader.py -p zhihu weibo bilibili
+
+# 指定数量
+python 00_Agent_Library/news_reader.py -n 15
+```
+
+### 🧠 智能新闻监控助手
+- **入口**: `00_Agent_Library/smart_news_monitor.py`
+- **功能**: 记住用户兴趣，智能匹配相关新闻
+- **支持平台**: 知乎、微博、B站、抖音、快手
+- **特点**: 长期/短期兴趣管理，自动学习关键词
+
+### 🤖 AI 新闻追踪器
+- **入口**: `01_Active_Projects/ai_news_tracker/`
+- **功能**: 追踪 GitHub AI 项目、MCP 服务器、AI 工具更新
+- **报告**: 自动生成每日新闻报告
+
+### 🌐 MCP 新闻服务器（已安装）
+| 服务器 | 平台数 | 启动命令 |
+|--------|--------|----------|
+| mcp-hot-news | 13+ | `mcp-hot-news` |
+| @wopal/mcp-server-hotnews | 9 | `npx @wopal/mcp-server-hotnews` |
+
+### 📖 部署指南
+- **文档**: [docs/guides/DEPLOY_DAILYHOTAPI.md](docs/guides/DEPLOY_DAILYHOTAPI.md)
+- **内容**: DailyHotApi Vercel 部署、TrendRadar 设置、爬虫优化
 
 ---
 

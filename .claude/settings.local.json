@@ -1,6 +1,7 @@
 {
   "permissions": {
     "allow": [
+      "Bash(*)",
       "Bash(dir:*)",
       "Bash(tree:*)",
       "Bash(mkdir:*)",
@@ -84,7 +85,9 @@
       "mcp__chrome-devtools__list_pages",
       "mcp__zai-mcp-server__extract_text_from_screenshot",
       "mcp__chrome-devtools__fill_form",
-      "Bash(netstat:*)"
+      "Bash(netstat:*)",
+      "Bash(mcp-hot-news:*)",
+      "Bash(mcp-newsnow:*)"
     ]
   },
   "model": "deepseek-chat",

@@ -1,24 +1,27 @@
-# ⏸️ 市场监管智能体 - Market Supervision Agent (已暂停)
+# 市场监管智能体 - Market Supervision Agent v4.0
 
-> **状态**: 🛑 项目已暂停并归档
-> **归档位置**: `02_Project_Archive/20260111_market_supervision_agent_v1.0/`
-> **归档日期**: 2026-01-11
+> **状态**: ✅ 开发完成 (100%)
+> **版本**: v4.0.0
+> **更新日期**: 2026-01-15
 
-自动化处理市场监管业务，包括企业年报、设立登记、变更登记等。
+自动化处理市场监管业务，包括 OCR 识别、数据提取、申请书生成等。
 
 ## 📋 项目状态
-- **开发状态**: ⏸️ 已暂停
-- **归档版本**: v1.0
-- **恢复指南**: 查看归档目录中的 `PAUSED.md` 文件
-- **虚拟环境**: 已删除以节省空间 (原118MB，现<2MB)
+- **开发状态**: ✅ 完成并可用
+- **当前版本**: v4.0.0
+- **核心功能**: 100% 完成
+- **Flask Web UI**: ✅ 已实现
+- **百度 OCR 集成**: ✅ 已集成
+- **申请书生成**: ✅ 已完成
 
 ## 项目特点
 
-- 基于 Playwright 的浏览器自动化
-- 模块化设计，易于扩展
-- 配置文件驱动，适应不同政务平台
-- 批量处理能力
-- 完整的错误处理和日志记录
+- **OCR 识别**: 支持身份证、营业执照自动识别
+- **Flask Web UI**: 友好的 Web 界面，支持文件上传和数据处理
+- **Jinja2 模板**: 灵活的申请书生成系统
+- **数据库管理**: SQLite 本地数据库，支持增删改查
+- **批量处理**: 支持多文件同时上传和数据处理
+- **完整的错误处理**: 友好的错误提示和日志记录
 
 ## 目录结构
 
@@ -26,24 +29,32 @@
 market_supervision_agent/
 ├── src/                          # 核心源代码
 │   ├── __init__.py
-│   ├── agent_core.py             # 智能体调度核心
-│   ├── browser_controller.py    # 浏览器控制器
-│   └── forms/                    # 表单处理模块
-│       ├── __init__.py
-│       ├── annual_report.py      # 年报填写
-│       ├── registration.py       # 设立登记
-│       └── change.py             # 变更登记
+│   ├── workflow.py               # 工作流引擎
+│   ├── database_manager.py       # 数据库管理
+│   ├── application_generator.py  # 申请书生成器
+│   ├── baidu_ocr_engine.py       # 百度 OCR 引擎
+│   ├── data_extractor.py         # 数据提取器
+│   ├── file_archiver.py          # 文件归档器
+│   └── ocr_engine.py             # OCR 引擎基类
+├── ui/                           # Flask Web UI
+│   ├── flask_app.py              # Flask 应用入口
+│   └── templates/                # HTML 模板
+│       ├── index.html
+│       ├── upload.html
+│       ├── database.html
+│       ├── generate.html
+│       └── edit.html
+├── templates/                    # Word 模板
+│   └── 个体工商户开业登记申请书.docx
 ├── config/                       # 配置文件
-│   ├── urls.yaml                 # 政务网站 URL
-│   └── selectors.yaml            # 网页元素定位器（核心！）
-├── data/                         # 业务数据
-│   ├── sample_customers.json    # 示例客户数据
-│   ├── processed/                # 已处理文件
-│   └── screenshots/              # 截图存储
-├── tests/                        # 测试脚本
-│   ├── test_agent_core.py
-│   └── test_browser_controller.py
-├── requirements.txt              # Python 依赖
+│   ├── database_schema.yaml      # 数据库结构
+│   └── baidu_ocr.yaml            # 百度 OCR 配置
+├── data/                         # 数据目录
+│   └── database.db               # SQLite 数据库
+├── output/                       # 输出目录
+│   └── application_*.docx        # 生成的申请书
+├── jinja2_filler.py              # 命令行填充工具
+├── requirements_v4.txt            # Python 依赖
 ├── .env.example                  # 环境变量模板
 └── README.md                     # 本文件
 ```
@@ -53,219 +64,266 @@ market_supervision_agent/
 ### 1. 安装依赖
 
 ```bash
-# 创建虚拟环境（推荐）
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
 # 安装 Python 包
-pip install -r requirements.txt
+pip install -r requirements_v4.txt
 
-# 安装 Playwright 浏览器
-playwright install chromium
-```
-
-### 2. 配置环境
-
-```bash
-# 复制环境变量模板
+# 配置环境变量
 cp .env.example .env
-
-# 编辑 .env 文件，填入实际配置
+# 编辑 .env 文件，填入百度 OCR API 密钥
 ```
 
-### 3. 配置选择器
-
-**这是最重要的步骤！**
-
-使用浏览器开发者工具（F12）检查目标网站的表单元素，更新 [config/selectors.yaml](config/selectors.yaml) 中的选择器。
-
-示例：
-```yaml
-login:
-  username: "#username"      # CSS 选择器
-  password: "#password"
-  submit: "button[type='submit']"
-```
-
-### 4. 准备数据
-
-编辑 [data/sample_customers.json](data/sample_customers.json)，填入实际企业数据。
-
-### 5. 运行测试
+### 2. 启动 Flask Web UI (推荐)
 
 ```bash
-# 运行所有测试
-pytest tests/ -v
+# 启动 Web 服务
+python ui/flask_app.py
 
-# 测试浏览器控制器
-python src/browser_controller.py
-
-# 测试智能体核心
-python src/agent_core.py
+# 访问 http://localhost:5000
 ```
+
+### 3. 使用命令行工具
+
+```bash
+# 使用测试数据生成申请书
+python jinja2_filler.py --test
+
+# 验证模板
+python jinja2_filler.py --validate templates/个体工商户开业登记申请书.docx
+```
+
+### 4. Web UI 功能说明
+
+**文件上传页面** (`/upload`)
+- 上传身份证/营业执照图片
+- 自动 OCR 识别
+- 数据提取和保存
+
+**数据库管理页面** (`/database`)
+- 查看所有经营户记录
+- 搜索和筛选
+- 编辑和删除记录
+
+**申请书生成页面** (`/generate`)
+- 选择经营户记录
+- 一键生成申请书
+- 下载 Word 文档
 
 ## 使用示例
 
-### 单个企业年报
+### 生成申请书
 
 ```python
-from src.agent_core import MarketSupervisionAgent
+from src.application_generator import ApplicationGenerator
 
-agent = MarketSupervisionAgent()
-
-company_data = {
-    'company_name': '北京示例科技有限公司',
-    'credit_code': '91110000XXXXXXXXXX',
-    'password': 'your_password',
-    'year': 2024,
-    'financial_data': {
-        'total_assets': 5000000,
-        'total_revenue': 3000000,
-        # ...更多数据
-    }
+# 准备数据
+operator_data = {
+    'operator_name': '张三',
+    'id_card': '450101199001011234',
+    'gender': '男',
+    'nation': '汉族',
+    'phone': '13800138000',
+    'business_name': '张三便利店',
+    'business_address': '广西玉林市兴业县蒲塘镇测试路123号',
+    'business_scope': '食品销售；日用百货',
+    'employee_count': '2',
+    'political_status': '群众'
 }
 
-success = agent.process_annual_report(company_data)
+# 生成申请书
+generator = ApplicationGenerator(template_path='templates')
+output_path = generator.generate_application(operator_data, output_dir='output')
+print(f'申请书已生成: {output_path}')
 ```
 
-### 批量处理
+### 批量生成
 
 ```python
-import json
-from src.agent_core import MarketSupervisionAgent
+from src.application_generator import ApplicationGenerator
 
-# 读取客户数据
-with open('data/sample_customers.json', 'r', encoding='utf-8') as f:
-    customers = json.load(f)
-
-# 构建任务列表
-tasks = [
-    {'type': 'annual_report', 'data': customer}
-    for customer in customers
+# 批量数据
+operators_list = [
+    {
+        'operator_name': '张三',
+        'id_card': '450101199001011234',
+        'business_name': '张三便利店',
+        # ... 更多字段
+    },
+    {
+        'operator_name': '李四',
+        'id_card': '450101199001011235',
+        'business_name': '李四水果店',
+        # ... 更多字段
+    }
 ]
 
-# 批量处理
-agent = MarketSupervisionAgent()
-results = agent.batch_process(tasks)
+# 批量生成
+generator = ApplicationGenerator(template_path='templates')
+results = generator.batch_generate(operators_list, output_dir='output')
 
-print(f"总计: {results['total']}")
-print(f"成功: {results['success']}")
-print(f"失败: {results['failed']}")
+for r in results:
+    if r['success']:
+        print(f"✓ {r['operator_name']}: {r['output']}")
+    else:
+        print(f"✗ {r['operator_name']}: {r['error']}")
 ```
 
 ## 核心模块说明
 
-### agent_core.py - 智能体核心
+### workflow.py - 工作流引擎
 
 负责任务调度、流程编排、错误处理。
 
 主要方法：
-- `process_annual_report()` - 处理企业年报
-- `process_registration()` - 处理设立登记
-- `process_change()` - 处理变更登记
-- `batch_process()` - 批量处理任务
+- `process_files()` - 处理上传的文件
+- `extract_data()` - 提取 OCR 数据
+- `save_to_database()` - 保存到数据库
 
-### browser_controller.py - 浏览器控制器
+### database_manager.py - 数据库管理
 
-封装 Playwright 功能，提供统一的浏览器操作接口。
+SQLite 数据库的增删改查操作。
 
 主要方法：
-- `start()` / `close()` - 启动/关闭浏览器
-- `navigate()` - 导航到 URL
-- `fill_form()` - 填写表单
-- `click()` - 点击元素
-- `screenshot()` - 截图
-- `save_cookies()` / `load_cookies()` - Cookie 管理
+- `add_operator()` - 添加经营户记录
+- `get_operator_by_id()` - 根据 ID 查询
+- `search_operators()` - 搜索记录
+- `update_operator()` - 更新记录
+- `delete_operator()` - 删除记录
 
-### forms/ - 表单处理模块
+### application_generator.py - 申请书生成器
 
-针对不同业务的表单填写逻辑。
+使用 Jinja2 模板生成 Word 文档。
 
-- `annual_report.py` - 企业年报表单
-- `registration.py` - 设立登记表单
-- `change.py` - 变更登记表单
+主要方法：
+- `generate_application()` - 生成申请书
+- `batch_generate()` - 批量生成
+- `validate_template()` - 验证模板
+- `check_data_completeness()` - 检查数据完整性
+
+### baidu_ocr_engine.py - 百度 OCR 引擎
+
+百度 OCR API 集成，支持身份证和营业执照识别。
+
+主要方法：
+- `recognize_id_card()` - 识别身份证
+- `recognize_business_license()` - 识别营业执照
 
 ## 配置文件说明
 
-### config/urls.yaml
+### config/baidu_ocr.yaml
 
-存储政务网站的 URL 地址。
+百度 OCR API 配置。
 
 ```yaml
-urls:
-  login: "https://example.gov.cn/login"
-  annual_report: "https://example.gov.cn/annual-report?year={year}"
+api_key: "${BAIDU_OCR_API_KEY}"
+secret_key: "${BAIDU_OCR_SECRET_KEY}"
 ```
 
-### config/selectors.yaml
+### config/database_schema.yaml
 
-**最核心的配置文件！**
+数据库结构和字段定义。
 
-存储网页元素的 CSS 选择器，用于定位表单字段。
+## 模板系统
 
-获取选择器的方法：
-1. 打开目标网站
-2. 按 F12 打开开发者工具
-3. 点击"选择元素"工具
-4. 点击要定位的表单字段
-5. 在 Elements 面板右键 → Copy → Copy selector
+### Jinja2 模板变量
 
-## 注意事项
+申请书模板支持以下变量：
 
-### 安全性
+- `operator_name` - 经营者姓名
+- `id_card` - 身份证号
+- `gender` - 性别
+- `nation` - 民族
+- `phone` - 联系电话
+- `business_name` - 个体工商户名称
+- `business_address` - 经营场所
+- `business_scope_licensed` - 许可项目
+- `business_scope_general` - 一般项目
+- `employee_count` - 从业人数
+- `political_status` - 政治面貌
 
-1. **不要将密码提交到版本控制**
-   - 使用 `.env` 文件存储敏感信息
-   - `.env` 已在 `.gitignore` 中
+### 模板制作
 
-2. **选择器配置**
-   - 定期检查选择器是否失效（网站更新后）
-   - 使用稳定的选择器（ID > Class > Tag）
+在 Word 文档中使用 `{{变量名}}` 语法：
 
-3. **错误处理**
-   - 启用截图功能便于调试
-   - 查看日志文件排查问题
+```
+经营者姓名：{{operator_name}}
+身份证号：{{id_card}}
+个体工商户名称：{{business_name}}
+```
 
-### 法律合规
-
-- 仅用于授权的自动化任务
-- 遵守目标网站的服务条款
-- 不要进行高频请求，避免被封禁
-
-## 开发计划
-
-- [ ] 添加验证码识别功能
-- [ ] 支持更多业务类型
-- [ ] 添加 GUI 界面
-- [ ] 实现任务队列和调度
-- [ ] 添加数据验证功能
-- [ ] 支持多浏览器（Firefox, WebKit）
-
-## 故障排除
-
-### 浏览器启动失败
+## 测试
 
 ```bash
-# 重新安装浏览器
-playwright install chromium --force
+# 测试 OCR 引擎
+python -c "from src import create_ocr_engine; ocr = create_ocr_engine(); print('OCR引擎:', ocr.active_engine)"
+
+# 测试数据库
+python -c "from src.database_manager import DatabaseManager; db = DatabaseManager(); print('记录数:', db.get_record_count())"
+
+# 测试申请书生成
+python jinja2_filler.py --test
+
+# 测试 Flask 应用
+python ui/flask_app.py
 ```
 
-### 元素定位失败
+## 常见问题
 
-1. 检查 `config/selectors.yaml` 中的选择器是否正确
-2. 打开浏览器开发者工具验证选择器
-3. 查看截图确认页面是否正确加载
+### OCR 识别失败
 
-### 依赖安装问题
+1. 检查 API 密钥配置
+2. 确认图片格式支持（JPG、PNG、PDF）
+3. 查看错误日志了解详情
+
+### 数据库错误
 
 ```bash
-# 更新 pip
-python -m pip install --upgrade pip
-
-# 清理缓存重新安装
-pip cache purge
-pip install -r requirements.txt --no-cache-dir
+# 重置数据库
+rm data/database.db
+python -c "from src.database_manager import DatabaseManager; DatabaseManager()"
 ```
+
+### 模板渲染失败
+
+```bash
+# 验证模板变量
+python jinja2_filler.py --validate templates/个体工商户开业登记申请书.docx
+```
+
+## 版本历史
+
+### v4.0.0 (2026-01-15)
+- ✅ Flask Web UI 完整实现
+- ✅ 百度 OCR API 集成
+- ✅ Jinja2 模板系统
+- ✅ 数据库管理功能
+- ✅ 申请书自动生成
+- ✅ 多文件上传支持
+
+### v3.0.0 (2026-01-12)
+- Jinja2 模板系统
+- 命令行填充工具
+
+### v1.0.0 (2026-01-11)
+- 基础 OCR 功能
+- 浏览器自动化
+
+## 许可证
+
+MIT License
+
+## 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 联系方式
+
+- 项目地址: [01_Active_Projects/market_supervision_agent](.)
+- 工作区指南: [../../CLAUDE.md](../../CLAUDE.md)
+
+---
+
+**项目完成时间**: 2026-01-15
+**维护状态**: ✅ 活跃维护
 
 ## 许可证
 

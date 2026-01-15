@@ -1,0 +1,74 @@
+{
+  "total_decisions": 6,
+  "tool_usage_stats": {
+    "Read": 1,
+    "Grep": 1,
+    "ButlerSystem": 3
+  },
+  "decisions": [
+    {
+      "timestamp": "2026-01-15T13:17:57.743415",
+      "task_type": "read_file",
+      "tool_chosen": "Read",
+      "alternatives": [
+        "Bash: cat",
+        "Grep"
+      ],
+      "reasoning": "Read工具是专门为文件读取设计的，更快更准确",
+      "success": true,
+      "lesson_learned": "优先使用Read工具读取文件"
+    },
+    {
+      "timestamp": "2026-01-15T13:17:57.744418",
+      "task_type": "search_code",
+      "tool_chosen": "Grep",
+      "alternatives": [
+        "Glob",
+        "Task: Explore"
+      ],
+      "reasoning": "Grep支持正则表达式，适合精确搜索",
+      "success": true,
+      "lesson_learned": ""
+    },
+    {
+      "timestamp": "2026-01-15T13:35:06.254932",
+      "task_type": "工作区状态检查",
+      "tool_chosen": "ButlerSystem",
+      "alternatives": [],
+      "reasoning": "基于0条历史经验",
+      "success": true,
+      "lesson_learned": "使用ButlerSystem成功"
+    },
+    {
+      "timestamp": "2026-01-15T13:35:24.773608",
+      "task_type": "工作区状态检查",
+      "tool_chosen": "ButlerSystem",
+      "alternatives": [],
+      "reasoning": "基于0条历史经验",
+      "success": true,
+      "lesson_learned": "使用ButlerSystem成功"
+    },
+    {
+      "timestamp": "2026-01-15T13:35:36.635968",
+      "task_type": "工作区状态检查",
+      "tool_chosen": "ButlerSystem",
+      "alternatives": [],
+      "reasoning": "基于1条历史经验",
+      "success": true,
+      "lesson_learned": "使用ButlerSystem成功"
+    },
+    {
+      "timestamp": "2026-01-15T13:45:58.497000",
+      "task_type": "role_definition",
+      "tool_chosen": "MemoryEnhancedAI",
+      "alternatives": [
+        "SimpleAssistant",
+        "ToolOnly",
+        "NoMemory"
+      ],
+      "reasoning": "用户明确期望从'工具'升级为'伙伴'，记忆是核心区别",
+      "success": true,
+      "lesson_learned": "记忆持久化是AI从工具到伙伴的关键进化"
+    }
+  ]
+}

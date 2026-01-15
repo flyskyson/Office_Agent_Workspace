@@ -1,0 +1,25 @@
+{
+  "active_projects": [],
+  "project_knowledge": {
+    "market_supervision_agent": {
+      "summary": "市场监管智能体 - 自动填写申请书的Web应用",
+      "key_points": [
+        "Flask Web UI",
+        "百度OCR集成",
+        "Jinja2模板引擎",
+        "端口5000"
+      ],
+      "tools_used": [
+        "Flask",
+        "PaddleOCR",
+        "Jinja2"
+      ],
+      "decisions": [
+        "使用Flask而非Streamlit",
+        "OCR降级到PaddleOCR"
+      ],
+      "status": "生产就绪"
+    }
+  },
+  "project_patterns": {}
+}
