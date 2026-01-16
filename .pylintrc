@@ -1,0 +1,36 @@
+[MASTER]
+# 使用多个进程加速检查
+jobs=1
+
+# 设置可缓存
+persistent=yes
+
+[MESSAGES CONTROL]
+# 禁用某些检查
+disable=
+    C0111,  # 缺少文档字符串
+    C0103,  # 变量名不符合规范
+    R0913,  # 参数过多
+    R0914,  # 局部变量过多
+    W0212,  # 访问受保护成员
+
+[FORMAT]
+# 最大行长
+max-line-length=100
+
+# 缩进字符串
+indent-string='    '
+
+[DESIGN]
+# 最大参数数量
+max-args=10
+
+# 最大本地变量
+max-locals=20
+
+[TYPECHECK]
+# 忽略混合类型
+ignore-mixin-members=yes
+
+# 忽略缺少的模块
+ignored-modules=

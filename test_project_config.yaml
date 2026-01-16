@@ -1,0 +1,119 @@
+# 测试项目配置
+# 用于验证自主代理工作流
+
+project:
+  name: "测试项目：简单计算器"
+  version: "1.0"
+  goal: "开发一个简单的命令行计算器，支持加减乘除运算"
+  description: "这是一个测试项目，用于验证自主代理工作流的可行性"
+
+# 暂停点配置
+milestones:
+  - point: "start"
+    description: "启动后、执行前"
+    require_confirmation: true
+    trigger_condition: "明显不符合条件才停止"
+
+  - point: "30%"
+    description: "第一个节点完成后"
+    require_confirmation: false
+    trigger_condition: "明显偏离目标才停止"
+
+  - point: "70%"
+    description: "第二个节点完成后"
+    require_confirmation: false
+    trigger_condition: "明显无法达成目标才停止"
+
+  - point: "pre_final"
+    description: "最终验收前"
+    require_confirmation: true
+    trigger_condition: "明显未完成目标才停止"
+
+# 预算配置
+budget:
+  resources:
+    max_retries: "unlimited"
+    max_tools: "unlimited"
+    max_duration: "flexible"
+  limits:
+    min_success_rate: 0.3        # 成功率低于30%果断停
+    broken_tools_limit: 5        # 超过5个工具损坏果断停
+    consecutive_failures: 3      # 连续3次节点失败果断停
+
+# 节点配置
+nodes:
+  - id: "node_1"
+    name: "需求分析和设计"
+    role: "产品设计师"
+    purpose: "明确计算器的功能需求和接口设计"
+    agent: "sub_agent_1"
+    tasks:
+      - "明确功能需求（加减乘除）"
+      - "设计命令行接口"
+      - "规划代码结构"
+    steps:
+      - "1. 分析需求，明确功能范围"
+      - "2. 设计命令行参数解析方案"
+      - "3. 规划函数和类的结构"
+      - "4. 生成设计文档"
+    requirements:
+      - "接口简单易用"
+      - "代码结构清晰"
+      - "考虑扩展性"
+    constraints:
+      - "不违反编码规范"
+      - "不破坏整体架构"
+
+  - id: "node_2"
+    name: "核心计算逻辑实现"
+    role: "核心开发工程师"
+    purpose: "实现计算器的核心运算逻辑"
+    agent: "sub_agent_2"
+    tasks:
+      - "实现基本运算函数（加减乘除）"
+      - "实现错误处理（除零错误）"
+      - "编写单元测试"
+    steps:
+      - "1. 实现加减乘除四个函数"
+      - "2. 添加错误处理逻辑"
+      - "3. 编写单元测试用例"
+      - "4. 运行测试确保通过"
+    requirements:
+      - "运算正确"
+      - "错误处理完善"
+      - "测试覆盖充分"
+    constraints:
+      - "不违反编码规范"
+      - "代码要有文档"
+
+  - id: "node_3"
+    name: "命令行界面实现"
+    role: "前端工程师"
+    purpose: "实现用户交互的命令行界面"
+    agent: "sub_agent_3"
+    tasks:
+      - "实现命令行参数解析"
+      - "实现用户交互逻辑"
+      - "添加帮助信息"
+    steps:
+      - "1. 使用 argparse 实现参数解析"
+      - "2. 实现主循环和用户交互"
+      - "3. 添加 --help 帮助信息"
+      - "4. 测试各种使用场景"
+    requirements:
+      - "用户体验友好"
+      - "错误提示清晰"
+      - "支持帮助和版本信息"
+    constraints:
+      - "不违反编码规范"
+      - "界面简洁清晰"
+
+# 工具注册表配置
+tools_registry:
+  path: "00_Agent_Library/tools/"
+  registry_file: "05_Outputs/autonomous_agent_projects/tools_registry.json"
+
+# 日志配置
+logging:
+  level: "INFO"
+  output: "05_Outputs/autonomous_agent_projects/测试项目_简单计算器/logs/"
