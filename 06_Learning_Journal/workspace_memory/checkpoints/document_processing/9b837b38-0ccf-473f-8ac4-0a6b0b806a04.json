@@ -1,0 +1,58 @@
+{
+  "id": "9b837b38-0ccf-473f-8ac4-0a6b0b806a04",
+  "workflow_id": "document_processing",
+  "timestamp": "2026-01-15T17:26:51.362411",
+  "current_node": "END",
+  "state": {
+    "data": {
+      "task": "如何提高工作效率",
+      "workflow_started": true,
+      "current_step": "research",
+      "step_index": 0,
+      "research_data": {
+        "topic": "如何提高工作效率",
+        "key_points": [
+          "关于'如何提高工作效率'的重点1",
+          "关于'如何提高工作效率'的重点2",
+          "关于'如何提高工作效率'的重点3"
+        ],
+        "sources": [
+          "资料A",
+          "资料B",
+          "资料C"
+        ]
+      },
+      "research_completed": true
+    },
+    "errors": [
+      "检测到循环: supervisor"
+    ],
+    "warnings": [],
+    "metadata": {
+      "start_time": "2026-01-15T17:26:51.360260",
+      "nodes_executed": [
+        "supervisor",
+        "research"
+      ],
+      "execution_log": [
+        {
+          "node": "supervisor",
+          "time": "2026-01-15T17:26:51.360260"
+        },
+        {
+          "node": "research",
+          "time": "2026-01-15T17:26:51.361407"
+        }
+      ],
+      "checkpoints": [
+        "0469b4f7-c8dc-433f-8ae8-b2831dae6c84",
+        "2492f929-c8ba-410e-ae7a-8e5e9ff3fb02"
+      ],
+      "end_time": "2026-01-15T17:26:51.362411",
+      "success": false
+    }
+  },
+  "metadata": {
+    "completed": true
+  }
+}

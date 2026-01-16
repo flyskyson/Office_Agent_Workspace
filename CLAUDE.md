@@ -4,7 +4,7 @@
 **主要框架**: Streamlit, Flask, Playwright, AutoGen AgentTool, LangGraph, MCP
 **Python版本**: 3.9+ (推荐 3.12)
 **更新日期**: 2026-01-16
-**当前版本**: v2.0.0
+**当前版本**: v2.5.0
 
 ---
 
@@ -13,6 +13,7 @@
 | 我想... | 查看文档 |
 |---------|---------|
 | 🚀 **快速上手** | [GETTING_STARTED.md](docs/GETTING_STARTED.md) |
+| 🔗 **快速链接** | [QUICK_LINKS.md](QUICK_LINKS.md) |
 | 🏗️ **了解架构** | [ARCHITECTURE.md](docs/ARCHITECTURE.md) |
 | 📝 **查看编码规范** | [CODING_STANDARDS.md](docs/CODING_STANDARDS.md) |
 | 🔧 **开发新功能** | [guides/AGENT_DEVELOPMENT.md](docs/guides/AGENT_DEVELOPMENT.md) |
@@ -21,15 +22,27 @@
 | 💡 **想法落地工作流** | [guides/IDEA_WORKFLOW.md](docs/guides/IDEA_WORKFLOW.md) |
 | 🤖 **自主代理工作流** | [guides/AUTONOMOUS_AGENT_WORKFLOW.md](docs/guides/AUTONOMOUS_AGENT_WORKFLOW.md) |
 | 🐛 **排查问题** | [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) |
-| ⭐ **v2.0 核心功能** | [05_Outputs/core_features_detailed_guide_20260116.md](05_Outputs/core_features_detailed_guide_20260116.md) |
+| 🧪 **测试与验证** | [guides/TESTING_GUIDE.md](docs/guides/TESTING_GUIDE.md) |
+| 🌐 **MCP 新闻设置** | [guides/MCP_NEWS_SETUP.md](docs/guides/MCP_NEWS_SETUP.md) |
+| 🎯 **Skill Seekers** | [guides/SKILL_SEEKERS_INTEGRATION.md](docs/guides/SKILL_SEEKERS_INTEGRATION.md) |
+| ⭐ **v2.5 核心功能** | [05_Outputs/core_features_detailed_guide_20260116.md](05_Outputs/core_features_detailed_guide_20260116.md) |
 
 ---
 
-## 🆕 v2.0 核心功能
+## 🆕 v2.5 核心功能
 
-2026-01-16 更新 - 工作区架构重大升级
+2026-01-16 更新 - 语义记忆系统与AI训练系统
 
-### 🔧 四大核心组件
+### 🔧 v2.5 核心升级
+
+| 组件 | 功能 | 位置 | 状态 |
+|------|------|------|------|
+| **语义记忆 v2.5** | 向量语义搜索 | [claude_memory.py](00_Agent_Library/claude_memory.py) | ✅ SSL修复完成 |
+| **AI训练系统** | 21天学习路径 | [ai_agent_training_system/](01_Active_Projects/ai_agent_training_system/) | ✅ supervisor注释 |
+| **快速链接索引** | 工作区快速导航 | [QUICK_LINKS.md](QUICK_LINKS.md) | ✅ 已创建 |
+| **会话总结** | 每日会话记录 | [daily_session_summary.py](00_Agent_Library/daily_session_summary.py) | ✅ 自动化 |
+
+### 🔧 v2.0 四大核心组件
 
 | 组件 | 功能 | 位置 | 状态 |
 |------|------|------|------|
@@ -87,24 +100,50 @@ Office_Agent_Workspace/
 │   ├── super-butler/SKILL.md        #    超级管家技能
 │   ├── application-generator/       #    申请书生成技能
 │   ├── license-organizer/           #    证照整理技能
-│   └── knowledge-indexer/           #    知识索引技能
+│   ├── knowledge-indexer/           #    知识索引技能
+│   └── skill-creator/SKILL.md       #    技能创建器 ⭐ NEW
 │
 ├── 00_Agent_Library/                # 🔧 核心框架库
 │   ├── agent_toolkit.py             #    AgentTool 工具框架
 │   ├── workflow_engine.py           #    LangGraph 工作流引擎
 │   ├── idea_workflow_engine.py      #    想法落地工作流引擎
 │   ├── version_manager.py           #    版本管理器
-│   ├── agent_supervisor.py          # ⭐ 智能体监督者 (v2.0)
-│   ├── config_center.py             # ⭐ 统一配置中心 (v2.0)
-│   ├── mcp_sqlite_wrapper.py        # ⭐ MCP SQLite 服务器 (v2.0)
-│   ├── workflow_templates.py        # ⭐ 工作流模板系统 (v2.0)
+│   ├── agent_supervisor.py          #    ⭐ 智能体监督者 (v2.0)
+│   ├── config_center.py             #    ⭐ 统一配置中心 (v2.0)
+│   ├── mcp_sqlite_wrapper.py        #    ⭐ MCP SQLite 服务器 (v2.0)
+│   ├── workflow_templates.py        #    ⭐ 工作流模板系统 (v2.0)
 │   ├── workflow_templates/          #    工作流模板目录
+│   ├── claude_memory.py             #    ⭐ Claude 记忆模块 (v2.0/v2.5)
+│   ├── exceptions.py                #    ⭐ 异常处理系统 (v2.0)
+│   ├── semantic_memory.py           #    ⭐ 语义向量搜索 (v2.5)
+│   ├── fix_ssl_issue.py             #    SSL修复工具 (v2.5)
+│   ├── test_ssl_fix.py              #    SSL修复测试 (v2.5)
+│   ├── diagram_generator.py         #    图表生成器
+│   ├── workspace_diagram_generator.py #    工作区图表生成器
+│   ├── glm_knowledge_accessor.py    #    GLM 知识访问器
+│   ├── mcp_news_client.py           #    MCP 新闻客户端
+│   ├── memory_monitor.py            #    记忆监控
+│   ├── memory_trigger.py            #    记忆触发器
+│   ├── session_initializer.py       #    会话初始化器
+│   ├── skill_seekers_adapter.py     #    Skill Seekers 适配器
+│   ├── skill_builder_facade.py      #    技能构建器门面
+│   ├── smart_news_monitor.py        #    智能新闻监控
+│   ├── news_reader.py               #    新闻读取器
+│   ├── news_scraper.py              #    新闻爬虫
+│   ├── auto_session_starter.py      #    自动会话启动器
 │   └── EVOLUTION_GUIDE.md           #    演进系统说明
 │
 ├── 01_Active_Projects/              # 🚀 活跃项目
 │   ├── market_supervision_agent/    #    市场监管智能体
 │   ├── memory_agent/                #    记忆助手
-│   └── file_organizer/              #    文件整理工具
+│   ├── file_organizer/              #    文件整理工具
+│   ├── pdf_processor/               #    PDF 处理工具
+│   ├── smart_translator/            #    智能翻译工具
+│   ├── smart_tools/                 #    智能工具集 ⭐ NEW
+│   ├── langgraph_supervisor_experiment/  #    LangGraph 监督者实验 ⭐ NEW
+│   ├── ai_agent_training_system/    #    AI智能体训练系统 ⭐ NEW
+│   ├── ai_news_tracker/             #    AI 新闻追踪器
+│   └── 06_Learning_Journal/         #    学习日志软链接
 │
 ├── 02_Project_Archive/              # 📦 归档项目
 ├── 04_Data_&_Resources/             # 📊 数据和资源
@@ -189,6 +228,7 @@ if sys.platform == 'win32':
 | 📄 **申请书生成** | "生成申请书"、"填写申请表"、"个体工商户开业" | [SKILL.md](skills/application-generator/SKILL.md) |
 | 📁 **证照整理** | "整理证照"、"归类文件"、"归档证件" | [SKILL.md](skills/license-organizer/SKILL.md) |
 | 🔍 **知识索引** | "索引笔记"、"更新知识库"、"构建索引" | [SKILL.md](skills/knowledge-indexer/SKILL.md) |
+| 🛠️ **技能创建器** | "创建技能"、"开发新技能"、"技能生成" | [SKILL.md](skills/skill-creator/SKILL.md) |
 | 📰 **新闻资讯** | "今日新闻"、"热点新闻"、"有什么新闻" | 见下方「📰 新闻资讯工具」 |
 
 > 💡 **提示**: 技能系统会在检测到关键词时自动激活，无需手动调用。
@@ -305,6 +345,35 @@ cat 06_Learning_Journal/version_registry.json
 - **配置**: `config.json`
 - **功能**: 按类型/日期/关键词整理文件
 
+### PDF 处理工具 (pdf_processor)
+- **入口**: `main.py`
+- **核心**: `pdf_extractor.py`
+- **功能**: PDF 内容提取、文本分析、批量处理
+
+### 智能翻译工具 (smart_translator)
+- **功能**: 多语言智能翻译
+- **特点**: 上下文感知翻译
+
+### 智能工具集 (smart_tools)
+- **功能**: 常用办公工具集合
+- **特点**: 模块化设计
+
+### LangGraph 监督者实验 (langgraph_supervisor_experiment)
+- **功能**: LangGraph 智能体协作实验
+- **特点**: 多智能体监督模式
+
+### AI智能体训练系统 (ai_agent_training_system) ⭐ NEW
+- **入口**: `automation_agents/supervisor.py`
+- **AI培训老师**: Streamlit学习界面（21天学习路径）
+- **自动化监督者**: 多Agent协作工作流
+- **测试网站**: Flask测试服务器
+- **文档**: [SUPERVISOR_ANNOTATED.md](01_Active_Projects/ai_agent_training_system/automation_agents/SUPERVISOR_ANNOTATED.md) - 详细注释
+- **特点**:
+  - 7个核心类完整中文注释
+  - SSL证书问题修复
+  - 语义记忆系统集成
+  - 自动化测试流程
+
 ---
 
 ## 📰 新闻资讯工具 ⭐ NEW
@@ -370,6 +439,10 @@ python 00_Agent_Library/news_reader.py -n 15
 - **文档**: [docs/guides/DEPLOY_DAILYHOTAPI.md](docs/guides/DEPLOY_DAILYHOTAPI.md)
 - **内容**: DailyHotApi Vercel 部署、TrendRadar 设置、爬虫优化
 
+### 📚 相关指南
+- **MCP 新闻设置**: [docs/guides/MCP_NEWS_SETUP.md](docs/guides/MCP_NEWS_SETUP.md)
+- **TrendRadar 设置**: [docs/guides/TRENDRADAR_SETUP.md](docs/guides/TRENDRADAR_SETUP.md)
+
 ---
 
 ## ⚠️ 重要提醒
@@ -410,6 +483,38 @@ session = quick_start("我想添加智能推荐功能")
 
 ---
 
+## 🧪 测试与质量保证
+
+### 测试指南
+- **文档**: [docs/guides/TESTING_GUIDE.md](docs/guides/TESTING_GUIDE.md)
+- **内容**: 单元测试、集成测试、端到端测试
+
+### 自动会话启动器
+- **入口**: `00_Agent_Library/auto_session_starter.py`
+- **文档**: [docs/guides/AUTO_SESSION_STARTER.md](docs/guides/AUTO_SESSION_STARTER.md)
+- **功能**: 自动化会话初始化和工作区准备
+
+### 记忆监控
+- **入口**: `00_Agent_Library/memory_monitor.py`
+- **文档**: [docs/guides/MEMORY_MONITOR.md](docs/guides/MEMORY_MONITOR.md)
+- **功能**: 监控记忆系统性能和状态
+
+---
+
+## 🎯 Skill Seekers 集成
+
+### 概述
+Skill Seekers 是一个技能发现和集成平台，支持自动化技能管理和部署。
+
+### 核心组件
+- **适配器**: [skill_seekers_adapter.py](00_Agent_Library/skill_seekers_adapter.py)
+- **构建器**: [skill_builder_facade.py](00_Agent_Library/skill_builder_facade.py)
+
+### 详细文档
+- **集成指南**: [docs/guides/SKILL_SEEKERS_INTEGRATION.md](docs/guides/SKILL_SEEKERS_INTEGRATION.md)
+
+---
+
 ## 📚 文档系统说明
 
 ### 文档组织结构
@@ -434,5 +539,7 @@ session = quick_start("我想添加智能推荐功能")
 **更新策略**: 增量升级，向后兼容
 **版本追踪**: 自动化演进管理系统
 **技能系统**: 自动化任务执行
+**记忆系统**: Claude 记忆增强 (v2.5)
+**质量保证**: 测试框架和错误处理系统
 
 **需要详细信息?** 查看 [docs/](docs/) 目录 📚

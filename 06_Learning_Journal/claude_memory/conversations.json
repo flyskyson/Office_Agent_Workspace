@@ -1,9 +1,23 @@
 {
-  "total_conversations": 1,
+  "total_conversations": 2,
   "conversations": [
     {
       "timestamp": "2026-01-15T13:17:57.759383",
       "session_id": "session_20260115_131757",
+      "user_query": "演示一个简单的多Agent系统原型？",
+      "my_response": "创建了multi_agent_demo.py，包含4个Agent...",
+      "tools_used": [
+        "Write",
+        "Bash",
+        "Read"
+      ],
+      "outcome": "成功演示了多Agent协作",
+      "user_satisfaction": null,
+      "follow_up_actions": []
+    },
+    {
+      "timestamp": "2026-01-16T10:05:35.447166",
+      "session_id": "session_20260116_100535",
       "user_query": "演示一个简单的多Agent系统原型？",
       "my_response": "创建了multi_agent_demo.py，包含4个Agent...",
       "tools_used": [

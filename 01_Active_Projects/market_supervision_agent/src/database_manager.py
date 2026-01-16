@@ -281,18 +281,24 @@ class DatabaseManager:
                 values
             )
 
-            # 记录操作日志
+            # 记录操作日志 - 在同一个连接上查询，避免事务隔离问题
             if cursor.rowcount > 0:
-                existing = self.get_operator_by_id_card(id_card)
-                if existing:
+                # 直接在当前连接上查询，而不是调用get_operator_by_id_card
+                cursor2 = conn.execute(
+                    'SELECT id FROM operators WHERE id_card = ?',
+                    (id_card,)
+                )
+                row = cursor2.fetchone()
+                if row:
+                    operator_id = row['id']
                     self._log_operation(
                         conn,
-                        existing['id'],
+                        operator_id,
                         'update',
                         f'更新字段: {", ".join(updates.keys())}'
                     )
-                    logger.info(f"更新经营户记录: ID={existing['id']}, 更新字段={list(updates.keys())}")
-                    return existing['id']
+                    logger.info(f"更新经营户记录: ID={operator_id}, 更新字段={list(updates.keys())}")
+                    return operator_id
 
         return 0
 
@@ -519,63 +525,6 @@ class DatabaseManager:
             INSERT INTO operation_logs (operator_id, operation, details)
             VALUES (?, ?, ?)
         ''', (operator_id, operation, details))
-
-    def update_operator(self, operator_id: int, updates: Dict[str, Any]) -> bool:
-        """更新经营户信息
-
-        Args:
-            operator_id: 经营户ID
-            updates: 要更新的字段字典
-
-        Returns:
-            是否成功
-        """
-        import sys
-        print(f"[DEBUG] update_operator called: ID={operator_id}, updates={updates}", file=sys.stderr)
-
-        try:
-            if not updates:
-                print("[DEBUG] updates is empty, returning False", file=sys.stderr)
-                return False
-
-            # 构建更新SQL
-            set_clauses = []
-            values = []
-
-            valid_fields = {
-                'operator_name', 'id_card', 'gender', 'nation', 'phone',
-                'email', 'address', 'business_name', 'business_address',
-                'business_scope', 'credit_code', 'property_owner',
-                'lease_start', 'lease_end', 'rent_amount'
-            }
-
-            for field, value in updates.items():
-                if field in valid_fields:
-                    set_clauses.append(f"{field} = ?")
-                    values.append(value)
-
-            if not set_clauses:
-                return False
-
-            values.append(operator_id)
-
-            with self._get_connection() as conn:
-                conn.execute(f'''
-                    UPDATE operators
-                    SET {', '.join(set_clauses)}
-                    WHERE id = ?
-                ''', values)
-
-                # 记录操作日志
-                update_details = ', '.join([f"{k}={v}" for k, v in updates.items()])
-                self._log_operation(conn, operator_id, 'update', update_details)
-
-            logger.info(f"更新经营户 ID={operator_id}: {update_details}")
-            return True
-
-        except Exception as e:
-            logger.error(f"更新失败: {e}")
-            return False
 
     def delete_operator(self, operator_id: int) -> bool:
         """删除经营户记录（软删除，设置 status 为 deleted）

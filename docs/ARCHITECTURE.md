@@ -2,36 +2,66 @@
 
 本文档详细说明 Office Agent Workspace 的技术架构、设计模式和组件关系。
 
+**🆕 v2.0 升级** (2026-01-16):
+- ✨ 新增 Mermaid 流程图可视化
+- ✨ 升级所有 ASCII 流程图为精美图表
+- ✅ 实时渲染和在线预览支持
+
 ---
 
 ## 📐 整体架构
 
 ### 三层架构模型
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    用户交互层                             │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
-│  │  Flask Web   │  │  Streamlit   │  │  CLI 菜单    │  │
-│  │    UI        │  │     UI       │  │   启动器     │  │
-│  └──────────────┘  └──────────────┘  └──────────────┘  │
-└─────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────┐
-│                   业务逻辑层                              │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
-│  │   AgentTool  │  │  Workflow    │  │    Skill     │  │
-│  │   框架        │  │   Engine     │  │   System     │  │
-│  └──────────────┘  └──────────────┘  └──────────────┘  │
-└─────────────────────────────────────────────────────────┘
-                          ↓
-┌─────────────────────────────────────────────────────────┐
-│                   数据存储层                              │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  │
-│  │   文件系统    │  │  ChromaDB    │  │   YAML       │  │
-│  │              │  │  向量数据库   │  │   配置        │  │
-│  └──────────────┘  └──────────────┘  └──────────────┘  │
-└─────────────────────────────────────────────────────────┘
+```mermaid
+graph TB
+    subgraph UI[用户交互层]
+        A[Flask Web UI]
+        B[Streamlit UI]
+        C[CLI 菜单启动器]
+    end
+
+    subgraph Business[业务逻辑层]
+        D[AgentTool 框架]
+        E[Workflow Engine]
+        F[Skill System]
+    end
+
+    subgraph Data[数据存储层]
+        G[文件系统]
+        H[ChromaDB 向量数据库]
+        I[YAML 配置]
+    end
+
+    A --> D
+    B --> E
+    C --> F
+
+    D --> G
+    E --> H
+    F --> I
+
+    D --> H
+    E --> G
+    F --> G
+
+    style A fill:#e1f5ff
+    style B fill:#e8f5e9
+    style C fill:#fff4e6
+    style D fill:#e3f2fd
+    style E fill:#e0f2f1
+    style F fill:#fce4ec
+    style G fill:#f3e5f5
+    style H fill:#e8f6f3
+    style I fill:#fff3e0
+
+    classDef uiLayer fill:#64b5f6,stroke:#1976d2,color:#fff
+    classDef businessLayer fill:#81c784,stroke:#388e3c,color:#fff
+    classDef dataLayer fill:#ffb74d,stroke:#f57c00,color:#fff
+
+    class A,B,C uiLayer
+    class D,E,F businessLayer
+    class G,H,I dataLayer
 ```
 
 ---
@@ -109,18 +139,26 @@ class WorkflowEngine:
 
 **工作流程**:
 
-```
-用户输入
-    ↓
-关键词检测
-    ↓
-技能匹配
-    ↓
-加载 SKILL.md
-    ↓
-执行步骤清单
-    ↓
-返回结果
+```mermaid
+graph LR
+    A[用户输入] --> B[关键词检测]
+    B --> C[技能匹配]
+    C --> D[加载 SKILL.md]
+    D --> E[执行步骤清单]
+    E --> F[返回结果]
+
+    style A fill:#e1f5ff
+    style B fill:#fff4e6
+    style C fill:#e8f5e9
+    style D fill:#e3f2fd
+    style E fill:#e0f2f1
+    style F fill:#e8f6f3
+
+    classDef success fill:#4caf50,stroke:#2e7d32
+    classDef info fill:#2196f3,stroke:#0d47a1
+
+    class F success
+    class A,B,C,D,E info
 ```
 
 **核心组件**:
@@ -139,19 +177,37 @@ class WorkflowEngine:
 
 **架构图**:
 
-```
-flask_app.py (Web界面)
-    ↓
-jinja2_filler.py (核心逻辑)
-    ↓
-┌─────────────┬─────────────┬─────────────┐
-│  OCR模块    │  模板引擎   │  文档生成   │
-│  (百度/     │  (Jinja2)   │  (python-   │
-│  PaddleOCR) │             │   docx)     │
-└─────────────┴─────────────┴─────────────┘
-    ↓
-database_schema.yaml (数据映射)
-templates/*.docx (Word模板)
+```mermaid
+graph TD
+    A[flask_app.py<br/>Web界面] --> B[jinja2_filler.py<br/>核心逻辑]
+
+    B --> C[OCR模块<br/>百度/PaddleOCR]
+    B --> D[模板引擎<br/>Jinja2]
+    B --> E[文档生成<br/>python-docx]
+
+    C --> F[database_schema.yaml<br/>数据映射]
+    D --> F
+    E --> F
+
+    F --> G[templates/*.docx<br/>Word模板]
+
+    style A fill:#e1f5ff
+    style B fill:#e8f5e9
+    style C fill:#fff4e6
+    style D fill:#e3f2fd
+    style E fill:#e0f2f1
+    style F fill:#fce4ec
+    style G fill:#f3e5f5
+
+    classDef ui fill:#64b5f6,stroke:#1976d2,color:#fff
+    classDef core fill:#81c784,stroke:#388e3c,color:#fff
+    classDef module fill:#ffb74d,stroke:#f57c00,color:#fff
+    classDef data fill:#ba68c8,stroke:#7b1fa2,color:#fff
+
+    class A ui
+    class B core
+    class C,D,E module
+    class F,G data
 ```
 
 **关键模块**:
@@ -166,19 +222,37 @@ templates/*.docx (Word模板)
 
 **架构图**:
 
-```
-app.py (Streamlit界面)
-    ↓
-memory_agent.py (核心逻辑)
-    ↓
-┌─────────────┬─────────────┬─────────────┐
-│  笔记添加   │  语义搜索   │  间隔复习   │
-│             │             │             │
-└─────────────┴─────────────┴─────────────┘
-    ↓
-ChromaDB (向量数据库)
-    ↓
-sentence-transformers (嵌入模型)
+```mermaid
+graph TD
+    A[app.py<br/>Streamlit界面] --> B[memory_agent.py<br/>核心逻辑]
+
+    B --> C[笔记添加]
+    B --> D[语义搜索]
+    B --> E[间隔复习]
+
+    C --> F[ChromaDB<br/>向量数据库]
+    D --> F
+    E --> F
+
+    F --> G[sentence-transformers<br/>嵌入模型]
+
+    style A fill:#e1f5ff
+    style B fill:#e8f5e9
+    style C fill:#fff4e6
+    style D fill:#e3f2fd
+    style E fill:#e0f2f1
+    style F fill:#fce4ec
+    style G fill:#f3e5f5
+
+    classDef ui fill:#64b5f6,stroke:#1976d2,color:#fff
+    classDef core fill:#81c784,stroke:#388e3c,color:#fff
+    classDef feature fill:#ffb74d,stroke:#f57c00,color:#fff
+    classDef db fill:#ba68c8,stroke:#7b1fa2,color:#fff
+
+    class A ui
+    class B core
+    class C,D,E feature
+    class F,G db
 ```
 
 **关键模块**:
@@ -193,15 +267,29 @@ sentence-transformers (嵌入模型)
 
 **架构图**:
 
-```
-file_organizer.py (核心逻辑)
-    ↓
-┌─────────────┬─────────────┬─────────────┐
-│  文件扫描   │  规则匹配   │  自动移动   │
-│             │             │             │
-└─────────────┴─────────────┴─────────────┘
-    ↓
-config.json (整理规则)
+```mermaid
+graph TD
+    A[file_organizer.py<br/>核心逻辑] --> B[文件扫描]
+    A --> C[规则匹配]
+    A --> D[自动移动]
+
+    B --> E[config.json<br/>整理规则]
+    C --> E
+    D --> E
+
+    style A fill:#e8f5e9
+    style B fill:#fff4e6
+    style C fill:#e3f2fd
+    style D fill:#e0f2f1
+    style E fill:#fce4ec
+
+    classDef core fill:#81c784,stroke:#388e3c,color:#fff
+    classDef module fill:#ffb74d,stroke:#f57c00,color:#fff
+    classDef config fill:#ba68c8,stroke:#7b1fa2,color:#fff
+
+    class A core
+    class B,C,D module
+    class E config
 ```
 
 **关键模块**:
@@ -215,46 +303,58 @@ config.json (整理规则)
 
 ### 申请书生成流程
 
-```
-用户上传图片
-    ↓
-Flask 接收请求
-    ↓
-OCR 识别营业执照
-    ↓
-提取结构化数据
-    ↓
-加载 YAML 配置
-    ↓
-映射到模板变量
-    ↓
-Jinja2 渲染模板
-    ↓
-生成 Word 文档
-    ↓
-返回下载链接
+```mermaid
+graph TD
+    A[用户上传图片] --> B[Flask 接收请求]
+    B --> C[OCR 识别营业执照]
+    C --> D[提取结构化数据]
+    D --> E[加载 YAML 配置]
+    E --> F[映射到模板变量]
+    F --> G[Jinja2 渲染模板]
+    G --> H[生成 Word 文档]
+    H --> I[返回下载链接]
+
+    style A fill:#e1f5ff
+    style C fill:#fff4e6
+    style G fill:#e3f2fd
+    style H fill:#e0f2f1
+    style I fill:#e8f6f3
+
+    classDef start fill:#64b5f6,stroke:#1976d2,color:#fff
+    classDef process fill:#81c784,stroke:#388e3c,color:#fff
+    classDef end fill:#4caf50,stroke:#2e7d32,color:#fff
+
+    class A start
+    class B,C,D,E,F,G,H process
+    class I end
 ```
 
 ### 知识管理流程
 
-```
-用户添加笔记
-    ↓
-Streamlit 接收输入
-    ↓
-文本预处理
-    ↓
-sentence-transformers 向量化
-    ↓
-存储到 ChromaDB
-    ↓
-用户搜索
-    ↓
-查询向量化
-    ↓
-ChromaDB 相似度检索
-    ↓
-返回相关笔记
+```mermaid
+graph TD
+    A[用户添加笔记] --> B[Streamlit 接收输入]
+    B --> C[文本预处理]
+    C --> D[sentence-transformers 向量化]
+    D --> E[存储到 ChromaDB]
+    E --> F[用户搜索]
+    F --> G[查询向量化]
+    G --> H[ChromaDB 相似度检索]
+    H --> I[返回相关笔记]
+
+    style A fill:#e1f5ff
+    style D fill:#fff4e6
+    style E fill:#e3f2fd
+    style H fill:#fce4ec
+    style I fill:#e8f6f3
+
+    classDef start fill:#64b5f6,stroke:#1976d2,color:#fff
+    classDef process fill:#81c784,stroke:#388e3c,color:#fff
+    classDef end fill:#4caf50,stroke:#2e7d32,color:#fff
+
+    class A start
+    class B,C,D,E,F,G,H process
+    class I end
 ```
 
 ---

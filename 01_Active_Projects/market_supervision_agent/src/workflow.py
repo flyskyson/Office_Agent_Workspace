@@ -304,13 +304,20 @@ class MarketSupervisionWorkflow:
             if existing:
                 # 更新现有记录
                 operator_id = existing["id"]
+
+                # 如果记录是 deleted 状态，恢复为 active
+                if existing.get("status") == "deleted":
+                    extracted_data["status"] = "active"
+                    state["messages"].append(f"恢复已删除的记录: ID={operator_id}")
+                else:
+                    state["messages"].append(f"更新现有记录: ID={operator_id}")
+
                 self.db_manager.update_operator(
                     extracted_data["id_card"],
                     extracted_data
                 )
                 state["operator_id"] = operator_id
                 state["database_status"] = "updated"
-                state["messages"].append(f"更新现有记录: ID={operator_id}")
             else:
                 # 插入新记录
                 operator_id = self.db_manager.insert_operator(extracted_data)

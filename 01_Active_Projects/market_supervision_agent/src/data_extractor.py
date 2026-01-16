@@ -362,15 +362,51 @@ class DataExtractor:
         Raises:
             ValidationError: 数据验证失败
         """
+        # 定义字段优先级（值越大优先级越高）
+        # 身份证字段优先级高，经营信息字段优先级高
+        field_priority = {
+            # 基本信息（来自身份证）
+            'operator_name': 10,
+            'id_card': 10,
+            'gender': 10,
+            'nation': 10,
+            'ethnicity': 10,
+            'address': 10,
+            'birth_date': 10,
+
+            # 经营信息（来自营业执照，优先级更高）
+            'business_name': 20,
+            'business_address': 20,
+            'business_scope': 20,
+            'credit_code': 20,
+            'register_date': 20,
+            'registered_capital': 20,
+            'legal_person': 20,
+
+            # 联系方式（中等优先级）
+            'phone': 15,
+            'email': 15,
+
+            # 场所信息（来自合同等）
+            'property_owner': 15,
+            'landlord': 15,
+            'lease_start': 15,
+            'lease_end': 15,
+            'rent_amount': 15,
+        }
+
         # 合并所有数据源
         merged = {}
+        source_priority = {}  # 记录每个字段当前值的来源优先级
+
         for source in data_sources:
-            # 深度合并
             for key, value in source.items():
                 if value:  # 只合并非空值
-                    # 已有值不被覆盖（优先保留先提取的数据）
-                    if key not in merged or not merged[key]:
+                    priority = field_priority.get(key, 5)  # 默认优先级
+                    # 如果新数据优先级更高，或者字段为空，则更新
+                    if key not in merged or source_priority.get(key, 0) < priority:
                         merged[key] = value
+                        source_priority[key] = priority
 
         logger.info(f"合并后的数据: {merged}")
 

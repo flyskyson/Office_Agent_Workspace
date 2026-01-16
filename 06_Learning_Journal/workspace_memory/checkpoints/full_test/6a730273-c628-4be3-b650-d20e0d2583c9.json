@@ -1,0 +1,41 @@
+{
+  "id": "6a730273-c628-4be3-b650-d20e0d2583c9",
+  "workflow_id": "full_test",
+  "timestamp": "2026-01-15T16:37:51.710953",
+  "current_node": "process",
+  "state": {
+    "data": {
+      "counter": 1,
+      "messages": [
+        "开始执行",
+        "处理完成，计数器: 1"
+      ]
+    },
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "start_time": "2026-01-15T16:37:51.709725",
+      "nodes_executed": [
+        "start",
+        "process"
+      ],
+      "execution_log": [
+        {
+          "node": "start",
+          "time": "2026-01-15T16:37:51.709725"
+        },
+        {
+          "node": "process",
+          "time": "2026-01-15T16:37:51.710953"
+        }
+      ],
+      "checkpoints": [
+        "11346d62-cdf8-481e-93e5-8f4df9e5f57b"
+      ]
+    }
+  },
+  "metadata": {
+    "node_name": "process",
+    "execution_count": 1
+  }
+}

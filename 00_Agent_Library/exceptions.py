@@ -58,6 +58,11 @@ class ErrorCode(Enum):
     NETWORK_TIMEOUT = 7001
     NETWORK_UNREACHABLE = 7002
 
+    # 依赖错误 (8000-8999)
+    DEPENDENCY_NOT_FOUND = 8000
+    DEPENDENCY_VERSION_MISMATCH = 8001
+    DEPENDENCY_INSTALL_FAILED = 8002
+
 
 class WorkspaceError(Exception):
     """

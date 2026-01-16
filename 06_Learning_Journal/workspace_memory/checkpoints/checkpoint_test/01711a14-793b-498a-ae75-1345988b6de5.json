@@ -1,0 +1,33 @@
+{
+  "id": "01711a14-793b-498a-ae75-1345988b6de5",
+  "workflow_id": "checkpoint_test",
+  "timestamp": "2026-01-15T16:37:51.705513",
+  "current_node": "start",
+  "state": {
+    "data": {
+      "counter": 0,
+      "messages": [
+        "开始执行"
+      ]
+    },
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "start_time": "2026-01-15T16:37:51.705513",
+      "nodes_executed": [
+        "start"
+      ],
+      "execution_log": [
+        {
+          "node": "start",
+          "time": "2026-01-15T16:37:51.705513"
+        }
+      ],
+      "checkpoints": []
+    }
+  },
+  "metadata": {
+    "node_name": "start",
+    "execution_count": 1
+  }
+}
