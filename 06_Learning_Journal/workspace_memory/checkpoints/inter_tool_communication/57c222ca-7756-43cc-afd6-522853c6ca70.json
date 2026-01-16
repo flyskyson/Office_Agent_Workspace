@@ -1,0 +1,90 @@
+{
+  "id": "57c222ca-7756-43cc-afd6-522853c6ca70",
+  "workflow_id": "inter_tool_communication",
+  "timestamp": "2026-01-17T07:27:15.081916",
+  "current_node": "memory",
+  "state": {
+    "data": {
+      "data": {
+        "files": [
+          "营业执照.jpg",
+          "身份证正面.jpg",
+          "身份证反面.jpg",
+          "经营者照片.jpg"
+        ]
+      },
+      "errors": [],
+      "warnings": [],
+      "metadata": {},
+      "organized_files": {
+        "license": [],
+        "id_card": [],
+        "photos": [],
+        "other": []
+      },
+      "application": {
+        "type": "个体工商户开业申请书",
+        "content": {
+          "name": "张三",
+          "shop_name": "示例便利店",
+          "address": "示例街道123号",
+          "business_scope": "日用百货销售"
+        },
+        "generated_at": "2026-01-17"
+      },
+      "license_info": {
+        "name": "张三",
+        "shop_name": "示例便利店",
+        "address": "示例街道123号",
+        "business_scope": "日用百货销售"
+      },
+      "memory": {
+        "topic": "个体工商户申请 - 示例便利店",
+        "summary": "经营者 张三 申请开设 示例便利店",
+        "key_points": [
+          "店铺名称: 示例便利店",
+          "经营地址: 示例街道123号",
+          "经营范围: 日用百货销售"
+        ],
+        "timestamp": "2026-01-17",
+        "tags": [
+          "个体工商户",
+          "申请",
+          "市场监管"
+        ]
+      }
+    },
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "start_time": "2026-01-17T07:27:15.077720",
+      "nodes_executed": [
+        "organize",
+        "generate",
+        "memory"
+      ],
+      "execution_log": [
+        {
+          "node": "organize",
+          "time": "2026-01-17T07:27:15.077720"
+        },
+        {
+          "node": "generate",
+          "time": "2026-01-17T07:27:15.077720"
+        },
+        {
+          "node": "memory",
+          "time": "2026-01-17T07:27:15.081916"
+        }
+      ],
+      "checkpoints": [
+        "5227bd9b-3aed-4616-a07d-0142f86d03cb",
+        "1115cb36-42f6-4bb0-9cfa-9f6ac308d5ab"
+      ]
+    }
+  },
+  "metadata": {
+    "node_name": "memory",
+    "execution_count": 1
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "390df8c8-f54c-4171-a36f-e19fa6f3ff77",
+  "workflow_id": "inter_tool_communication",
+  "timestamp": "2026-01-17T07:27:50.406874",
+  "current_node": "organize",
+  "state": {
+    "data": {
+      "files": [
+        "营业执照.jpg",
+        "身份证正面.jpg",
+        "身份证反面.jpg",
+        "经营者照片.jpg"
+      ],
+      "organized_files": {
+        "license": [
+          "营业执照.jpg"
+        ],
+        "id_card": [
+          "身份证正面.jpg",
+          "身份证反面.jpg"
+        ],
+        "photos": [
+          "经营者照片.jpg"
+        ],
+        "other": []
+      }
+    },
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "start_time": "2026-01-17T07:27:50.406874",
+      "nodes_executed": [
+        "organize"
+      ],
+      "execution_log": [
+        {
+          "node": "organize",
+          "time": "2026-01-17T07:27:50.406874"
+        }
+      ],
+      "checkpoints": []
+    }
+  },
+  "metadata": {
+    "node_name": "organize",
+    "execution_count": 1
+  }
+}

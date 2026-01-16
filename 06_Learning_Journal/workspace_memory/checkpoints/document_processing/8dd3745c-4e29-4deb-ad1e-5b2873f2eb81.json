@@ -1,0 +1,33 @@
+{
+  "id": "8dd3745c-4e29-4deb-ad1e-5b2873f2eb81",
+  "workflow_id": "document_processing",
+  "timestamp": "2026-01-17T07:24:07.761134",
+  "current_node": "supervisor",
+  "state": {
+    "data": {
+      "task": "如何提高工作效率",
+      "workflow_started": true,
+      "current_step": "research",
+      "step_index": 0
+    },
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "start_time": "2026-01-17T07:24:07.761134",
+      "nodes_executed": [
+        "supervisor"
+      ],
+      "execution_log": [
+        {
+          "node": "supervisor",
+          "time": "2026-01-17T07:24:07.761134"
+        }
+      ],
+      "checkpoints": []
+    }
+  },
+  "metadata": {
+    "node_name": "supervisor",
+    "execution_count": 1
+  }
+}

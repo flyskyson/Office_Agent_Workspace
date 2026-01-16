@@ -1,0 +1,69 @@
+{
+  "id": "5fd7f936-0095-41a5-b944-ebdc39ce162e",
+  "workflow_id": "inter_tool_communication",
+  "timestamp": "2026-01-17T07:27:01.911064",
+  "current_node": "generate",
+  "state": {
+    "data": {
+      "data": {
+        "files": [
+          "营业执照.jpg",
+          "身份证正面.jpg",
+          "身份证反面.jpg",
+          "经营者照片.jpg"
+        ]
+      },
+      "errors": [],
+      "warnings": [],
+      "metadata": {},
+      "organized_files": {
+        "license": [],
+        "id_card": [],
+        "photos": [],
+        "other": []
+      },
+      "application": {
+        "type": "个体工商户开业申请书",
+        "content": {
+          "name": "张三",
+          "shop_name": "示例便利店",
+          "address": "示例街道123号",
+          "business_scope": "日用百货销售"
+        },
+        "generated_at": "2026-01-17"
+      },
+      "license_info": {
+        "name": "张三",
+        "shop_name": "示例便利店",
+        "address": "示例街道123号",
+        "business_scope": "日用百货销售"
+      }
+    },
+    "errors": [],
+    "warnings": [],
+    "metadata": {
+      "start_time": "2026-01-17T07:27:01.911064",
+      "nodes_executed": [
+        "organize",
+        "generate"
+      ],
+      "execution_log": [
+        {
+          "node": "organize",
+          "time": "2026-01-17T07:27:01.911064"
+        },
+        {
+          "node": "generate",
+          "time": "2026-01-17T07:27:01.911064"
+        }
+      ],
+      "checkpoints": [
+        "fbdc601c-4704-4424-9869-32960d42d4a2"
+      ]
+    }
+  },
+  "metadata": {
+    "node_name": "generate",
+    "execution_count": 1
+  }
+}
