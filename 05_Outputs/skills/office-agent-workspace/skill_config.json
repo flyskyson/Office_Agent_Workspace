@@ -1,0 +1,17 @@
+{
+  "name": "office-agent-workspace",
+  "version": "1.0.0",
+  "description": "Office Agent Workspace - Python办公自动化工具集",
+  "author": "Claude Code",
+  "created": "2026-01-16",
+  "projects": [
+    "market_supervision_agent",
+    "memory_agent",
+    "file_organizer"
+  ],
+  "frameworks": [
+    "workflow_engine",
+    "agent_toolkit",
+    "claude_memory"
+  ]
+}

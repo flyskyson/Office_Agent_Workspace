@@ -1,0 +1,19 @@
+# AI Agent Training System - 依赖包
+
+# 核心框架
+streamlit>=1.28.0
+flask>=2.3.0
+
+# 浏览器自动化
+playwright>=1.40.0
+
+# AI框架
+langgraph>=0.0.40
+langchain>=0.1.0
+
+# 数据处理
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# 工作区依赖（从父项目导入）
+# -e ../../00_Agent_Library

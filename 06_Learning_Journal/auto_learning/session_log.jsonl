@@ -1,0 +1,3 @@
+{"session_id": "session_20260116_233706", "timestamp": "2026-01-16T23:37:06.986909", "first_message": "我想让Claude能够记住我的偏好，并且持续学习", "intent": "learn_explore", "context": {"project": null, "topic": "learning", "tech_stack": [], "user_goal": "learn"}}
+{"session_id": "session_20260116_233835", "timestamp": "2026-01-16T23:38:35.085306", "first_message": "我想让Claude能够记住我的偏好，并且持续学习", "intent": "learn_explore", "context": {"project": null, "topic": "learning", "tech_stack": [], "user_goal": "learn"}}
+{"session_id": "session_20260116_234004", "timestamp": "2026-01-16T23:40:04.260246", "first_message": "我们的对话现在有多少", "intent": "general", "context": {"project": null, "topic": null, "tech_stack": [], "user_goal": null}}

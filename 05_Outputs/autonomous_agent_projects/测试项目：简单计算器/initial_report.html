@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自主代理工作流报告 - 测试项目：简单计算器</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            opacity: 0.9;
+        }
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background: #f8f9fa;
+        }
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-label {
+            color: #6c757d;
+            margin-top: 5px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #333;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .mermaid {
+            background: #fafafa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+            overflow-x: auto;
+        }
+        .node-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .node-card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s;
+        }
+        .node-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+        .node-card.completed {
+            border-left: 4px solid #28a745;
+        }
+        .node-card.in-progress {
+            border-left: 4px solid #ffc107;
+        }
+        .node-card.pending {
+            border-left: 4px solid #6c757d;
+        }
+        .node-title {
+            font-weight: bold;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .node-role {
+            background: #e9ecef;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+        .node-purpose {
+            color: #6c757d;
+            margin: 10px 0;
+        }
+        .node-tasks {
+            margin-top: 10px;
+        }
+        .node-tasks ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .node-tasks li {
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .node-tasks li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+        }
+        .status-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: bold;
+        }
+        .status-completed {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-in-progress {
+            background: #fff3cd;
+            color: #856404;
+        }
+        .status-pending {
+            background: #e2e3e5;
+            color: #383d41;
+        }
+        .status-failed {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #667eea;
+        }
+        .timeline-item {
+            position: relative;
+            padding-bottom: 30px;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -34px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 3px solid white;
+            box-shadow: 0 0 0 2px #667eea;
+        }
+        .timeline-time {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        .timeline-content {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 5px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #6c757d;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 自主代理工作流报告</h1>
+            <p>测试项目：简单计算器</p>
+            <p style="font-size: 0.9em; margin-top: 10px;">这是一个测试项目，用于验证自主代理工作流的可行性</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-value">3</div>
+                <div class="stat-label">总节点数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="completed-count">-</div>
+                <div class="stat-label">已完成</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="success-rate">-%</div>
+                <div class="stat-label">成功率</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value" id="total-duration">-</div>
+                <div class="stat-label">总耗时(分钟)</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>📊 工作流流程图</h2>
+                <div class="mermaid">
+graph TD
+  Project["<b>测试项目：简单计算器</b><br/>目标: 开发一个简单的命令行计算器，支持加减乘除运算"]
+node_1["⏳ 需求分析和设计<br/><small>产品设计师</small>"
+    {class: pending}
+  ]
+  Project --> node_1
+node_2["⏳ 核心计算逻辑实现<br/><small>核心开发工程师</small>"
+    {class: pending}
+  ]
+  node_1 --> node_2
+node_3["⏳ 命令行界面实现<br/><small>前端工程师</small>"
+    {class: pending}
+  ]
+  node_2 --> node_3
+  node_3 --> End(("🎉 完成"))
+
+  classDef completed fill:#90EE90,stroke:#006400,stroke-width:3px;
+  classDef in_progress fill:#FFD700,stroke:#FF8C00,stroke-width:3px;
+  classDef pending fill:#D3D3D3,stroke:#696969,stroke-width:2px;
+  classDef failed fill:#FFB6C1,stroke:#DC143C,stroke-width:3px;
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📋 节点列表</h2>
+                <div class="node-list">
+
+                    <div class="node-card pending">
+                        <div class="node-title">
+                            需求分析和设计
+                            <span class="node-role">产品设计师</span>
+                        </div>
+                        <span class="status-badge status-pending">待执行</span>
+                        <div class="node-purpose">明确计算器的功能需求和接口设计</div>
+                        <div class='node-tasks'><ul><li>明确功能需求（加减乘除）</li><li>设计命令行接口</li><li>规划代码结构</li></ul></div>
+                    </div>
+
+                    <div class="node-card pending">
+                        <div class="node-title">
+                            核心计算逻辑实现
+                            <span class="node-role">核心开发工程师</span>
+                        </div>
+                        <span class="status-badge status-pending">待执行</span>
+                        <div class="node-purpose">实现计算器的核心运算逻辑</div>
+                        <div class='node-tasks'><ul><li>实现基本运算函数（加减乘除）</li><li>实现错误处理（除零错误）</li><li>编写单元测试</li></ul></div>
+                    </div>
+
+                    <div class="node-card pending">
+                        <div class="node-title">
+                            命令行界面实现
+                            <span class="node-role">前端工程师</span>
+                        </div>
+                        <span class="status-badge status-pending">待执行</span>
+                        <div class="node-purpose">实现用户交互的命令行界面</div>
+                        <div class='node-tasks'><ul><li>实现命令行参数解析</li><li>实现用户交互逻辑</li><li>添加帮助信息</li></ul></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>📈 执行时间线</h2>
+                <div class="timeline">
+                    <p>暂无执行记录</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>生成时间: 2026-01-15 17:54:29</p>
+            <p>自主代理工作流 v1.0 | 基于 Claude Code</p>
+        </div>
+    </div>
+
+    <script>
+        // 更新统计数据
+        const nodes = [{"id": "node_1", "name": "\u9700\u6c42\u5206\u6790\u548c\u8bbe\u8ba1"}, {"id": "node_2", "name": "\u6838\u5fc3\u8ba1\u7b97\u903b\u8f91\u5b9e\u73b0"}, {"id": "node_3", "name": "\u547d\u4ee4\u884c\u754c\u9762\u5b9e\u73b0"}];
+        const statePath = "05_Outputs\autonomous_agent_projects\测试项目：简单计算器\project_state.json";
+
+        // 尝试加载状态
+        fetch(statePath)
+            .then(response => response.json())
+            .then(state => {
+                const completed = state.completed_nodes ? state.completed_nodes.length : 0;
+                const total = nodes.length;
+                const successRate = total > 0 ? Math.round((completed / total) * 100) : 0;
+
+                document.getElementById('completed-count').textContent = completed;
+                document.getElementById('success-rate').textContent = successRate + '%';
+            })
+            .catch(err => {
+                console.log('无法加载状态文件');
+            });
+
+        // 初始化 Mermaid
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#667eea',
+                primaryTextColor: '#fff',
+                primaryBorderColor: '#764ba2',
+                lineColor: '#667eea',
+                secondaryColor: '#764ba2',
+                tertiaryColor: '#f8f9fa'
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "session_id": "session_20260116_233706",
+  "timestamp": "2026-01-16T23:37:07.068738",
+  "duration_seconds": 0.081829,
+  "conversation_count": 3,
+  "key_moments_count": 0,
+  "session_summary": "会话 session_20260116_233706 持续 0 秒；包含 3 次对话；识别了 0 个关键时刻。",
+  "key_learnings": [],
+  "user_insights": {
+    "communication_style": [],
+    "detail_level_preference": "medium",
+    "top_interests": [
+      "create_feature"
+    ],
+    "skill_growth": [],
+    "conversation_patterns": {}
+  },
+  "evolution_metrics": {
+    "total_conversations_learned": 1,
+    "total_insights_extracted": 1,
+    "knowledge_domains": 1,
+    "skill_diversity": 0,
+    "learning_velocity": 0.0
+  },
+  "recommendations": [
+    "考虑增加对话深度，提炼更多有价值的信息",
+    "尝试更多不同的技术栈，扩展技能覆盖",
+    "继续观察用户沟通偏好，提供个性化服务"
+  ]
+}

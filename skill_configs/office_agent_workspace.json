@@ -1,0 +1,21 @@
+{
+  "name": "office-agent-workspace",
+  "description": "Office Agent Workspace - Python办公自动化工具集，包含市场监管智能体、记忆助手、文件整理工具、工作流引擎等",
+  "base_url": "https://github.com",
+  "github_repo": "local",
+  "github_path": "Office_Agent_Workspace",
+  "selectors": {
+    "main_content": "markdown-body, article, README",
+    "title": "h1, h2",
+    "code_blocks": "pre code"
+  },
+  "categories": {
+    "getting_started": ["GETTING_STARTED", "入门", "快速开始"],
+    "architecture": ["ARCHITECTURE", "架构", "设计"],
+    "guides": ["guides", "指南", "开发"],
+    "skills": ["skills", "技能"],
+    "projects": ["projects", "项目", "智能体"]
+  },
+  "max_pages": 150,
+  "rate_limit": 0.2
+}

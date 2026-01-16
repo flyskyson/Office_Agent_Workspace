@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-01-16",
+  "total_skills": 7,
+  "skills": [
+    {
+      "id": "market-supervision-agent",
+      "name": "市场监管智能体",
+      "path": "c:\\Users\\flyskyson\\Office_Agent_Workspace\\05_Outputs\\skills\\market-supervision-agent",
+      "type": "agent"
+    },
+    {
+      "id": "memory-agent",
+      "name": "记忆助手",
+      "path": "c:\\Users\\flyskyson\\Office_Agent_Workspace\\05_Outputs\\skills\\memory-agent",
+      "type": "agent"
+    },
+    {
+      "id": "file-organizer",
+      "name": "文件整理工具",
+      "path": "c:\\Users\\flyskyson\\Office_Agent_Workspace\\05_Outputs\\skills\\file-organizer",
+      "type": "agent"
+    },
+    {
+      "id": "smart-tools",
+      "name": "智能工具集",
+      "path": "c:\\Users\\flyskyson\\Office_Agent_Workspace\\05_Outputs\\skills\\smart-tools",
+      "type": "agent"
+    },
+    {
+      "id": "workflow-engine",
+      "name": "工作流引擎",
+      "path": "c:\\Users\\flyskyson\\Office_Agent_Workspace\\05_Outputs\\skills\\workflow-engine",
+      "type": "framework"
+    },
+    {
+      "id": "agent-toolkit",
+      "name": "AgentTool工具框架",
+      "path": "c:\\Users\\flyskyson\\Office_Agent_Workspace\\05_Outputs\\skills\\agent-toolkit",
+      "type": "framework"
+    },
+    {
+      "id": "claude-memory",
+      "name": "Claude记忆系统",
+      "path": "c:\\Users\\flyskyson\\Office_Agent_Workspace\\05_Outputs\\skills\\claude-memory",
+      "type": "framework"
+    }
+  ]
+}

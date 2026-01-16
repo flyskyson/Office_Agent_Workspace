@@ -1,0 +1,26 @@
+{
+  "project_name": "测试项目：简单计算器",
+  "status": "completed",
+  "current_node": "node_3",
+  "completed_nodes": ["node_1", "node_2", "node_3"],
+  "failed_nodes": [],
+  "tools_created": [],
+  "start_time": "2026-01-15T17:54:29.030672",
+  "last_update": "2026-01-15T18:38:00.000000Z",
+  "budget_usage": {
+    "success_rate": 1.0,
+    "consecutive_failures": 0,
+    "broken_tools": 0
+  },
+  "milestones_reached": ["start", "30%", "70%", "pre_final"],
+  "total_nodes": 3,
+  "node1": {
+    "completed_at": "2026-01-15T18:00:00Z",
+    "duration_seconds": 180,
+    "agent_id": "ab378c4",
+    "outputs": 4,
+    "quality_score": 5.0
+  },
+  "checkpoints_enabled": true,
+  "visualization_enabled": true
+}

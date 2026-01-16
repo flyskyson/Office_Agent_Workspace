@@ -1,0 +1,43 @@
+{
+  "name": "User",
+  "preferences": {
+    "communication_style": ["深度思考", "简洁明了"],
+    "detail_level": "high",
+    "urgency": "normal",
+    "feedback_style": "constructive",
+    "expect_proactive_feedback": true,
+    "expect_timely_reminders": true,
+    "expect_suggestions": true
+  },
+  "skills": [],
+  "interests": [
+    "create_feature",
+    "系统进化",
+    "深度思考"
+  ],
+  "work_patterns": {
+    "active_hours": [],
+    "frequent_commands": [],
+    "preferred_tools": []
+  },
+  "values": [
+    "重视进化",
+    "长期视角",
+    "深度优先",
+    "主动提醒",
+    "及时建议"
+  ],
+  "learning_history": [
+    {
+      "timestamp": "2026-01-16T23:25:24.088716",
+      "intent": "create_feature",
+      "importance": 40.0
+    },
+    {
+      "timestamp": "2026-01-16T23:45:00.000000",
+      "intent": "configure_expectations",
+      "importance": 100.0,
+      "key_requirement": "希望Claude主动提醒和及时建议"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "project": {
+    "name": "测试项目：简单计算器",
+    "version": "1.0",
+    "goal": "开发一个简单的命令行计算器，支持加减乘除运算",
+    "description": "这是一个测试项目，用于验证自主代理工作流的可行性",
+    "nodes": [
+      {
+        "id": "node_1",
+        "name": "需求分析和设计",
+        "role": "产品设计师",
+        "purpose": "明确计算器的功能需求和接口设计",
+        "tasks": [
+          "明确功能需求（加减乘除）",
+          "设计命令行接口",
+          "规划代码结构"
+        ],
+        "requirements": [
+          "接口简单易用",
+          "代码结构清晰",
+          "考虑扩展性"
+        ],
+        "agent": "sub_agent_1"
+      },
+      {
+        "id": "node_2",
+        "name": "核心计算逻辑实现",
+        "role": "核心开发工程师",
+        "purpose": "实现计算器的核心运算逻辑",
+        "tasks": [
+          "实现基本运算函数（加减乘除）",
+          "实现错误处理（除零错误）",
+          "编写单元测试"
+        ],
+        "requirements": [
+          "运算正确",
+          "错误处理完善",
+          "测试覆盖充分"
+        ],
+        "agent": "sub_agent_2"
+      },
+      {
+        "id": "node_3",
+        "name": "命令行界面实现",
+        "role": "前端工程师",
+        "purpose": "实现用户交互的命令行界面",
+        "tasks": [
+          "实现命令行参数解析",
+          "实现用户交互逻辑",
+          "添加帮助信息"
+        ],
+        "requirements": [
+          "用户体验友好",
+          "错误提示清晰",
+          "支持帮助和版本信息"
+        ],
+        "agent": "sub_agent_3"
+      }
+    ]
+  },
+  "milestones": [
+    {
+      "point": "start",
+      "description": "启动后、执行前",
+      "require_confirmation": true,
+      "trigger_condition": "明显不符合条件才停止"
+    },
+    {
+      "point": "30%",
+      "description": "第一个节点完成后",
+      "require_confirmation": false,
+      "trigger_condition": "明显偏离目标才停止"
+    },
+    {
+      "point": "70%",
+      "description": "第二个节点完成后",
+      "require_confirmation": false,
+      "trigger_condition": "明显无法达成目标才停止"
+    },
+    {
+      "point": "pre_final",
+      "description": "最终验收前",
+      "require_confirmation": true,
+      "trigger_condition": "明显未完成目标才停止"
+    }
+  ],
+  "budget": {
+    "resources": {
+      "max_retries": "unlimited",
+      "max_tools": "unlimited",
+      "max_duration": "flexible"
+    },
+    "limits": {
+      "min_success_rate": 0.3,
+      "broken_tools_limit": 5,
+      "consecutive_failures": 3
+    }
+  },
+  "tools_registry": {
+    "path": "00_Agent_Library/tools/",
+    "registry_file": "05_Outputs\\autonomous_agent_projects\\05_Outputs\\autonomous_agent_projects\\tools_registry.json",
+    "statistics": {
+      "total_tools": 0,
+      "by_status": {
+        "experimental": 0,
+        "testing": 0,
+        "stable": 0,
+        "deprecated": 0
+      },
+      "total_usage": 0,
+      "average_success_rate": 0
+    }
+  },
+  "workspace": "05_Outputs\\autonomous_agent_projects\\测试项目：简单计算器",
+  "state_file": "05_Outputs\\autonomous_agent_projects\\测试项目：简单计算器\\project_state.json",
+  "checkpoints_dir": "05_Outputs\\autonomous_agent_projects\\测试项目：简单计算器\\checkpoints",
+  "start_time": "2026-01-15T17:54:29.030672",
+  "status": "initialized",
+  "checkpoint_management": {
+    "enabled": true,
+    "auto_save_before_node": true,
+    "auto_save_after_node": true,
+    "auto_save_milestone": true
+  },
+  "visualization": {
+    "enabled": true,
+    "auto_generate_html": true,
+    "auto_generate_markdown": true,
+    "output_dir": "05_Outputs\\autonomous_agent_projects\\测试项目：简单计算器\\reports"
+  },
+  "available_tools": {
+    "chief_agent_tools": [
+      "Task - 创建子代理（使用 subagent_type=general-purpose）",
+      "AskUserQuestion - 暂停点确认",
+      "TodoWrite - 进度跟踪和任务管理",
+      "Read/Write - 读写状态文件",
+      "MCP-filesystem - 文件系统操作",
+      "Skill:/super-butler - 工作区状态检查",
+      "Skill:/idea-to-product - 需求澄清（如需要）",
+      "CheckpointManager - 保存和恢复检查点 ⭐ NEW",
+      "WorkflowVisualizer - 生成可视化报告 ⭐ NEW"
+    ],
+    "sub_agent_tools": [
+      "Read/Write/Edit - 读写编辑代码",
+      "Bash - 运行测试和命令",
+      "Glob/Grep - 搜索代码",
+      "MCP-filesystem - 文件操作",
+      "Task - 创建更小的子任务（可选）"
+    ]
+  },
+  "execution_workflow": [
+    "1. 读取 project_context.json",
+    "2. 用 TodoWrite 创建任务列表（所有节点）",
+    "3. 【暂停点1】用 AskUserQuestion 确认是否开始",
+    "4. 保存开始检查点（CheckpointManager.save_milestone）",
+    "5. 对每个节点：",
+    "   a. 标记当前任务为 in_progress",
+    "   b. 保存节点前检查点（CheckpointManager.save_before_node）",
+    "   c. 用 Task 创建子代理执行节点",
+    "   d. 子代理返回结果",
+    "   e. 验收结果",
+    "   f. 保存节点后检查点（CheckpointManager.save_after_node）",
+    "   g. 更新 project_state.json",
+    "   h. 标记任务为 completed",
+    "   i. 检查是否到达暂停点",
+    "6. 生成可视化报告（WorkflowVisualizer.generate_html_report）",
+    "7. 生成复盘报告",
+    "8. 【暂停点4】用 AskUserQuestion 汇报最终状态"
+  ],
+  "sub_agent_guideline_template": "\n你是一个子代理，负责执行以下节点任务：\n\n节点信息：\n- 名称: {node_name}\n- 角色: {node_role}\n- 目的: {node_purpose}\n- 任务: {node_tasks}\n- 要求: {node_requirements}\n\n你的工作流程：\n1. 理解节点目标和任务\n2. 查询工具注册表，看是否有可用工具\n3. 执行任务（可以使用 Read/Write/Edit/Bash 等工具）\n4. 如果需要新工具，创建并注册到 00_Agent_Library/tools/\n5. 自评验收：检查是否完成所有任务\n6. 返回结果和自评意见\n\n可用工具：\n- Read/Write/Edit - 读写编辑文件\n- Bash - 执行命令\n- Glob/Grep - 搜索代码\n- MCP-filesystem - 文件操作\n\n重要：完成后必须返回：\n1. 是否完成所有任务（是/否）\n2. 创建的工具列表（如有）\n3. 使用的工具列表\n4. 执行时长（秒）\n5. 错误信息（如有）\n"
+}
