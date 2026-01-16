@@ -1,0 +1,4 @@
+enabled: true
+name: 文件整理工具
+rules:
+  path: 01_Active_Projects/file_organizer/config.json

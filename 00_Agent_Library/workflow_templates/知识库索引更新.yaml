@@ -1,0 +1,32 @@
+category: 知识管理
+created_at: '2026-01-16T10:42:59.250312'
+description: 扫描笔记并更新向量索引
+name: 知识库索引更新
+parameters:
+  index_type:
+    default: vector
+    description: 索引类型
+    required: false
+    type: string
+  notes_path:
+    default: null
+    description: 笔记目录
+    required: true
+    type: string
+steps:
+- action: scan
+  agent: file_organizer
+  condition: null
+  params:
+    path: ${notes_path}
+- action: batch_add_notes
+  agent: memory
+  condition: null
+  params:
+    source: ${notes_path}
+- action: rebuild_index
+  agent: memory
+  condition: null
+  params:
+    type: ${index_type}
+version: 1.0.0

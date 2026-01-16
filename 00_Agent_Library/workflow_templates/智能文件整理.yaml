@@ -1,0 +1,46 @@
+category: 文件管理
+created_at: '2026-01-16T10:42:59.229399'
+description: 按类型和日期整理文件
+name: 智能文件整理
+parameters:
+  create_backup:
+    default: true
+    description: 是否创建备份
+    required: false
+    type: boolean
+  rules:
+    default: {}
+    description: 整理规则
+    required: false
+    type: dict
+  source_path:
+    default: null
+    description: 源目录
+    required: true
+    type: string
+  target_path:
+    default: null
+    description: 目标目录
+    required: true
+    type: string
+steps:
+- action: scan
+  agent: file_organizer
+  condition: null
+  params:
+    path: ${source_path}
+- action: organize
+  agent: file_organizer
+  condition: null
+  params:
+    rules: ${rules}
+    source: ${source_path}
+    target: ${target_path}
+- action: add_note
+  agent: memory
+  condition: null
+  params:
+    category: 文件管理
+    content: 整理了 ${source_path} 到 ${target_path}
+    title: 文件整理记录 ${datetime.now().strftime('%Y-%m-%d')}
+version: 1.0.0

@@ -1,0 +1,57 @@
+category: 证照管理
+created_at: '2026-01-16T10:42:59.262680'
+description: 从材料扫描到申请表生成的完整流程
+name: 证照申请完整流程
+parameters:
+  business_address:
+    default: ''
+    description: 经营地址
+    required: false
+    type: string
+  business_name:
+    default: ''
+    description: 商铺名称
+    required: false
+    type: string
+  id_card:
+    default: null
+    description: 身份证号
+    required: true
+    type: string
+  material_path:
+    default: .
+    description: 材料目录路径
+    required: false
+    type: string
+  operator_name:
+    default: null
+    description: 经营者姓名
+    required: true
+    type: string
+steps:
+- action: scan
+  agent: file_organizer
+  condition: null
+  params:
+    path: ${material_path}
+- action: search
+  agent: memory
+  condition: null
+  params:
+    keyword: ${operator_name}
+- action: generate_application
+  agent: market_supervision
+  condition: null
+  params:
+    business_address: ${business_address}
+    business_name: ${business_name}
+    id_card: ${id_card}
+    operator_name: ${operator_name}
+- action: add_note
+  agent: memory
+  condition: null
+  params:
+    category: 证照申请
+    content: '身份证: ${id_card}, 商铺: ${business_name}'
+    title: '申请记录: ${operator_name}'
+version: 1.0.0

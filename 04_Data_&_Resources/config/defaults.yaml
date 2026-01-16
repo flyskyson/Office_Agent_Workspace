@@ -1,0 +1,24 @@
+database:
+  default_type: sqlite
+  pool_size: 5
+  sqlite_path: 04_Data_&_Resources/databases
+features:
+  mcp_servers:
+    auto_start: true
+    enabled: true
+  skills:
+    auto_discover: true
+    enabled: true
+logging:
+  file: 06_Learning_Journal/workspace.log
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+  level: INFO
+paths:
+  data: 04_Data_&_Resources
+  logs: 06_Learning_Journal
+  output: 05_Outputs
+  temp: 00_Agent_Library/temp
+version: 1.0.0
+workspace:
+  name: Office Agent Workspace
+  root: c:\Users\flyskyson\Office_Agent_Workspace

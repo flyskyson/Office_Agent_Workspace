@@ -1,0 +1,7 @@
+database:
+  path: 01_Active_Projects/memory_agent/chroma_db
+  type: chromadb
+embedding:
+  model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+enabled: true
+name: 记忆助手

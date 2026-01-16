@@ -1,0 +1,43 @@
+category: 资讯管理
+created_at: '2026-01-16T10:42:59.239390'
+description: 获取热点新闻并生成日报
+name: 每日新闻摘要
+parameters:
+  count:
+    default: 20
+    description: 获取数量
+    required: false
+    type: integer
+  keywords:
+    default: []
+    description: 关键词过滤
+    required: false
+    type: list
+  platforms:
+    default:
+    - weibo
+    - zhihu
+    - bilibili
+    description: 新闻平台
+    required: false
+    type: list
+steps:
+- action: fetch
+  agent: news_scraper
+  condition: null
+  params:
+    count: ${count}
+    platforms: ${platforms}
+- action: search
+  agent: memory
+  condition: null
+  params:
+    keyword: ${keywords[0] if keywords else ''}
+- action: add_note
+  agent: memory
+  condition: null
+  params:
+    category: 新闻
+    content: 今日热点新闻摘要
+    title: 新闻日报 ${datetime.now().strftime('%Y-%m-%d')}
+version: 1.0.0

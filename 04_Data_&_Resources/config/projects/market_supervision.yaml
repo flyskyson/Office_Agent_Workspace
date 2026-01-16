@@ -1,0 +1,10 @@
+database:
+  path: 04_Data_&_Resources/operators_database.db
+  type: sqlite
+enabled: true
+name: 市场监管智能体
+ocr:
+  engine: baidu
+  fallback: paddle
+templates:
+  path: 01_Active_Projects/market_supervision_agent/templates

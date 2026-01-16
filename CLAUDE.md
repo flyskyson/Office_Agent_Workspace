@@ -1,9 +1,10 @@
 # Office Agent Workspace - 项目配置
 
 **项目类型**: Python 办公自动化工具集
-**主要框架**: Streamlit, Flask, Playwright, AutoGen AgentTool
+**主要框架**: Streamlit, Flask, Playwright, AutoGen AgentTool, LangGraph, MCP
 **Python版本**: 3.9+ (推荐 3.12)
-**更新日期**: 2026-01-14
+**更新日期**: 2026-01-16
+**当前版本**: v2.0.0
 
 ---
 
@@ -16,8 +17,46 @@
 | 📝 **查看编码规范** | [CODING_STANDARDS.md](docs/CODING_STANDARDS.md) |
 | 🔧 **开发新功能** | [guides/AGENT_DEVELOPMENT.md](docs/guides/AGENT_DEVELOPMENT.md) |
 | 🤖 **使用技能系统** | [guides/SKILLS_SYSTEM.md](docs/guides/SKILLS_SYSTEM.md) |
+| 📋 **选择工作流模板** | [guides/TEMPLATES.md](docs/guides/TEMPLATES.md) |
 | 💡 **想法落地工作流** | [guides/IDEA_WORKFLOW.md](docs/guides/IDEA_WORKFLOW.md) |
-| 🐛 **排查问题** | [TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) |
+| 🤖 **自主代理工作流** | [guides/AUTONOMOUS_AGENT_WORKFLOW.md](docs/guides/AUTONOMOUS_AGENT_WORKFLOW.md) |
+| 🐛 **排查问题** | [docs/TROUBLESHOOTING.md](docs/TROUBLESHOOTING.md) |
+| ⭐ **v2.0 核心功能** | [05_Outputs/core_features_detailed_guide_20260116.md](05_Outputs/core_features_detailed_guide_20260116.md) |
+
+---
+
+## 🆕 v2.0 核心功能
+
+2026-01-16 更新 - 工作区架构重大升级
+
+### 🔧 四大核心组件
+
+| 组件 | 功能 | 位置 | 状态 |
+|------|------|------|------|
+| **SQLite MCP** | 统一数据访问层 | [mcp_sqlite_wrapper.py](00_Agent_Library/mcp_sqlite_wrapper.py) | ✅ 测试通过 |
+| **ConfigCenter** | 分层配置系统 | [config_center.py](00_Agent_Library/config_center.py) | ✅ 测试通过 |
+| **AgentSupervisor** | 智能体协作编排 | [agent_supervisor.py](00_Agent_Library/agent_supervisor.py) | ✅ 测试通过 |
+| **Workflow Templates** | 可复用工作流 | [workflow_templates.py](00_Agent_Library/workflow_templates.py) | ✅ 测试通过 |
+
+### 📊 架构升级
+
+**Before (v1.x)**: 独立智能体，分散配置，异构数据库
+**After (v2.0)**: 统一监督者，分层配置，MCP统一接口
+
+### 🚀 快速使用
+
+```bash
+# 初始化配置中心
+python 00_Agent_Library/config_center.py init
+
+# 使用智能体监督者
+python 00_Agent_Library/agent_supervisor.py
+
+# 查看工作流模板
+python 00_Agent_Library/workflow_templates.py
+```
+
+详细文档: [core_features_detailed_guide_20260116.md](05_Outputs/core_features_detailed_guide_20260116.md)
 
 ---
 
@@ -36,7 +75,9 @@ Office_Agent_Workspace/
 │   ├── CODING_STANDARDS.md          #    编码规范
 │   ├── TROUBLESHOOTING.md           #    问题排查
 │   └── guides/                      #    专题指南
-│       ├── IDEA_WORKFLOW.md         #       想法落地详细指南
+│       ├── TEMPLATES.md             #       工作流模板索引
+│       ├── IDEA_WORKFLOW.md         #       想法落地工作流
+│       ├── AUTONOMOUS_AGENT_WORKFLOW.md  # 自主代理工作流
 │       ├── SKILLS_SYSTEM.md         #       技能系统说明
 │       ├── VERSION_MANAGEMENT.md    #       版本管理
 │       └── AGENT_DEVELOPMENT.md     #       智能体开发
@@ -53,6 +94,11 @@ Office_Agent_Workspace/
 │   ├── workflow_engine.py           #    LangGraph 工作流引擎
 │   ├── idea_workflow_engine.py      #    想法落地工作流引擎
 │   ├── version_manager.py           #    版本管理器
+│   ├── agent_supervisor.py          # ⭐ 智能体监督者 (v2.0)
+│   ├── config_center.py             # ⭐ 统一配置中心 (v2.0)
+│   ├── mcp_sqlite_wrapper.py        # ⭐ MCP SQLite 服务器 (v2.0)
+│   ├── workflow_templates.py        # ⭐ 工作流模板系统 (v2.0)
+│   ├── workflow_templates/          #    工作流模板目录
 │   └── EVOLUTION_GUIDE.md           #    演进系统说明
 │
 ├── 01_Active_Projects/              # 🚀 活跃项目
@@ -62,7 +108,9 @@ Office_Agent_Workspace/
 │
 ├── 02_Project_Archive/              # 📦 归档项目
 ├── 04_Data_&_Resources/             # 📊 数据和资源
+│   └── config/                      # ⭐ 统一配置目录 (v2.0)
 ├── 05_Outputs/                      # 📤 输出文件
+│   └── core_features_detailed_guide_20260116.md  # v2.0 功能详解
 └── 06_Learning_Journal/             # 📝 学习日志和演进记录
 ```
 
